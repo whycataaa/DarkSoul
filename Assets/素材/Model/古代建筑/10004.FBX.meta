@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: f46ad0c20569bf34195fb5a004705998
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ______011
+    100004: ______011 1
+    100006: A_S_Lim_Ins002_A_BU_005_D
+    100008: around
+    100010: Broken_topTX05D
+    100012: Broken_topTX05D_Caster
+    100014: Broken_topTX05D_Receive
+    100016: Broken_topTX05D_Receive 1
+    100018: build_huojiazi
+    100020: build_sunhuaijianzhu01
+    100022: build_sunhuaijianzhu02
+    100024: build_sunhuaijianzhu02 1
+    100026: build_sunhuaijianzhu02 2
+    100028: build_sunhuaijianzhu02 3
+    100030: build_sunhuaijianzhu03
+    100032: build_sunhuaijianzhu03 1
+    100034: build_sunhuaijianzhu03 2
+    100036: build_sunhuaijianzhu03 3
+    100038: build_sunhuaijianzhu03 4
+    100040: build_xinshouchun_taizi_batched
+    100042: build_xinshoucun_shuiche
+    100044: build_xinshoucun_shuiche 1
+    100046: build_yewai_bujian_1
+    100048: build_yuanluo_wutai4
+    100050: build_zhandao
+    100052: build_zhandao 1
+    100054: Building_Broken_001_01_D1
+    100056: bush_Lvcao111
+    100058: bush_lvcao21
+    100060: c5_pingjieqiang_obj_0
+    100062: c5_pingjieqiang_obj_1
+    100064: c5_veg_hongshu01_obj_005
+    100066: Cylinder009
+    100068: fire
+    100070: fire 1
+    100072: Fire_Scenes
+    100074: Fire_Scenes 1
+    100076: Group001
+    100078: heart
+    100080: heart 1
+    100082: heart 2
+    100084: Model
+    100086: Model 1
+    100088: Object017
+    100090: Object017 1
+    100092: Object070
+    100094: Object085
+    100096: OcclusionTrigger
+    100098: part01_batched
+    100100: part02_batched
+    100102: part03_batched
+    100104: part04
+    100106: Particle System
+    100108: Particle System 1
+    100110: Plane048
+    100112: Plane048 1
+    100114: Plane_fengshu
+    100116: Plane_fengshu 1
+    100118: Plane_fengshu 2
+    100120: Plane_fengshu 3
+    100122: Plane_fengshu 4
+    100124: Plane_fengshu 5
+    100126: Plane_fengshu 6
+    100128: PUBU
+    100130: qigai
+    100132: qigai 1
+    100134: rock_yewai02
+    100136: rock_yewai04
+    100138: rock_yewai5
+    100140: SceneAreaTrigger--1
+    100142: SceneAreaTrigger--1 1
+    100144: SceneAreaTrigger--1 2
+    100146: SceneAreaTrigger--1 3
+    100148: SceneAreaTrigger--1 4
+    100150: SceneAreaTrigger--1 5
+    100152: SceneAreaTrigger--1 6
+    100154: sceneeffect
+    100156: SceneObjects
+    100158: shiqiao1
+    100160: shiqiao1 1
+    100162: shiqiao1_Caster
+    100164: shuiche_jiaban
+    100166: shuiche_jiaban 1
+    100168: shuiche_zhalan
+    100170: veg
+    100172: veg_qiaomu02
+    100174: veg_qiaomu02_01
+    100176: veg_zhuzi01
+    100178: veg_zhuzi01 1
+    100180: veg_zhuzi01_01
+    100182: veg_zhuzi01_01_Caster_Receive
+    100184: veg_zhuzi01_02
+    100186: veg_zhuzi01_02 1
+    100188: veg_zhuzi01_02_Caster_Receive
+    100190: water_shuidi01
+    100192: water_shuimian01
+    100194: xiaorong
+    100196: Xiaoyan_huo
+    100198: xinshou_rock
+    100200: xinshoucun_hulan02_batched
+    100202: xinshoucun_qiang
+    100204: xinshoucun_shiqiao01_d
+    100206: xinshoucun_shiqiao01_d_Receive
+    100208: xinshoucun_shiqiao01_d_Receive 1
+    100210: xinshoucun_shiqiao02_d
+    100212: xinshoucun_shiqiao02_d_Caster
+    100214: xinshoucun_shiqiao02_d_Caster_Receive
+    100216: xinshoucun_shiqiao02_d_Receive
+    100218: xinshoucun_shiqiao03_d
+    100220: xinshoucun_shiqiao03_d_Receive
+    100222: xinshoucun_shuiche
+    100224: xinshoucun_shuiche 1
+    100226: xue04
+    100228: xue04 1
+    100230: yewai_1_1
+    100232: yewai_guanqia01_part02
+    100234: yewai_guanqia01_part02 1
+    100236: yewai_guanqia01_part02 2
+    100238: yewai_guanqia02_part3
+    100240: yewai_guanqia02_part3 1
+    100242: yewai_guanqia02_part3 2
+    100244: yewai_guanqia02_part3 3
+    100246: yewai_muban_Receive
+    100248: yewai_mutong
+    100250: yewai_shidunzi
+    100252: yewai_shidunzi 1
+    100254: yewai_shidunzi 2
+    100256: yewai_shidunzi_Caster
+    100258: yewai_shiti02_Receive
+    100260: yewai_suibidan
+    100262: yewai_suibidan 1
+    100264: zhuangbei_d_01_BigVertex_0
+    100266: zhuangbei_d_01_BigVertex_0 1
+    100268: zhuangbei_d_01_BigVertex_1
+    100270: zhuangbei_d_01_BigVertex_1 1
+    400000: //RootNode
+    400002: ______011
+    400004: ______011 1
+    400006: A_S_Lim_Ins002_A_BU_005_D
+    400008: around
+    400010: Broken_topTX05D
+    400012: Broken_topTX05D_Caster
+    400014: Broken_topTX05D_Receive
+    400016: Broken_topTX05D_Receive 1
+    400018: build_huojiazi
+    400020: build_sunhuaijianzhu01
+    400022: build_sunhuaijianzhu02
+    400024: build_sunhuaijianzhu02 1
+    400026: build_sunhuaijianzhu02 2
+    400028: build_sunhuaijianzhu02 3
+    400030: build_sunhuaijianzhu03
+    400032: build_sunhuaijianzhu03 1
+    400034: build_sunhuaijianzhu03 2
+    400036: build_sunhuaijianzhu03 3
+    400038: build_sunhuaijianzhu03 4
+    400040: build_xinshouchun_taizi_batched
+    400042: build_xinshoucun_shuiche
+    400044: build_xinshoucun_shuiche 1
+    400046: build_yewai_bujian_1
+    400048: build_yuanluo_wutai4
+    400050: build_zhandao
+    400052: build_zhandao 1
+    400054: Building_Broken_001_01_D1
+    400056: bush_Lvcao111
+    400058: bush_lvcao21
+    400060: c5_pingjieqiang_obj_0
+    400062: c5_pingjieqiang_obj_1
+    400064: c5_veg_hongshu01_obj_005
+    400066: Cylinder009
+    400068: fire
+    400070: fire 1
+    400072: Fire_Scenes
+    400074: Fire_Scenes 1
+    400076: Group001
+    400078: heart
+    400080: heart 1
+    400082: heart 2
+    400084: Model
+    400086: Model 1
+    400088: Object017
+    400090: Object017 1
+    400092: Object070
+    400094: Object085
+    400096: OcclusionTrigger
+    400098: part01_batched
+    400100: part02_batched
+    400102: part03_batched
+    400104: part04
+    400106: Particle System
+    400108: Particle System 1
+    400110: Plane048
+    400112: Plane048 1
+    400114: Plane_fengshu
+    400116: Plane_fengshu 1
+    400118: Plane_fengshu 2
+    400120: Plane_fengshu 3
+    400122: Plane_fengshu 4
+    400124: Plane_fengshu 5
+    400126: Plane_fengshu 6
+    400128: PUBU
+    400130: qigai
+    400132: qigai 1
+    400134: rock_yewai02
+    400136: rock_yewai04
+    400138: rock_yewai5
+    400140: SceneAreaTrigger--1
+    400142: SceneAreaTrigger--1 1
+    400144: SceneAreaTrigger--1 2
+    400146: SceneAreaTrigger--1 3
+    400148: SceneAreaTrigger--1 4
+    400150: SceneAreaTrigger--1 5
+    400152: SceneAreaTrigger--1 6
+    400154: sceneeffect
+    400156: SceneObjects
+    400158: shiqiao1
+    400160: shiqiao1 1
+    400162: shiqiao1_Caster
+    400164: shuiche_jiaban
+    400166: shuiche_jiaban 1
+    400168: shuiche_zhalan
+    400170: veg
+    400172: veg_qiaomu02
+    400174: veg_qiaomu02_01
+    400176: veg_zhuzi01
+    400178: veg_zhuzi01 1
+    400180: veg_zhuzi01_01
+    400182: veg_zhuzi01_01_Caster_Receive
+    400184: veg_zhuzi01_02
+    400186: veg_zhuzi01_02 1
+    400188: veg_zhuzi01_02_Caster_Receive
+    400190: water_shuidi01
+    400192: water_shuimian01
+    400194: xiaorong
+    400196: Xiaoyan_huo
+    400198: xinshou_rock
+    400200: xinshoucun_hulan02_batched
+    400202: xinshoucun_qiang
+    400204: xinshoucun_shiqiao01_d
+    400206: xinshoucun_shiqiao01_d_Receive
+    400208: xinshoucun_shiqiao01_d_Receive 1
+    400210: xinshoucun_shiqiao02_d
+    400212: xinshoucun_shiqiao02_d_Caster
+    400214: xinshoucun_shiqiao02_d_Caster_Receive
+    400216: xinshoucun_shiqiao02_d_Receive
+    400218: xinshoucun_shiqiao03_d
+    400220: xinshoucun_shiqiao03_d_Receive
+    400222: xinshoucun_shuiche
+    400224: xinshoucun_shuiche 1
+    400226: xue04
+    400228: xue04 1
+    400230: yewai_1_1
+    400232: yewai_guanqia01_part02
+    400234: yewai_guanqia01_part02 1
+    400236: yewai_guanqia01_part02 2
+    400238: yewai_guanqia02_part3
+    400240: yewai_guanqia02_part3 1
+    400242: yewai_guanqia02_part3 2
+    400244: yewai_guanqia02_part3 3
+    400246: yewai_muban_Receive
+    400248: yewai_mutong
+    400250: yewai_shidunzi
+    400252: yewai_shidunzi 1
+    400254: yewai_shidunzi 2
+    400256: yewai_shidunzi_Caster
+    400258: yewai_shiti02_Receive
+    400260: yewai_suibidan
+    400262: yewai_suibidan 1
+    400264: zhuangbei_d_01_BigVertex_0
+    400266: zhuangbei_d_01_BigVertex_0 1
+    400268: zhuangbei_d_01_BigVertex_1
+    400270: zhuangbei_d_01_BigVertex_1 1
+    2300000: ______011
+    2300002: ______011 1
+    2300004: A_S_Lim_Ins002_A_BU_005_D
+    2300006: around
+    2300008: Broken_topTX05D
+    2300010: Broken_topTX05D_Caster
+    2300012: Broken_topTX05D_Receive
+    2300014: Broken_topTX05D_Receive 1
+    2300016: build_huojiazi
+    2300018: build_sunhuaijianzhu01
+    2300020: build_sunhuaijianzhu02
+    2300022: build_sunhuaijianzhu02 1
+    2300024: build_sunhuaijianzhu02 2
+    2300026: build_sunhuaijianzhu02 3
+    2300028: build_sunhuaijianzhu03
+    2300030: build_sunhuaijianzhu03 1
+    2300032: build_sunhuaijianzhu03 2
+    2300034: build_sunhuaijianzhu03 3
+    2300036: build_sunhuaijianzhu03 4
+    2300038: build_yewai_bujian_1
+    2300040: build_yuanluo_wutai4
+    2300042: build_zhandao
+    2300044: build_zhandao 1
+    2300046: Building_Broken_001_01_D1
+    2300048: bush_Lvcao111
+    2300050: bush_lvcao21
+    2300052: c5_pingjieqiang_obj_0
+    2300054: c5_pingjieqiang_obj_1
+    2300056: Cylinder009
+    2300058: heart
+    2300060: heart 1
+    2300062: heart 2
+    2300064: Object017
+    2300066: Object017 1
+    2300068: Object070
+    2300070: Object085
+    2300072: Plane048
+    2300074: Plane048 1
+    2300076: Plane_fengshu
+    2300078: Plane_fengshu 1
+    2300080: Plane_fengshu 2
+    2300082: Plane_fengshu 3
+    2300084: Plane_fengshu 4
+    2300086: Plane_fengshu 5
+    2300088: Plane_fengshu 6
+    2300090: qigai
+    2300092: qigai 1
+    2300094: rock_yewai02
+    2300096: rock_yewai04
+    2300098: rock_yewai5
+    2300100: shiqiao1
+    2300102: shiqiao1 1
+    2300104: shiqiao1_Caster
+    2300106: shuiche_jiaban
+    2300108: shuiche_jiaban 1
+    2300110: shuiche_zhalan
+    2300112: veg_qiaomu02
+    2300114: veg_qiaomu02_01
+    2300116: veg_zhuzi01_01
+    2300118: veg_zhuzi01_01_Caster_Receive
+    2300120: veg_zhuzi01_02
+    2300122: veg_zhuzi01_02 1
+    2300124: veg_zhuzi01_02_Caster_Receive
+    2300126: water_shuidi01
+    2300128: water_shuimian01
+    2300130: xinshoucun_shiqiao01_d
+    2300132: xinshoucun_shiqiao01_d_Receive
+    2300134: xinshoucun_shiqiao01_d_Receive 1
+    2300136: xinshoucun_shiqiao02_d
+    2300138: xinshoucun_shiqiao02_d_Caster
+    2300140: xinshoucun_shiqiao02_d_Caster_Receive
+    2300142: xinshoucun_shiqiao02_d_Receive
+    2300144: xinshoucun_shiqiao03_d
+    2300146: xinshoucun_shiqiao03_d_Receive
+    2300148: xue04
+    2300150: xue04 1
+    2300152: yewai_1_1
+    2300154: yewai_guanqia01_part02
+    2300156: yewai_guanqia01_part02 1
+    2300158: yewai_guanqia01_part02 2
+    2300160: yewai_muban_Receive
+    2300162: yewai_mutong
+    2300164: yewai_shidunzi
+    2300166: yewai_shidunzi 1
+    2300168: yewai_shidunzi 2
+    2300170: yewai_shidunzi_Caster
+    2300172: yewai_shiti02_Receive
+    2300174: yewai_suibidan
+    2300176: yewai_suibidan 1
+    2300178: zhuangbei_d_01_BigVertex_0
+    2300180: zhuangbei_d_01_BigVertex_0 1
+    2300182: zhuangbei_d_01_BigVertex_1
+    2300184: zhuangbei_d_01_BigVertex_1 1
+    3300000: ______011
+    3300002: ______011 1
+    3300004: A_S_Lim_Ins002_A_BU_005_D
+    3300006: around
+    3300008: Broken_topTX05D
+    3300010: Broken_topTX05D_Caster
+    3300012: Broken_topTX05D_Receive
+    3300014: Broken_topTX05D_Receive 1
+    3300016: build_huojiazi
+    3300018: build_sunhuaijianzhu01
+    3300020: build_sunhuaijianzhu02
+    3300022: build_sunhuaijianzhu02 1
+    3300024: build_sunhuaijianzhu02 2
+    3300026: build_sunhuaijianzhu02 3
+    3300028: build_sunhuaijianzhu03
+    3300030: build_sunhuaijianzhu03 1
+    3300032: build_sunhuaijianzhu03 2
+    3300034: build_sunhuaijianzhu03 3
+    3300036: build_sunhuaijianzhu03 4
+    3300038: build_yewai_bujian_1
+    3300040: build_yuanluo_wutai4
+    3300042: build_zhandao
+    3300044: build_zhandao 1
+    3300046: Building_Broken_001_01_D1
+    3300048: bush_Lvcao111
+    3300050: bush_lvcao21
+    3300052: c5_pingjieqiang_obj_0
+    3300054: c5_pingjieqiang_obj_1
+    3300056: Cylinder009
+    3300058: heart
+    3300060: heart 1
+    3300062: heart 2
+    3300064: Object017
+    3300066: Object017 1
+    3300068: Object070
+    3300070: Object085
+    3300072: Plane048
+    3300074: Plane048 1
+    3300076: Plane_fengshu
+    3300078: Plane_fengshu 1
+    3300080: Plane_fengshu 2
+    3300082: Plane_fengshu 3
+    3300084: Plane_fengshu 4
+    3300086: Plane_fengshu 5
+    3300088: Plane_fengshu 6
+    3300090: qigai
+    3300092: qigai 1
+    3300094: rock_yewai02
+    3300096: rock_yewai04
+    3300098: rock_yewai5
+    3300100: shiqiao1
+    3300102: shiqiao1 1
+    3300104: shiqiao1_Caster
+    3300106: shuiche_jiaban
+    3300108: shuiche_jiaban 1
+    3300110: shuiche_zhalan
+    3300112: veg_qiaomu02
+    3300114: veg_qiaomu02_01
+    3300116: veg_zhuzi01_01
+    3300118: veg_zhuzi01_01_Caster_Receive
+    3300120: veg_zhuzi01_02
+    3300122: veg_zhuzi01_02 1
+    3300124: veg_zhuzi01_02_Caster_Receive
+    3300126: water_shuidi01
+    3300128: water_shuimian01
+    3300130: xinshoucun_shiqiao01_d
+    3300132: xinshoucun_shiqiao01_d_Receive
+    3300134: xinshoucun_shiqiao01_d_Receive 1
+    3300136: xinshoucun_shiqiao02_d
+    3300138: xinshoucun_shiqiao02_d_Caster
+    3300140: xinshoucun_shiqiao02_d_Caster_Receive
+    3300142: xinshoucun_shiqiao02_d_Receive
+    3300144: xinshoucun_shiqiao03_d
+    3300146: xinshoucun_shiqiao03_d_Receive
+    3300148: xue04
+    3300150: xue04 1
+    3300152: yewai_1_1
+    3300154: yewai_guanqia01_part02
+    3300156: yewai_guanqia01_part02 1
+    3300158: yewai_guanqia01_part02 2
+    3300160: yewai_muban_Receive
+    3300162: yewai_mutong
+    3300164: yewai_shidunzi
+    3300166: yewai_shidunzi 1
+    3300168: yewai_shidunzi 2
+    3300170: yewai_shidunzi_Caster
+    3300172: yewai_shiti02_Receive
+    3300174: yewai_suibidan
+    3300176: yewai_suibidan 1
+    3300178: zhuangbei_d_01_BigVertex_0
+    3300180: zhuangbei_d_01_BigVertex_0 1
+    3300182: zhuangbei_d_01_BigVertex_1
+    3300184: zhuangbei_d_01_BigVertex_1 1
+    4300000: c5_pingjieqiang_obj_0
+    4300002: c5_pingjieqiang_obj_1
+    4300004: around
+    4300006: heart
+    4300008: heart
+    4300010: heart
+    4300012: Object017
+    4300014: Plane048
+    4300016: water_shuidi01
+    4300018: build_zhandao
+    4300020: yewai_mutong
+    4300022: rock_yewai04
+    4300024: xinshoucun_shiqiao01_d
+    4300026: build_sunhuaijianzhu01
+    4300028: build_sunhuaijianzhu03
+    4300030: yewai_guanqia01_part02
+    4300032: build_sunhuaijianzhu02
+    4300034: build_sunhuaijianzhu03
+    4300036: build_sunhuaijianzhu03
+    4300038: ______011
+    4300040: build_sunhuaijianzhu03
+    4300042: build_sunhuaijianzhu02
+    4300044: A_S_Lim_Ins002_A_BU_005_D
+    4300046: shiqiao1_Caster
+    4300048: yewai_suibidan
+    4300050: yewai_shidunzi
+    4300052: rock_yewai02
+    4300054: build_sunhuaijianzhu02
+    4300056: build_yuanluo_wutai4
+    4300058: veg_zhuzi01_02
+    4300060: veg_zhuzi01_01
+    4300062: yewai_suibidan
+    4300064: yewai_shidunzi
+    4300066: yewai_shiti02_Receive
+    4300068: build_zhandao
+    4300070: Building_Broken_001_01_D1
+    4300072: yewai_1_1
+    4300074: Broken_topTX05D_Receive
+    4300076: xinshoucun_shiqiao01_d_Receive
+    4300078: Plane_fengshu
+    4300080: Plane_fengshu
+    4300082: water_shuimian01
+    4300084: yewai_guanqia01_part02
+    4300086: build_sunhuaijianzhu03
+    4300088: build_sunhuaijianzhu02
+    4300090: yewai_guanqia01_part02
+    4300092: xue04
+    4300094: qigai
+    4300096: zhuangbei_d_01_BigVertex_0
+    4300098: zhuangbei_d_01_BigVertex_1
+    4300100: veg_zhuzi01_01_Caster_Receive
+    4300102: veg_zhuzi01_02_Caster_Receive
+    4300104: bush_Lvcao111
+    4300106: yewai_shidunzi
+    4300108: shiqiao1
+    4300110: rock_yewai5
+    4300112: veg_qiaomu02_01
+    4300114: veg_qiaomu02
+    4300116: ______011
+    4300118: veg_zhuzi01_02
+    4300120: qigai
+    4300122: xue04
+    4300124: zhuangbei_d_01_BigVertex_0
+    4300126: zhuangbei_d_01_BigVertex_1
+    4300128: yewai_shidunzi_Caster
+    4300130: bush_lvcao21
+    4300132: build_yewai_bujian_1
+    4300134: build_huojiazi
+    4300136: shiqiao1
+    4300138: yewai_muban_Receive
+    4300140: Object017
+    4300142: Plane048
+    4300144: xinshoucun_shiqiao03_d_Receive
+    4300146: xinshoucun_shiqiao02_d
+    4300148: xinshoucun_shiqiao02_d_Caster_Receive
+    4300150: xinshoucun_shiqiao03_d
+    4300152: xinshoucun_shiqiao01_d_Receive
+    4300154: Broken_topTX05D_Receive
+    4300156: Broken_topTX05D_Caster
+    4300158: Broken_topTX05D
+    4300160: xinshoucun_shiqiao02_d_Receive
+    4300162: xinshoucun_shiqiao02_d_Caster
+    4300164: shuiche_jiaban
+    4300166: Cylinder009
+    4300168: Object070
+    4300170: Object085
+    4300172: shuiche_zhalan
+    4300174: shuiche_jiaban
+    4300176: Plane_fengshu
+    4300178: Plane_fengshu
+    4300180: Plane_fengshu
+    4300182: Plane_fengshu
+    4300184: Plane_fengshu
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 

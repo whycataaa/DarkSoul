@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 4a08b4e8a36faae449f360e1e3183de5
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: biwutai
+    100004: biwutai 1
+    100006: blend01
+    100008: blend01 1
+    100010: blend01 10
+    100012: blend01 2
+    100014: blend01 3
+    100016: blend01 4
+    100018: blend01 5
+    100020: blend01 6
+    100022: blend01 7
+    100024: blend01 8
+    100026: blend01 9
+    100028: build_batai02_test_Caster_Receive
+    100030: build_batai02_test_Caster_Receive 1
+    100032: build_batai_Caster_Receive
+    100034: build_batai_Caster_Receive 1
+    100036: build_batai_Caster_Receive 2
+    100038: build_dating_Receive
+    100040: build_dating_Receive 1
+    100042: build_jiaju01_Caster_Receive
+    100044: build_jiaju01_Caster_Receive 1
+    100046: build_jiaju01_Caster_Receive 2
+    100048: build_jiaju03
+    100050: build_jiaju03 1
+    100052: build_jiaju03 2
+    100054: build_jiaju03_Caster
+    100056: build_jiaju03_Caster 1
+    100058: build_jiaju03_Receive
+    100060: build_jiuguan
+    100062: build_jiuguan 1
+    100064: build_jiuguan 2
+    100066: build_jiuguan_Caster_Receive
+    100068: build_jiuguan_Caster_Receive 1
+    100070: build_jiutan02_Caster_Receive
+    100072: build_jiutan02_Caster_Receive 1
+    100074: build_woshiqiang_Caster_Receive
+    100076: build_xiaoditan
+    100078: build_xiaoditan_Caster_Receive
+    100080: build_xiaoditan_Receive
+    100082: build_xiaoditan_Receive 1
+    100084: build_xiaoditan_Receive 2
+    100086: build_xiaoditan_Receive 3
+    100088: build_xiaoditanMat_Receive
+    100090: build_xiaoditanMat_Receive 1
+    100092: build_yewai_bujian_1_BigVertex_0
+    100094: build_yewai_yuanluo_qizi
+    100096: build_yuanluo_weiqiang_03
+    100098: build_yuanluo_weiqiang_04
+    100100: build_yuanluo_wutai01_BigVertex_2
+    100102: build_yuanluo_wutai01_Caster_BigVertex_1
+    100104: build_yuanluo_wutai01_Caster_Receive_BigVertex_0
+    100106: build_yuanluo_wutai01png
+    100108: build_yuanluo_wutai01png 1
+    100110: build_yuanluo_wutai01png 2
+    100112: build_yuanluo_wutai7_Caster_Receive
+    100114: build_zhiwu
+    100116: build_zhiwu 1
+    100118: build_zhiwu 2
+    100120: build_zhiwu 3
+    100122: build_zhiwu_Caster_Receive
+    100124: build_zhiwu_Caster_Receive 1
+    100126: build_zhiwu_Caster_Receive 2
+    100128: build_zhiwu_Caster_Receive 3
+    100130: effectscene
+    100132: jiaju_Caster_Receive
+    100134: jiaju_Caster_Receive 1
+    100136: jianzhu01_Caster_Receive
+    100138: jianzhu01_Caster_Receive 1
+    100140: jianzhu01_Caster_Receive 2
+    100142: jianzhu02_Caster_Receive
+    100144: jianzhu02_Caster_Receive 1
+    100146: jianzhu02_Caster_Receive 2
+    100148: Object283393s002
+    100150: Object283393s002 1
+    100152: Object283393s002 2
+    100154: Object283620
+    100156: Object283622
+    100158: part01_batched
+    100160: part02_batched
+    100162: part03_batched
+    100164: part04_batched
+    100166: penjing
+    100168: penjing_Caster
+    100170: penjing_Caster 1
+    100172: penjing_Caster 2
+    100174: penjing_Caster 3
+    100176: Plane001
+    100178: Plane003
+    100180: Plane004
+    100182: Plane004 1
+    100184: Plane004 2
+    100186: sceneobject
+    400000: //RootNode
+    400002: biwutai
+    400004: biwutai 1
+    400006: blend01
+    400008: blend01 1
+    400010: blend01 10
+    400012: blend01 2
+    400014: blend01 3
+    400016: blend01 4
+    400018: blend01 5
+    400020: blend01 6
+    400022: blend01 7
+    400024: blend01 8
+    400026: blend01 9
+    400028: build_batai02_test_Caster_Receive
+    400030: build_batai02_test_Caster_Receive 1
+    400032: build_batai_Caster_Receive
+    400034: build_batai_Caster_Receive 1
+    400036: build_batai_Caster_Receive 2
+    400038: build_dating_Receive
+    400040: build_dating_Receive 1
+    400042: build_jiaju01_Caster_Receive
+    400044: build_jiaju01_Caster_Receive 1
+    400046: build_jiaju01_Caster_Receive 2
+    400048: build_jiaju03
+    400050: build_jiaju03 1
+    400052: build_jiaju03 2
+    400054: build_jiaju03_Caster
+    400056: build_jiaju03_Caster 1
+    400058: build_jiaju03_Receive
+    400060: build_jiuguan
+    400062: build_jiuguan 1
+    400064: build_jiuguan 2
+    400066: build_jiuguan_Caster_Receive
+    400068: build_jiuguan_Caster_Receive 1
+    400070: build_jiutan02_Caster_Receive
+    400072: build_jiutan02_Caster_Receive 1
+    400074: build_woshiqiang_Caster_Receive
+    400076: build_xiaoditan
+    400078: build_xiaoditan_Caster_Receive
+    400080: build_xiaoditan_Receive
+    400082: build_xiaoditan_Receive 1
+    400084: build_xiaoditan_Receive 2
+    400086: build_xiaoditan_Receive 3
+    400088: build_xiaoditanMat_Receive
+    400090: build_xiaoditanMat_Receive 1
+    400092: build_yewai_bujian_1_BigVertex_0
+    400094: build_yewai_yuanluo_qizi
+    400096: build_yuanluo_weiqiang_03
+    400098: build_yuanluo_weiqiang_04
+    400100: build_yuanluo_wutai01_BigVertex_2
+    400102: build_yuanluo_wutai01_Caster_BigVertex_1
+    400104: build_yuanluo_wutai01_Caster_Receive_BigVertex_0
+    400106: build_yuanluo_wutai01png
+    400108: build_yuanluo_wutai01png 1
+    400110: build_yuanluo_wutai01png 2
+    400112: build_yuanluo_wutai7_Caster_Receive
+    400114: build_zhiwu
+    400116: build_zhiwu 1
+    400118: build_zhiwu 2
+    400120: build_zhiwu 3
+    400122: build_zhiwu_Caster_Receive
+    400124: build_zhiwu_Caster_Receive 1
+    400126: build_zhiwu_Caster_Receive 2
+    400128: build_zhiwu_Caster_Receive 3
+    400130: effectscene
+    400132: jiaju_Caster_Receive
+    400134: jiaju_Caster_Receive 1
+    400136: jianzhu01_Caster_Receive
+    400138: jianzhu01_Caster_Receive 1
+    400140: jianzhu01_Caster_Receive 2
+    400142: jianzhu02_Caster_Receive
+    400144: jianzhu02_Caster_Receive 1
+    400146: jianzhu02_Caster_Receive 2
+    400148: Object283393s002
+    400150: Object283393s002 1
+    400152: Object283393s002 2
+    400154: Object283620
+    400156: Object283622
+    400158: part01_batched
+    400160: part02_batched
+    400162: part03_batched
+    400164: part04_batched
+    400166: penjing
+    400168: penjing_Caster
+    400170: penjing_Caster 1
+    400172: penjing_Caster 2
+    400174: penjing_Caster 3
+    400176: Plane001
+    400178: Plane003
+    400180: Plane004
+    400182: Plane004 1
+    400184: Plane004 2
+    400186: sceneobject
+    2300000: biwutai
+    2300002: biwutai 1
+    2300004: blend01
+    2300006: blend01 1
+    2300008: blend01 10
+    2300010: blend01 2
+    2300012: blend01 3
+    2300014: blend01 4
+    2300016: blend01 5
+    2300018: blend01 6
+    2300020: blend01 7
+    2300022: blend01 8
+    2300024: blend01 9
+    2300026: build_batai02_test_Caster_Receive
+    2300028: build_batai02_test_Caster_Receive 1
+    2300030: build_batai_Caster_Receive
+    2300032: build_batai_Caster_Receive 1
+    2300034: build_batai_Caster_Receive 2
+    2300036: build_dating_Receive
+    2300038: build_dating_Receive 1
+    2300040: build_jiaju01_Caster_Receive
+    2300042: build_jiaju01_Caster_Receive 1
+    2300044: build_jiaju01_Caster_Receive 2
+    2300046: build_jiaju03
+    2300048: build_jiaju03 1
+    2300050: build_jiaju03 2
+    2300052: build_jiaju03_Caster
+    2300054: build_jiaju03_Caster 1
+    2300056: build_jiaju03_Receive
+    2300058: build_jiuguan
+    2300060: build_jiuguan 1
+    2300062: build_jiuguan 2
+    2300064: build_jiuguan_Caster_Receive
+    2300066: build_jiuguan_Caster_Receive 1
+    2300068: build_jiutan02_Caster_Receive
+    2300070: build_jiutan02_Caster_Receive 1
+    2300072: build_woshiqiang_Caster_Receive
+    2300074: build_xiaoditan
+    2300076: build_xiaoditan_Caster_Receive
+    2300078: build_xiaoditan_Receive
+    2300080: build_xiaoditan_Receive 1
+    2300082: build_xiaoditan_Receive 2
+    2300084: build_xiaoditan_Receive 3
+    2300086: build_xiaoditanMat_Receive
+    2300088: build_xiaoditanMat_Receive 1
+    2300090: build_yewai_bujian_1_BigVertex_0
+    2300092: build_yewai_yuanluo_qizi
+    2300094: build_yuanluo_weiqiang_03
+    2300096: build_yuanluo_weiqiang_04
+    2300098: build_yuanluo_wutai01_BigVertex_2
+    2300100: build_yuanluo_wutai01_Caster_BigVertex_1
+    2300102: build_yuanluo_wutai01_Caster_Receive_BigVertex_0
+    2300104: build_yuanluo_wutai01png
+    2300106: build_yuanluo_wutai01png 1
+    2300108: build_yuanluo_wutai01png 2
+    2300110: build_yuanluo_wutai7_Caster_Receive
+    2300112: build_zhiwu
+    2300114: build_zhiwu 1
+    2300116: build_zhiwu 2
+    2300118: build_zhiwu 3
+    2300120: build_zhiwu_Caster_Receive
+    2300122: build_zhiwu_Caster_Receive 1
+    2300124: build_zhiwu_Caster_Receive 2
+    2300126: build_zhiwu_Caster_Receive 3
+    2300128: jiaju_Caster_Receive
+    2300130: jiaju_Caster_Receive 1
+    2300132: jianzhu01_Caster_Receive
+    2300134: jianzhu01_Caster_Receive 1
+    2300136: jianzhu01_Caster_Receive 2
+    2300138: jianzhu02_Caster_Receive
+    2300140: jianzhu02_Caster_Receive 1
+    2300142: jianzhu02_Caster_Receive 2
+    2300144: Object283393s002
+    2300146: Object283393s002 1
+    2300148: Object283393s002 2
+    2300150: Object283620
+    2300152: Object283622
+    2300154: penjing
+    2300156: penjing_Caster
+    2300158: penjing_Caster 1
+    2300160: penjing_Caster 2
+    2300162: penjing_Caster 3
+    2300164: Plane001
+    2300166: Plane003
+    2300168: Plane004
+    2300170: Plane004 1
+    2300172: Plane004 2
+    3300000: biwutai
+    3300002: biwutai 1
+    3300004: blend01
+    3300006: blend01 1
+    3300008: blend01 10
+    3300010: blend01 2
+    3300012: blend01 3
+    3300014: blend01 4
+    3300016: blend01 5
+    3300018: blend01 6
+    3300020: blend01 7
+    3300022: blend01 8
+    3300024: blend01 9
+    3300026: build_batai02_test_Caster_Receive
+    3300028: build_batai02_test_Caster_Receive 1
+    3300030: build_batai_Caster_Receive
+    3300032: build_batai_Caster_Receive 1
+    3300034: build_batai_Caster_Receive 2
+    3300036: build_dating_Receive
+    3300038: build_dating_Receive 1
+    3300040: build_jiaju01_Caster_Receive
+    3300042: build_jiaju01_Caster_Receive 1
+    3300044: build_jiaju01_Caster_Receive 2
+    3300046: build_jiaju03
+    3300048: build_jiaju03 1
+    3300050: build_jiaju03 2
+    3300052: build_jiaju03_Caster
+    3300054: build_jiaju03_Caster 1
+    3300056: build_jiaju03_Receive
+    3300058: build_jiuguan
+    3300060: build_jiuguan 1
+    3300062: build_jiuguan 2
+    3300064: build_jiuguan_Caster_Receive
+    3300066: build_jiuguan_Caster_Receive 1
+    3300068: build_jiutan02_Caster_Receive
+    3300070: build_jiutan02_Caster_Receive 1
+    3300072: build_woshiqiang_Caster_Receive
+    3300074: build_xiaoditan
+    3300076: build_xiaoditan_Caster_Receive
+    3300078: build_xiaoditan_Receive
+    3300080: build_xiaoditan_Receive 1
+    3300082: build_xiaoditan_Receive 2
+    3300084: build_xiaoditan_Receive 3
+    3300086: build_xiaoditanMat_Receive
+    3300088: build_xiaoditanMat_Receive 1
+    3300090: build_yewai_bujian_1_BigVertex_0
+    3300092: build_yewai_yuanluo_qizi
+    3300094: build_yuanluo_weiqiang_03
+    3300096: build_yuanluo_weiqiang_04
+    3300098: build_yuanluo_wutai01_BigVertex_2
+    3300100: build_yuanluo_wutai01_Caster_BigVertex_1
+    3300102: build_yuanluo_wutai01_Caster_Receive_BigVertex_0
+    3300104: build_yuanluo_wutai01png
+    3300106: build_yuanluo_wutai01png 1
+    3300108: build_yuanluo_wutai01png 2
+    3300110: build_yuanluo_wutai7_Caster_Receive
+    3300112: build_zhiwu
+    3300114: build_zhiwu 1
+    3300116: build_zhiwu 2
+    3300118: build_zhiwu 3
+    3300120: build_zhiwu_Caster_Receive
+    3300122: build_zhiwu_Caster_Receive 1
+    3300124: build_zhiwu_Caster_Receive 2
+    3300126: build_zhiwu_Caster_Receive 3
+    3300128: jiaju_Caster_Receive
+    3300130: jiaju_Caster_Receive 1
+    3300132: jianzhu01_Caster_Receive
+    3300134: jianzhu01_Caster_Receive 1
+    3300136: jianzhu01_Caster_Receive 2
+    3300138: jianzhu02_Caster_Receive
+    3300140: jianzhu02_Caster_Receive 1
+    3300142: jianzhu02_Caster_Receive 2
+    3300144: Object283393s002
+    3300146: Object283393s002 1
+    3300148: Object283393s002 2
+    3300150: Object283620
+    3300152: Object283622
+    3300154: penjing
+    3300156: penjing_Caster
+    3300158: penjing_Caster 1
+    3300160: penjing_Caster 2
+    3300162: penjing_Caster 3
+    3300164: Plane001
+    3300166: Plane003
+    3300168: Plane004
+    3300170: Plane004 1
+    3300172: Plane004 2
+    4300000: build_yuanluo_wutai01_BigVertex_2
+    4300002: build_yuanluo_wutai01_Caster_BigVertex_1
+    4300004: build_yewai_bujian_1_BigVertex_0
+    4300006: build_xiaoditan_Receive
+    4300008: build_zhiwu_Caster_Receive
+    4300010: penjing_Caster
+    4300012: build_zhiwu
+    4300014: build_jiaju03
+    4300016: build_jiaju03
+    4300018: build_zhiwu_Caster_Receive
+    4300020: build_xiaoditan_Receive
+    4300022: penjing_Caster
+    4300024: build_zhiwu
+    4300026: build_yuanluo_weiqiang_03
+    4300028: build_yuanluo_weiqiang_04
+    4300030: build_woshiqiang_Caster_Receive
+    4300032: build_batai02_test_Caster_Receive
+    4300034: jiaju_Caster_Receive
+    4300036: build_jiaju03_Caster
+    4300038: build_jiuguan_Caster_Receive
+    4300040: jianzhu02_Caster_Receive
+    4300042: build_batai_Caster_Receive
+    4300044: build_jiuguan
+    4300046: jianzhu01_Caster_Receive
+    4300048: build_xiaoditanMat_Receive
+    4300050: build_jiaju01_Caster_Receive
+    4300052: build_dating_Receive
+    4300054: biwutai
+    4300056: build_yuanluo_wutai01png
+    4300058: build_batai02_test_Caster_Receive
+    4300060: jiaju_Caster_Receive
+    4300062: build_zhiwu_Caster_Receive
+    4300064: build_jiaju03_Caster
+    4300066: build_yuanluo_wutai01png
+    4300068: build_xiaoditan_Receive
+    4300070: build_batai_Caster_Receive
+    4300072: build_jiuguan
+    4300074: jianzhu01_Caster_Receive
+    4300076: jianzhu02_Caster_Receive
+    4300078: build_zhiwu
+    4300080: build_jiuguan_Caster_Receive
+    4300082: penjing_Caster
+    4300084: build_jiaju01_Caster_Receive
+    4300086: build_yuanluo_wutai01_Caster_Receive_BigVertex_0
+    4300088: build_jiutan02_Caster_Receive
+    4300090: jianzhu02_Caster_Receive
+    4300092: build_jiutan02_Caster_Receive
+    4300094: build_batai_Caster_Receive
+    4300096: build_jiuguan
+    4300098: jianzhu01_Caster_Receive
+    4300100: build_xiaoditanMat_Receive
+    4300102: build_jiaju01_Caster_Receive
+    4300104: build_dating_Receive
+    4300106: biwutai
+    4300108: build_xiaoditan_Receive
+    4300110: build_yuanluo_wutai01png
+    4300112: build_zhiwu_Caster_Receive
+    4300114: penjing_Caster
+    4300116: build_zhiwu
+    4300118: build_jiaju03
+    4300120: build_xiaoditan
+    4300122: build_xiaoditan_Caster_Receive
+    4300124: build_jiaju03_Receive
+    4300126: penjing
+    4300128: build_yuanluo_wutai7_Caster_Receive
+    4300130: Plane004
+    4300132: Plane004
+    4300134: Object283393s002
+    4300136: Object283393s002
+    4300138: Plane004
+    4300140: Plane003
+    4300142: Plane001
+    4300144: Object283622
+    4300146: Object283620
+    4300148: Object283393s002
+    4300150: build_yewai_yuanluo_qizi
+    4300152: blend01
+    4300154: blend01
+    4300156: blend01
+    4300158: blend01
+    4300160: blend01
+    4300162: blend01
+    4300164: blend01
+    4300166: blend01
+    4300168: blend01
+    4300170: blend01
+    4300172: blend01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 

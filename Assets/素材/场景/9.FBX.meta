@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 964bda385b87be74987588f04056645c
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: 3011
+    100002: 3011 1
+    100004: 3011 2
+    100006: //RootNode
+    100008: box
+    100010: Camera
+    100012: Cube
+    100014: Cube 1
+    100016: Cube 2
+    100018: Cube 3
+    100020: Cube 4
+    100022: Cube 5
+    100024: Cube 6
+    100026: Cube 7
+    100028: Cube 8
+    100030: Cube 9
+    100032: daxing01
+    100034: daxing01 1
+    100036: Directional light
+    100038: Directional light 1
+    100040: Directional light 2
+    100042: Directional light 3
+    100044: Directional light 4
+    100046: dixing02_001
+    100048: dixing02_002
+    100050: dixing02_003
+    100052: dixing02_004
+    100054: dixing02_005
+    100056: dixing02_006
+    100058: dixing02_007
+    100060: dixing02_008
+    100062: dixing02_009
+    100064: dixing02_010
+    100066: enemys
+    100068: ground
+    100070: Light
+    100072: pathes
+    100074: Point light
+    100076: Point light 1
+    100078: Point light 10
+    100080: Point light 11
+    100082: Point light 12
+    100084: Point light 13
+    100086: Point light 14
+    100088: Point light 15
+    100090: Point light 16
+    100092: Point light 17
+    100094: Point light 18
+    100096: Point light 19
+    100098: Point light 2
+    100100: Point light 20
+    100102: Point light 21
+    100104: Point light 22
+    100106: Point light 23
+    100108: Point light 24
+    100110: Point light 25
+    100112: Point light 26
+    100114: Point light 27
+    100116: Point light 28
+    100118: Point light 3
+    100120: Point light 4
+    100122: Point light 5
+    100124: Point light 6
+    100126: Point light 7
+    100128: Point light 8
+    100130: Point light 9
+    100132: shimiao01_001
+    100134: shimiao01_002
+    100136: shimiao01_003
+    100138: shimiao01_004
+    100140: shimiao02_001
+    100142: shimiao02_002
+    100144: shimiao02_003
+    100146: shimiao02_004
+    100148: shimiao03_001
+    100150: shimiao03_002
+    100152: shimiao03_003
+    100154: shimiao03_004
+    100156: shimiao04_001
+    100158: shimiao04_002
+    100160: shimiao04_003
+    100162: shimiao04_004
+    100164: sky
+    100166: Sky_3011
+    100168: zhiwu01
+    100170: zhiwu01 1
+    100172: zhiwu02
+    100174: zhiwu02 1
+    100176: zhiwu03
+    100178: zhiwu03 1
+    400000: 3011
+    400002: 3011 1
+    400004: 3011 2
+    400006: //RootNode
+    400008: box
+    400010: Camera
+    400012: Cube
+    400014: Cube 1
+    400016: Cube 2
+    400018: Cube 3
+    400020: Cube 4
+    400022: Cube 5
+    400024: Cube 6
+    400026: Cube 7
+    400028: Cube 8
+    400030: Cube 9
+    400032: daxing01
+    400034: daxing01 1
+    400036: Directional light
+    400038: Directional light 1
+    400040: Directional light 2
+    400042: Directional light 3
+    400044: Directional light 4
+    400046: dixing02_001
+    400048: dixing02_002
+    400050: dixing02_003
+    400052: dixing02_004
+    400054: dixing02_005
+    400056: dixing02_006
+    400058: dixing02_007
+    400060: dixing02_008
+    400062: dixing02_009
+    400064: dixing02_010
+    400066: enemys
+    400068: ground
+    400070: Light
+    400072: pathes
+    400074: Point light
+    400076: Point light 1
+    400078: Point light 10
+    400080: Point light 11
+    400082: Point light 12
+    400084: Point light 13
+    400086: Point light 14
+    400088: Point light 15
+    400090: Point light 16
+    400092: Point light 17
+    400094: Point light 18
+    400096: Point light 19
+    400098: Point light 2
+    400100: Point light 20
+    400102: Point light 21
+    400104: Point light 22
+    400106: Point light 23
+    400108: Point light 24
+    400110: Point light 25
+    400112: Point light 26
+    400114: Point light 27
+    400116: Point light 28
+    400118: Point light 3
+    400120: Point light 4
+    400122: Point light 5
+    400124: Point light 6
+    400126: Point light 7
+    400128: Point light 8
+    400130: Point light 9
+    400132: shimiao01_001
+    400134: shimiao01_002
+    400136: shimiao01_003
+    400138: shimiao01_004
+    400140: shimiao02_001
+    400142: shimiao02_002
+    400144: shimiao02_003
+    400146: shimiao02_004
+    400148: shimiao03_001
+    400150: shimiao03_002
+    400152: shimiao03_003
+    400154: shimiao03_004
+    400156: shimiao04_001
+    400158: shimiao04_002
+    400160: shimiao04_003
+    400162: shimiao04_004
+    400164: sky
+    400166: Sky_3011
+    400168: zhiwu01
+    400170: zhiwu01 1
+    400172: zhiwu02
+    400174: zhiwu02 1
+    400176: zhiwu03
+    400178: zhiwu03 1
+    2300000: daxing01
+    2300002: daxing01 1
+    2300004: dixing02_001
+    2300006: dixing02_002
+    2300008: dixing02_003
+    2300010: dixing02_004
+    2300012: dixing02_005
+    2300014: dixing02_006
+    2300016: dixing02_007
+    2300018: dixing02_008
+    2300020: dixing02_009
+    2300022: dixing02_010
+    2300024: shimiao01_001
+    2300026: shimiao01_002
+    2300028: shimiao01_003
+    2300030: shimiao01_004
+    2300032: shimiao02_001
+    2300034: shimiao02_002
+    2300036: shimiao02_003
+    2300038: shimiao02_004
+    2300040: shimiao03_001
+    2300042: shimiao03_002
+    2300044: shimiao03_003
+    2300046: shimiao03_004
+    2300048: shimiao04_001
+    2300050: shimiao04_002
+    2300052: shimiao04_003
+    2300054: shimiao04_004
+    2300056: sky
+    2300058: Sky_3011
+    2300060: zhiwu01
+    2300062: zhiwu01 1
+    2300064: zhiwu02
+    2300066: zhiwu02 1
+    2300068: zhiwu03
+    2300070: zhiwu03 1
+    3300000: daxing01
+    3300002: daxing01 1
+    3300004: dixing02_001
+    3300006: dixing02_002
+    3300008: dixing02_003
+    3300010: dixing02_004
+    3300012: dixing02_005
+    3300014: dixing02_006
+    3300016: dixing02_007
+    3300018: dixing02_008
+    3300020: dixing02_009
+    3300022: dixing02_010
+    3300024: shimiao01_001
+    3300026: shimiao01_002
+    3300028: shimiao01_003
+    3300030: shimiao01_004
+    3300032: shimiao02_001
+    3300034: shimiao02_002
+    3300036: shimiao02_003
+    3300038: shimiao02_004
+    3300040: shimiao03_001
+    3300042: shimiao03_002
+    3300044: shimiao03_003
+    3300046: shimiao03_004
+    3300048: shimiao04_001
+    3300050: shimiao04_002
+    3300052: shimiao04_003
+    3300054: shimiao04_004
+    3300056: sky
+    3300058: Sky_3011
+    3300060: zhiwu01
+    3300062: zhiwu01 1
+    3300064: zhiwu02
+    3300066: zhiwu02 1
+    3300068: zhiwu03
+    3300070: zhiwu03 1
+    4300000: daxing01
+    4300002: Sky_3011
+    4300004: zhiwu01
+    4300006: zhiwu02
+    4300008: zhiwu03
+    4300010: daxing01
+    4300012: zhiwu03
+    4300014: zhiwu02
+    4300016: zhiwu01
+    4300018: sky
+    4300020: dixing02_001
+    4300022: dixing02_002
+    4300024: dixing02_003
+    4300026: dixing02_004
+    4300028: dixing02_005
+    4300030: shimiao01_001
+    4300032: shimiao01_002
+    4300034: shimiao02_001
+    4300036: shimiao02_002
+    4300038: shimiao03_001
+    4300040: shimiao03_002
+    4300042: shimiao04_001
+    4300044: shimiao04_002
+    4300046: shimiao04_003
+    4300048: shimiao04_004
+    4300050: shimiao03_003
+    4300052: shimiao03_004
+    4300054: shimiao02_003
+    4300056: shimiao02_004
+    4300058: shimiao01_003
+    4300060: shimiao01_004
+    4300062: dixing02_006
+    4300064: dixing02_007
+    4300066: dixing02_008
+    4300068: dixing02_009
+    4300070: dixing02_010
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

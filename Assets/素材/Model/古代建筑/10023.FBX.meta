@@ -1,0 +1,1538 @@
+fileFormatVersion: 2
+guid: 2c0761e6a25eae5488bb998fe41d187f
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: 044
+    100002: 044 1
+    100004: 044 2
+    100006: 051
+    100008: 051 1
+    100010: 051 2
+    100012: 053
+    100014: 054
+    100016: 055
+    100018: 056
+    100020: 057
+    100022: 058
+    100024: 096
+    100026: //RootNode
+    100028: 107
+    100030: 108
+    100032: 109
+    100034: 111
+    100036: 111 1
+    100038: 111 2
+    100040: 111 3
+    100042: 111 4
+    100044: 112
+    100046: 112 1
+    100048: 112 10
+    100050: 112 2
+    100052: 112 3
+    100054: 112 4
+    100056: 112 5
+    100058: 112 6
+    100060: 112 7
+    100062: 112 8
+    100064: 112 9
+    100066: ______001
+    100068: ______001 1
+    100070: ______001 2
+    100072: ______001 3
+    100074: ______001 4
+    100076: ______001 5
+    100078: ______001 6
+    100080: ______001 7
+    100082: Blend01
+    100084: Blend01 1
+    100086: Blend01 10
+    100088: Blend01 11
+    100090: Blend01 12
+    100092: Blend01 13
+    100094: Blend01 14
+    100096: Blend01 15
+    100098: Blend01 16
+    100100: Blend01 17
+    100102: Blend01 2
+    100104: Blend01 3
+    100106: Blend01 4
+    100108: Blend01 5
+    100110: Blend01 6
+    100112: Blend01 7
+    100114: Blend01 8
+    100116: Blend01 9
+    100118: Box001
+    100120: Box002
+    100122: Box003
+    100124: Box004
+    100126: Box005
+    100128: Box006
+    100130: bsp_stone_021
+    100132: bsp_stone_022
+    100134: build_shihulan
+    100136: build_shihulan 1
+    100138: build_shihulan 2
+    100140: build_shihulan 3
+    100142: build_shihulan 4
+    100144: build_shihulan 5
+    100146: build_shihulan 6
+    100148: build_shihulan 7
+    100150: build_shiti01
+    100152: build_yewai_bujian_tanzi02
+    100154: build_yewai_bujian_tanzi02 1
+    100156: build_yewai_bujian_tanzi02 2
+    100158: build_yewai_bujian_tanzi02 3
+    100160: build_yewai_bujian_tanzi02 4
+    100162: build_yewai_bujian_tanzi02 5
+    100164: build_yewai_pingtai
+    100166: build_yewai_pingtaiqiao
+    100168: build_yewai_pingtaiqiao 1
+    100170: build_yewai_pingtaiqiao 1 1
+    100172: build_yewai_zhuzi01
+    100174: build_yewai_zhuzi02
+    100176: build_yewai_zhuzi02 1
+    100178: build_yewai_zhuzi02 2
+    100180: build_yewai_zhuzi02 3
+    100182: build_yewai_zhuzi02 4
+    100184: build_yewai_zhuzi03
+    100186: build_yewai_zhuzi03 1
+    100188: build_yewai_zhuzi03 10
+    100190: build_yewai_zhuzi03 11
+    100192: build_yewai_zhuzi03 2
+    100194: build_yewai_zhuzi03 3
+    100196: build_yewai_zhuzi03 4
+    100198: build_yewai_zhuzi03 5
+    100200: build_yewai_zhuzi03 6
+    100202: build_yewai_zhuzi03 7
+    100204: build_yewai_zhuzi03 8
+    100206: build_yewai_zhuzi03 9
+    100208: bys_building_big014_b
+    100210: bys_building_big014_b 1
+    100212: bys_building_big014_b 2
+    100214: bys_building_big014_b 3
+    100216: Cube
+    100218: Cube 1
+    100220: Cube 2
+    100222: Cube 3
+    100224: Cylinder001
+    100226: decal_shuiwa
+    100228: decal_shuiwa 1
+    100230: decal_shuiwa 10
+    100232: decal_shuiwa 11
+    100234: decal_shuiwa 12
+    100236: decal_shuiwa 13
+    100238: decal_shuiwa 14
+    100240: decal_shuiwa 15
+    100242: decal_shuiwa 16
+    100244: decal_shuiwa 17
+    100246: decal_shuiwa 18
+    100248: decal_shuiwa 19
+    100250: decal_shuiwa 2
+    100252: decal_shuiwa 20
+    100254: decal_shuiwa 21
+    100256: decal_shuiwa 22
+    100258: decal_shuiwa 23
+    100260: decal_shuiwa 24
+    100262: decal_shuiwa 3
+    100264: decal_shuiwa 4
+    100266: decal_shuiwa 5
+    100268: decal_shuiwa 6
+    100270: decal_shuiwa 7
+    100272: decal_shuiwa 8
+    100274: decal_shuiwa 9
+    100276: dibiaohuawen2
+    100278: dibiaohuawen4
+    100280: dibiaohuawen4 1
+    100282: dixiacheng-dizhuan
+    100284: dixiacheng-dizhuan 1
+    100286: dixiacheng-dizhuan 2
+    100288: dixiacheng-dizhuan 3
+    100290: dixiacheng-dizhuan 4
+    100292: dixiacheng-dizhuan 5
+    100294: dixiacheng-huolu
+    100296: dixiacheng-huolu 1
+    100298: dixiacheng-huolu 2
+    100300: dixiacheng-huolu 3
+    100302: dixiacheng-huolu 4
+    100304: dixiacheng-huolu 5
+    100306: dixiacheng-huolu 6
+    100308: dixiacheng-huolu 7
+    100310: dixiacheng-huopen
+    100312: dixiacheng-huopen 1
+    100314: dixiacheng-huopen 2
+    100316: dixiacheng-huopen 3
+    100318: dixiacheng-men
+    100320: dixiacheng-men 1
+    100322: dixiacheng-men 10
+    100324: dixiacheng-men 11
+    100326: dixiacheng-men 2
+    100328: dixiacheng-men 3
+    100330: dixiacheng-men 4
+    100332: dixiacheng-men 5
+    100334: dixiacheng-men 6
+    100336: dixiacheng-men 7
+    100338: dixiacheng-men 8
+    100340: dixiacheng-men 9
+    100342: dixiacheng-part1
+    100344: dixiacheng-part2
+    100346: dixiacheng-part2 1
+    100348: dixiacheng-part2 2
+    100350: dixiacheng-part2 3
+    100352: dixiacheng-part3
+    100354: dixiacheng-qiao1
+    100356: dixiacheng-qiao2
+    100358: dixiacheng-qiao2 1
+    100360: dixiacheng-qiao2 2
+    100362: dixiacheng-qiao2 3
+    100364: dixiacheng-qiao2 4
+    100366: dixiacheng-qiao2 5
+    100368: dixiacheng-qiao2 6
+    100370: dixiacheng-qiao2 7
+    100372: dixiacheng-shitaijieguaijiao
+    100374: dixiacheng-shitaijieguaijiao 1
+    100376: dixiacheng-shitaijieguaijiao 2
+    100378: dixiacheng-shitaijieguaijiao 3
+    100380: dixiacheng-taijie
+    100382: dixiacheng-taijie 1
+    100384: dixiacheng_louti2
+    100386: dixiacheng_louti2 1
+    100388: dixiacheng_louti2 2
+    100390: dixiacheng_louti3
+    100392: dixiacheng_louti3 1
+    100394: dixiacheng_louti3 2
+    100396: dixiacheng_louti3 3
+    100398: dixiacheng_qiang
+    100400: dixiacheng_qiang 1
+    100402: dixiacheng_shiweilan
+    100404: effect
+    100406: fire
+    100408: fire 1
+    100410: fire 10
+    100412: fire 11
+    100414: fire 2
+    100416: fire 3
+    100418: fire 4
+    100420: fire 5
+    100422: fire 6
+    100424: fire 7
+    100426: fire 8
+    100428: fire 9
+    100430: Fire_Scenes
+    100432: Fire_Scenes 1
+    100434: Fire_Scenes 2
+    100436: Fire_Scenes 3
+    100438: Fire_Scenes 4
+    100440: Fire_Scenes 5
+    100442: Fire_Scenes 6
+    100444: Fire_Scenes 7
+    100446: Fire_Scenes 8
+    100448: Object001
+    100450: Object001 1
+    100452: Object001 10
+    100454: Object001 11
+    100456: Object001 2
+    100458: Object001 3
+    100460: Object001 4
+    100462: Object001 5
+    100464: Object001 6
+    100466: Object001 7
+    100468: Object001 8
+    100470: Object001 9
+    100472: Object003
+    100474: Object003 1
+    100476: Object003 2
+    100478: Object003 3
+    100480: Object003 4
+    100482: Object003 5
+    100484: Object003 6
+    100486: Object003 7
+    100488: Object003 8
+    100490: Object003 9
+    100492: Object007
+    100494: Object007 1
+    100496: Object007 2
+    100498: Object007 3
+    100500: Object008
+    100502: Object008 1
+    100504: Object008 2
+    100506: Object008 3
+    100508: Object009
+    100510: Object009 1
+    100512: Object012
+    100514: Object012 1
+    100516: Object085
+    100518: Object085 1
+    100520: Object085 2
+    100522: Object085 3
+    100524: Object086
+    100526: Object086 1
+    100528: Object086 2
+    100530: Object086 3
+    100532: Object094
+    100534: Object096
+    100536: Object097
+    100538: Object097 1
+    100540: Object097 2
+    100542: Object097 3
+    100544: Object097 4
+    100546: Object097 5
+    100548: Object097 6
+    100550: Object098
+    100552: Object099
+    100554: Object113
+    100556: Object114
+    100558: Object115
+    100560: Object116
+    100562: Object117
+    100564: Object119
+    100566: Object120
+    100568: Object121
+    100570: Object122
+    100572: Object123
+    100574: Object124
+    100576: Object125
+    100578: Object126
+    100580: Object127
+    100582: Object128
+    100584: Object129
+    100586: Object130
+    100588: Object131
+    100590: Object132
+    100592: Object133
+    100594: Object134
+    100596: Object135
+    100598: Object136
+    100600: Object137
+    100602: Object138
+    100604: Object139
+    100606: Object140
+    100608: Object141
+    100610: Object142
+    100612: Object143
+    100614: Object144
+    100616: Object145
+    100618: Object146
+    100620: Object147
+    100622: Object148
+    100624: Object149
+    100626: Object150
+    100628: Object161
+    100630: Object161 1
+    100632: Object161 2
+    100634: Object161 3
+    100636: Object161 4
+    100638: Object161 5
+    100640: Object161 6
+    100642: Object161 7
+    100644: Object161 8
+    100646: Object161 9
+    100648: Object162
+    100650: Object162 1
+    100652: Object162 10
+    100654: Object162 11
+    100656: Object162 12
+    100658: Object162 13
+    100660: Object162 14
+    100662: Object162 15
+    100664: Object162 16
+    100666: Object162 17
+    100668: Object162 18
+    100670: Object162 19
+    100672: Object162 2
+    100674: Object162 20
+    100676: Object162 21
+    100678: Object162 22
+    100680: Object162 23
+    100682: Object162 24
+    100684: Object162 3
+    100686: Object162 4
+    100688: Object162 5
+    100690: Object162 6
+    100692: Object162 7
+    100694: Object162 8
+    100696: Object162 9
+    100698: Object282246
+    100700: sceneObject
+    100702: yewai_muban
+    100704: yewai_muban 1
+    100706: yewai_muban 2
+    100708: yewai_muban02
+    100710: yewai_muban02 1
+    100712: yewai_muban02 2
+    100714: yewai_muban02 3
+    100716: yewai_muban02 4
+    100718: yewai_muban02 5
+    100720: yewai_muban02 6
+    100722: yewai_muban02 7
+    100724: yewai_mutai
+    100726: yewai_xingjia
+    100728: zhucheng_xiaopingtai
+    100730: zhucheng_xiaopingtai 1
+    100732: zudang
+    400000: 044
+    400002: 044 1
+    400004: 044 2
+    400006: 051
+    400008: 051 1
+    400010: 051 2
+    400012: 053
+    400014: 054
+    400016: 055
+    400018: 056
+    400020: 057
+    400022: 058
+    400024: 096
+    400026: //RootNode
+    400028: 107
+    400030: 108
+    400032: 109
+    400034: 111
+    400036: 111 1
+    400038: 111 2
+    400040: 111 3
+    400042: 111 4
+    400044: 112
+    400046: 112 1
+    400048: 112 10
+    400050: 112 2
+    400052: 112 3
+    400054: 112 4
+    400056: 112 5
+    400058: 112 6
+    400060: 112 7
+    400062: 112 8
+    400064: 112 9
+    400066: ______001
+    400068: ______001 1
+    400070: ______001 2
+    400072: ______001 3
+    400074: ______001 4
+    400076: ______001 5
+    400078: ______001 6
+    400080: ______001 7
+    400082: Blend01
+    400084: Blend01 1
+    400086: Blend01 10
+    400088: Blend01 11
+    400090: Blend01 12
+    400092: Blend01 13
+    400094: Blend01 14
+    400096: Blend01 15
+    400098: Blend01 16
+    400100: Blend01 17
+    400102: Blend01 2
+    400104: Blend01 3
+    400106: Blend01 4
+    400108: Blend01 5
+    400110: Blend01 6
+    400112: Blend01 7
+    400114: Blend01 8
+    400116: Blend01 9
+    400118: Box001
+    400120: Box002
+    400122: Box003
+    400124: Box004
+    400126: Box005
+    400128: Box006
+    400130: bsp_stone_021
+    400132: bsp_stone_022
+    400134: build_shihulan
+    400136: build_shihulan 1
+    400138: build_shihulan 2
+    400140: build_shihulan 3
+    400142: build_shihulan 4
+    400144: build_shihulan 5
+    400146: build_shihulan 6
+    400148: build_shihulan 7
+    400150: build_shiti01
+    400152: build_yewai_bujian_tanzi02
+    400154: build_yewai_bujian_tanzi02 1
+    400156: build_yewai_bujian_tanzi02 2
+    400158: build_yewai_bujian_tanzi02 3
+    400160: build_yewai_bujian_tanzi02 4
+    400162: build_yewai_bujian_tanzi02 5
+    400164: build_yewai_pingtai
+    400166: build_yewai_pingtaiqiao
+    400168: build_yewai_pingtaiqiao 1
+    400170: build_yewai_pingtaiqiao 1 1
+    400172: build_yewai_zhuzi01
+    400174: build_yewai_zhuzi02
+    400176: build_yewai_zhuzi02 1
+    400178: build_yewai_zhuzi02 2
+    400180: build_yewai_zhuzi02 3
+    400182: build_yewai_zhuzi02 4
+    400184: build_yewai_zhuzi03
+    400186: build_yewai_zhuzi03 1
+    400188: build_yewai_zhuzi03 10
+    400190: build_yewai_zhuzi03 11
+    400192: build_yewai_zhuzi03 2
+    400194: build_yewai_zhuzi03 3
+    400196: build_yewai_zhuzi03 4
+    400198: build_yewai_zhuzi03 5
+    400200: build_yewai_zhuzi03 6
+    400202: build_yewai_zhuzi03 7
+    400204: build_yewai_zhuzi03 8
+    400206: build_yewai_zhuzi03 9
+    400208: bys_building_big014_b
+    400210: bys_building_big014_b 1
+    400212: bys_building_big014_b 2
+    400214: bys_building_big014_b 3
+    400216: Cube
+    400218: Cube 1
+    400220: Cube 2
+    400222: Cube 3
+    400224: Cylinder001
+    400226: decal_shuiwa
+    400228: decal_shuiwa 1
+    400230: decal_shuiwa 10
+    400232: decal_shuiwa 11
+    400234: decal_shuiwa 12
+    400236: decal_shuiwa 13
+    400238: decal_shuiwa 14
+    400240: decal_shuiwa 15
+    400242: decal_shuiwa 16
+    400244: decal_shuiwa 17
+    400246: decal_shuiwa 18
+    400248: decal_shuiwa 19
+    400250: decal_shuiwa 2
+    400252: decal_shuiwa 20
+    400254: decal_shuiwa 21
+    400256: decal_shuiwa 22
+    400258: decal_shuiwa 23
+    400260: decal_shuiwa 24
+    400262: decal_shuiwa 3
+    400264: decal_shuiwa 4
+    400266: decal_shuiwa 5
+    400268: decal_shuiwa 6
+    400270: decal_shuiwa 7
+    400272: decal_shuiwa 8
+    400274: decal_shuiwa 9
+    400276: dibiaohuawen2
+    400278: dibiaohuawen4
+    400280: dibiaohuawen4 1
+    400282: dixiacheng-dizhuan
+    400284: dixiacheng-dizhuan 1
+    400286: dixiacheng-dizhuan 2
+    400288: dixiacheng-dizhuan 3
+    400290: dixiacheng-dizhuan 4
+    400292: dixiacheng-dizhuan 5
+    400294: dixiacheng-huolu
+    400296: dixiacheng-huolu 1
+    400298: dixiacheng-huolu 2
+    400300: dixiacheng-huolu 3
+    400302: dixiacheng-huolu 4
+    400304: dixiacheng-huolu 5
+    400306: dixiacheng-huolu 6
+    400308: dixiacheng-huolu 7
+    400310: dixiacheng-huopen
+    400312: dixiacheng-huopen 1
+    400314: dixiacheng-huopen 2
+    400316: dixiacheng-huopen 3
+    400318: dixiacheng-men
+    400320: dixiacheng-men 1
+    400322: dixiacheng-men 10
+    400324: dixiacheng-men 11
+    400326: dixiacheng-men 2
+    400328: dixiacheng-men 3
+    400330: dixiacheng-men 4
+    400332: dixiacheng-men 5
+    400334: dixiacheng-men 6
+    400336: dixiacheng-men 7
+    400338: dixiacheng-men 8
+    400340: dixiacheng-men 9
+    400342: dixiacheng-part1
+    400344: dixiacheng-part2
+    400346: dixiacheng-part2 1
+    400348: dixiacheng-part2 2
+    400350: dixiacheng-part2 3
+    400352: dixiacheng-part3
+    400354: dixiacheng-qiao1
+    400356: dixiacheng-qiao2
+    400358: dixiacheng-qiao2 1
+    400360: dixiacheng-qiao2 2
+    400362: dixiacheng-qiao2 3
+    400364: dixiacheng-qiao2 4
+    400366: dixiacheng-qiao2 5
+    400368: dixiacheng-qiao2 6
+    400370: dixiacheng-qiao2 7
+    400372: dixiacheng-shitaijieguaijiao
+    400374: dixiacheng-shitaijieguaijiao 1
+    400376: dixiacheng-shitaijieguaijiao 2
+    400378: dixiacheng-shitaijieguaijiao 3
+    400380: dixiacheng-taijie
+    400382: dixiacheng-taijie 1
+    400384: dixiacheng_louti2
+    400386: dixiacheng_louti2 1
+    400388: dixiacheng_louti2 2
+    400390: dixiacheng_louti3
+    400392: dixiacheng_louti3 1
+    400394: dixiacheng_louti3 2
+    400396: dixiacheng_louti3 3
+    400398: dixiacheng_qiang
+    400400: dixiacheng_qiang 1
+    400402: dixiacheng_shiweilan
+    400404: effect
+    400406: fire
+    400408: fire 1
+    400410: fire 10
+    400412: fire 11
+    400414: fire 2
+    400416: fire 3
+    400418: fire 4
+    400420: fire 5
+    400422: fire 6
+    400424: fire 7
+    400426: fire 8
+    400428: fire 9
+    400430: Fire_Scenes
+    400432: Fire_Scenes 1
+    400434: Fire_Scenes 2
+    400436: Fire_Scenes 3
+    400438: Fire_Scenes 4
+    400440: Fire_Scenes 5
+    400442: Fire_Scenes 6
+    400444: Fire_Scenes 7
+    400446: Fire_Scenes 8
+    400448: Object001
+    400450: Object001 1
+    400452: Object001 10
+    400454: Object001 11
+    400456: Object001 2
+    400458: Object001 3
+    400460: Object001 4
+    400462: Object001 5
+    400464: Object001 6
+    400466: Object001 7
+    400468: Object001 8
+    400470: Object001 9
+    400472: Object003
+    400474: Object003 1
+    400476: Object003 2
+    400478: Object003 3
+    400480: Object003 4
+    400482: Object003 5
+    400484: Object003 6
+    400486: Object003 7
+    400488: Object003 8
+    400490: Object003 9
+    400492: Object007
+    400494: Object007 1
+    400496: Object007 2
+    400498: Object007 3
+    400500: Object008
+    400502: Object008 1
+    400504: Object008 2
+    400506: Object008 3
+    400508: Object009
+    400510: Object009 1
+    400512: Object012
+    400514: Object012 1
+    400516: Object085
+    400518: Object085 1
+    400520: Object085 2
+    400522: Object085 3
+    400524: Object086
+    400526: Object086 1
+    400528: Object086 2
+    400530: Object086 3
+    400532: Object094
+    400534: Object096
+    400536: Object097
+    400538: Object097 1
+    400540: Object097 2
+    400542: Object097 3
+    400544: Object097 4
+    400546: Object097 5
+    400548: Object097 6
+    400550: Object098
+    400552: Object099
+    400554: Object113
+    400556: Object114
+    400558: Object115
+    400560: Object116
+    400562: Object117
+    400564: Object119
+    400566: Object120
+    400568: Object121
+    400570: Object122
+    400572: Object123
+    400574: Object124
+    400576: Object125
+    400578: Object126
+    400580: Object127
+    400582: Object128
+    400584: Object129
+    400586: Object130
+    400588: Object131
+    400590: Object132
+    400592: Object133
+    400594: Object134
+    400596: Object135
+    400598: Object136
+    400600: Object137
+    400602: Object138
+    400604: Object139
+    400606: Object140
+    400608: Object141
+    400610: Object142
+    400612: Object143
+    400614: Object144
+    400616: Object145
+    400618: Object146
+    400620: Object147
+    400622: Object148
+    400624: Object149
+    400626: Object150
+    400628: Object161
+    400630: Object161 1
+    400632: Object161 2
+    400634: Object161 3
+    400636: Object161 4
+    400638: Object161 5
+    400640: Object161 6
+    400642: Object161 7
+    400644: Object161 8
+    400646: Object161 9
+    400648: Object162
+    400650: Object162 1
+    400652: Object162 10
+    400654: Object162 11
+    400656: Object162 12
+    400658: Object162 13
+    400660: Object162 14
+    400662: Object162 15
+    400664: Object162 16
+    400666: Object162 17
+    400668: Object162 18
+    400670: Object162 19
+    400672: Object162 2
+    400674: Object162 20
+    400676: Object162 21
+    400678: Object162 22
+    400680: Object162 23
+    400682: Object162 24
+    400684: Object162 3
+    400686: Object162 4
+    400688: Object162 5
+    400690: Object162 6
+    400692: Object162 7
+    400694: Object162 8
+    400696: Object162 9
+    400698: Object282246
+    400700: sceneObject
+    400702: yewai_muban
+    400704: yewai_muban 1
+    400706: yewai_muban 2
+    400708: yewai_muban02
+    400710: yewai_muban02 1
+    400712: yewai_muban02 2
+    400714: yewai_muban02 3
+    400716: yewai_muban02 4
+    400718: yewai_muban02 5
+    400720: yewai_muban02 6
+    400722: yewai_muban02 7
+    400724: yewai_mutai
+    400726: yewai_xingjia
+    400728: zhucheng_xiaopingtai
+    400730: zhucheng_xiaopingtai 1
+    400732: zudang
+    2300000: 096
+    2300002: 107
+    2300004: 108
+    2300006: 109
+    2300008: 111
+    2300010: 111 1
+    2300012: 111 2
+    2300014: 111 3
+    2300016: 111 4
+    2300018: 112
+    2300020: 112 1
+    2300022: 112 10
+    2300024: 112 2
+    2300026: 112 3
+    2300028: 112 4
+    2300030: 112 5
+    2300032: 112 6
+    2300034: 112 7
+    2300036: 112 8
+    2300038: 112 9
+    2300040: ______001
+    2300042: ______001 1
+    2300044: ______001 2
+    2300046: ______001 3
+    2300048: ______001 4
+    2300050: ______001 5
+    2300052: ______001 6
+    2300054: ______001 7
+    2300056: Blend01
+    2300058: Blend01 1
+    2300060: Blend01 10
+    2300062: Blend01 11
+    2300064: Blend01 12
+    2300066: Blend01 13
+    2300068: Blend01 14
+    2300070: Blend01 15
+    2300072: Blend01 16
+    2300074: Blend01 17
+    2300076: Blend01 2
+    2300078: Blend01 3
+    2300080: Blend01 4
+    2300082: Blend01 5
+    2300084: Blend01 6
+    2300086: Blend01 7
+    2300088: Blend01 8
+    2300090: Blend01 9
+    2300092: build_yewai_bujian_tanzi02
+    2300094: build_yewai_bujian_tanzi02 1
+    2300096: build_yewai_bujian_tanzi02 2
+    2300098: build_yewai_bujian_tanzi02 3
+    2300100: build_yewai_bujian_tanzi02 4
+    2300102: build_yewai_bujian_tanzi02 5
+    2300104: build_yewai_pingtaiqiao 1
+    2300106: build_yewai_pingtaiqiao 1 1
+    2300108: build_yewai_zhuzi01
+    2300110: build_yewai_zhuzi02
+    2300112: build_yewai_zhuzi02 1
+    2300114: build_yewai_zhuzi02 2
+    2300116: build_yewai_zhuzi02 3
+    2300118: build_yewai_zhuzi02 4
+    2300120: build_yewai_zhuzi03
+    2300122: build_yewai_zhuzi03 1
+    2300124: build_yewai_zhuzi03 10
+    2300126: build_yewai_zhuzi03 11
+    2300128: build_yewai_zhuzi03 2
+    2300130: build_yewai_zhuzi03 3
+    2300132: build_yewai_zhuzi03 4
+    2300134: build_yewai_zhuzi03 5
+    2300136: build_yewai_zhuzi03 6
+    2300138: build_yewai_zhuzi03 7
+    2300140: build_yewai_zhuzi03 8
+    2300142: build_yewai_zhuzi03 9
+    2300144: Cube
+    2300146: Cube 1
+    2300148: Cube 2
+    2300150: Cube 3
+    2300152: Cylinder001
+    2300154: decal_shuiwa
+    2300156: decal_shuiwa 1
+    2300158: decal_shuiwa 10
+    2300160: decal_shuiwa 11
+    2300162: decal_shuiwa 12
+    2300164: decal_shuiwa 13
+    2300166: decal_shuiwa 14
+    2300168: decal_shuiwa 15
+    2300170: decal_shuiwa 16
+    2300172: decal_shuiwa 17
+    2300174: decal_shuiwa 18
+    2300176: decal_shuiwa 19
+    2300178: decal_shuiwa 2
+    2300180: decal_shuiwa 20
+    2300182: decal_shuiwa 21
+    2300184: decal_shuiwa 22
+    2300186: decal_shuiwa 23
+    2300188: decal_shuiwa 24
+    2300190: decal_shuiwa 3
+    2300192: decal_shuiwa 4
+    2300194: decal_shuiwa 5
+    2300196: decal_shuiwa 6
+    2300198: decal_shuiwa 7
+    2300200: decal_shuiwa 8
+    2300202: decal_shuiwa 9
+    2300204: dibiaohuawen2
+    2300206: dibiaohuawen4
+    2300208: dibiaohuawen4 1
+    2300210: dixiacheng-dizhuan
+    2300212: dixiacheng-dizhuan 1
+    2300214: dixiacheng-dizhuan 2
+    2300216: dixiacheng-dizhuan 3
+    2300218: dixiacheng-dizhuan 4
+    2300220: dixiacheng-dizhuan 5
+    2300222: dixiacheng-huolu
+    2300224: dixiacheng-huolu 1
+    2300226: dixiacheng-huolu 2
+    2300228: dixiacheng-huolu 3
+    2300230: dixiacheng-huolu 4
+    2300232: dixiacheng-huolu 5
+    2300234: dixiacheng-huolu 6
+    2300236: dixiacheng-huolu 7
+    2300238: dixiacheng-huopen
+    2300240: dixiacheng-huopen 1
+    2300242: dixiacheng-huopen 2
+    2300244: dixiacheng-huopen 3
+    2300246: dixiacheng-men
+    2300248: dixiacheng-men 1
+    2300250: dixiacheng-men 10
+    2300252: dixiacheng-men 11
+    2300254: dixiacheng-men 2
+    2300256: dixiacheng-men 3
+    2300258: dixiacheng-men 4
+    2300260: dixiacheng-men 5
+    2300262: dixiacheng-men 6
+    2300264: dixiacheng-men 7
+    2300266: dixiacheng-men 8
+    2300268: dixiacheng-men 9
+    2300270: Object001
+    2300272: Object001 1
+    2300274: Object001 2
+    2300276: Object001 3
+    2300278: Object001 4
+    2300280: Object001 5
+    2300282: Object001 6
+    2300284: Object001 7
+    2300286: Object003
+    2300288: Object003 1
+    2300290: Object003 2
+    2300292: Object003 3
+    2300294: Object003 4
+    2300296: Object003 5
+    2300298: Object003 6
+    2300300: Object003 7
+    2300302: Object003 8
+    2300304: Object003 9
+    2300306: Object009
+    2300308: Object009 1
+    2300310: Object012
+    2300312: Object012 1
+    2300314: Object094
+    2300316: Object096
+    2300318: Object097
+    2300320: Object097 1
+    2300322: Object097 2
+    2300324: Object097 3
+    2300326: Object097 4
+    2300328: Object097 5
+    2300330: Object097 6
+    2300332: Object098
+    2300334: Object099
+    2300336: Object113
+    2300338: Object114
+    2300340: Object115
+    2300342: Object116
+    2300344: Object117
+    2300346: Object119
+    2300348: Object120
+    2300350: Object121
+    2300352: Object122
+    2300354: Object123
+    2300356: Object124
+    2300358: Object125
+    2300360: Object126
+    2300362: Object127
+    2300364: Object128
+    2300366: Object129
+    2300368: Object130
+    2300370: Object131
+    2300372: Object132
+    2300374: Object133
+    2300376: Object134
+    2300378: Object135
+    2300380: Object136
+    2300382: Object137
+    2300384: Object138
+    2300386: Object139
+    2300388: Object141
+    2300390: Object142
+    2300392: Object143
+    2300394: Object144
+    2300396: Object145
+    2300398: Object146
+    2300400: Object147
+    2300402: Object148
+    2300404: Object149
+    2300406: Object150
+    2300408: Object161
+    2300410: Object161 1
+    2300412: Object161 2
+    2300414: Object161 3
+    2300416: Object161 4
+    2300418: Object161 5
+    2300420: Object161 6
+    2300422: Object161 7
+    2300424: Object161 8
+    2300426: Object161 9
+    2300428: Object162
+    2300430: Object162 1
+    2300432: Object162 10
+    2300434: Object162 11
+    2300436: Object162 12
+    2300438: Object162 13
+    2300440: Object162 14
+    2300442: Object162 15
+    2300444: Object162 16
+    2300446: Object162 17
+    2300448: Object162 18
+    2300450: Object162 19
+    2300452: Object162 2
+    2300454: Object162 20
+    2300456: Object162 21
+    2300458: Object162 22
+    2300460: Object162 23
+    2300462: Object162 24
+    2300464: Object162 3
+    2300466: Object162 4
+    2300468: Object162 5
+    2300470: Object162 6
+    2300472: Object162 7
+    2300474: Object162 8
+    2300476: Object162 9
+    2300478: Object282246
+    2300480: yewai_muban02
+    2300482: yewai_muban02 1
+    2300484: yewai_muban02 2
+    2300486: yewai_muban02 3
+    2300488: yewai_muban02 4
+    2300490: yewai_muban02 5
+    2300492: yewai_muban02 6
+    2300494: yewai_muban02 7
+    3300000: 096
+    3300002: 107
+    3300004: 108
+    3300006: 109
+    3300008: 111
+    3300010: 111 1
+    3300012: 111 2
+    3300014: 111 3
+    3300016: 111 4
+    3300018: 112
+    3300020: 112 1
+    3300022: 112 10
+    3300024: 112 2
+    3300026: 112 3
+    3300028: 112 4
+    3300030: 112 5
+    3300032: 112 6
+    3300034: 112 7
+    3300036: 112 8
+    3300038: 112 9
+    3300040: ______001
+    3300042: ______001 1
+    3300044: ______001 2
+    3300046: ______001 3
+    3300048: ______001 4
+    3300050: ______001 5
+    3300052: ______001 6
+    3300054: ______001 7
+    3300056: Blend01
+    3300058: Blend01 1
+    3300060: Blend01 10
+    3300062: Blend01 11
+    3300064: Blend01 12
+    3300066: Blend01 13
+    3300068: Blend01 14
+    3300070: Blend01 15
+    3300072: Blend01 16
+    3300074: Blend01 17
+    3300076: Blend01 2
+    3300078: Blend01 3
+    3300080: Blend01 4
+    3300082: Blend01 5
+    3300084: Blend01 6
+    3300086: Blend01 7
+    3300088: Blend01 8
+    3300090: Blend01 9
+    3300092: build_yewai_bujian_tanzi02
+    3300094: build_yewai_bujian_tanzi02 1
+    3300096: build_yewai_bujian_tanzi02 2
+    3300098: build_yewai_bujian_tanzi02 3
+    3300100: build_yewai_bujian_tanzi02 4
+    3300102: build_yewai_bujian_tanzi02 5
+    3300104: build_yewai_pingtaiqiao 1
+    3300106: build_yewai_pingtaiqiao 1 1
+    3300108: build_yewai_zhuzi01
+    3300110: build_yewai_zhuzi02
+    3300112: build_yewai_zhuzi02 1
+    3300114: build_yewai_zhuzi02 2
+    3300116: build_yewai_zhuzi02 3
+    3300118: build_yewai_zhuzi02 4
+    3300120: build_yewai_zhuzi03
+    3300122: build_yewai_zhuzi03 1
+    3300124: build_yewai_zhuzi03 10
+    3300126: build_yewai_zhuzi03 11
+    3300128: build_yewai_zhuzi03 2
+    3300130: build_yewai_zhuzi03 3
+    3300132: build_yewai_zhuzi03 4
+    3300134: build_yewai_zhuzi03 5
+    3300136: build_yewai_zhuzi03 6
+    3300138: build_yewai_zhuzi03 7
+    3300140: build_yewai_zhuzi03 8
+    3300142: build_yewai_zhuzi03 9
+    3300144: Cube
+    3300146: Cube 1
+    3300148: Cube 2
+    3300150: Cube 3
+    3300152: Cylinder001
+    3300154: decal_shuiwa
+    3300156: decal_shuiwa 1
+    3300158: decal_shuiwa 10
+    3300160: decal_shuiwa 11
+    3300162: decal_shuiwa 12
+    3300164: decal_shuiwa 13
+    3300166: decal_shuiwa 14
+    3300168: decal_shuiwa 15
+    3300170: decal_shuiwa 16
+    3300172: decal_shuiwa 17
+    3300174: decal_shuiwa 18
+    3300176: decal_shuiwa 19
+    3300178: decal_shuiwa 2
+    3300180: decal_shuiwa 20
+    3300182: decal_shuiwa 21
+    3300184: decal_shuiwa 22
+    3300186: decal_shuiwa 23
+    3300188: decal_shuiwa 24
+    3300190: decal_shuiwa 3
+    3300192: decal_shuiwa 4
+    3300194: decal_shuiwa 5
+    3300196: decal_shuiwa 6
+    3300198: decal_shuiwa 7
+    3300200: decal_shuiwa 8
+    3300202: decal_shuiwa 9
+    3300204: dibiaohuawen2
+    3300206: dibiaohuawen4
+    3300208: dibiaohuawen4 1
+    3300210: dixiacheng-dizhuan
+    3300212: dixiacheng-dizhuan 1
+    3300214: dixiacheng-dizhuan 2
+    3300216: dixiacheng-dizhuan 3
+    3300218: dixiacheng-dizhuan 4
+    3300220: dixiacheng-dizhuan 5
+    3300222: dixiacheng-huolu
+    3300224: dixiacheng-huolu 1
+    3300226: dixiacheng-huolu 2
+    3300228: dixiacheng-huolu 3
+    3300230: dixiacheng-huolu 4
+    3300232: dixiacheng-huolu 5
+    3300234: dixiacheng-huolu 6
+    3300236: dixiacheng-huolu 7
+    3300238: dixiacheng-huopen
+    3300240: dixiacheng-huopen 1
+    3300242: dixiacheng-huopen 2
+    3300244: dixiacheng-huopen 3
+    3300246: dixiacheng-men
+    3300248: dixiacheng-men 1
+    3300250: dixiacheng-men 10
+    3300252: dixiacheng-men 11
+    3300254: dixiacheng-men 2
+    3300256: dixiacheng-men 3
+    3300258: dixiacheng-men 4
+    3300260: dixiacheng-men 5
+    3300262: dixiacheng-men 6
+    3300264: dixiacheng-men 7
+    3300266: dixiacheng-men 8
+    3300268: dixiacheng-men 9
+    3300270: Object001
+    3300272: Object001 1
+    3300274: Object001 2
+    3300276: Object001 3
+    3300278: Object001 4
+    3300280: Object001 5
+    3300282: Object001 6
+    3300284: Object001 7
+    3300286: Object003
+    3300288: Object003 1
+    3300290: Object003 2
+    3300292: Object003 3
+    3300294: Object003 4
+    3300296: Object003 5
+    3300298: Object003 6
+    3300300: Object003 7
+    3300302: Object003 8
+    3300304: Object003 9
+    3300306: Object009
+    3300308: Object009 1
+    3300310: Object012
+    3300312: Object012 1
+    3300314: Object094
+    3300316: Object096
+    3300318: Object097
+    3300320: Object097 1
+    3300322: Object097 2
+    3300324: Object097 3
+    3300326: Object097 4
+    3300328: Object097 5
+    3300330: Object097 6
+    3300332: Object098
+    3300334: Object099
+    3300336: Object113
+    3300338: Object114
+    3300340: Object115
+    3300342: Object116
+    3300344: Object117
+    3300346: Object119
+    3300348: Object120
+    3300350: Object121
+    3300352: Object122
+    3300354: Object123
+    3300356: Object124
+    3300358: Object125
+    3300360: Object126
+    3300362: Object127
+    3300364: Object128
+    3300366: Object129
+    3300368: Object130
+    3300370: Object131
+    3300372: Object132
+    3300374: Object133
+    3300376: Object134
+    3300378: Object135
+    3300380: Object136
+    3300382: Object137
+    3300384: Object138
+    3300386: Object139
+    3300388: Object141
+    3300390: Object142
+    3300392: Object143
+    3300394: Object144
+    3300396: Object145
+    3300398: Object146
+    3300400: Object147
+    3300402: Object148
+    3300404: Object149
+    3300406: Object150
+    3300408: Object161
+    3300410: Object161 1
+    3300412: Object161 2
+    3300414: Object161 3
+    3300416: Object161 4
+    3300418: Object161 5
+    3300420: Object161 6
+    3300422: Object161 7
+    3300424: Object161 8
+    3300426: Object161 9
+    3300428: Object162
+    3300430: Object162 1
+    3300432: Object162 10
+    3300434: Object162 11
+    3300436: Object162 12
+    3300438: Object162 13
+    3300440: Object162 14
+    3300442: Object162 15
+    3300444: Object162 16
+    3300446: Object162 17
+    3300448: Object162 18
+    3300450: Object162 19
+    3300452: Object162 2
+    3300454: Object162 20
+    3300456: Object162 21
+    3300458: Object162 22
+    3300460: Object162 23
+    3300462: Object162 24
+    3300464: Object162 3
+    3300466: Object162 4
+    3300468: Object162 5
+    3300470: Object162 6
+    3300472: Object162 7
+    3300474: Object162 8
+    3300476: Object162 9
+    3300478: Object282246
+    3300480: yewai_muban02
+    3300482: yewai_muban02 1
+    3300484: yewai_muban02 2
+    3300486: yewai_muban02 3
+    3300488: yewai_muban02 4
+    3300490: yewai_muban02 5
+    3300492: yewai_muban02 6
+    3300494: yewai_muban02 7
+    4300000: dixiacheng-huopen
+    4300002: Blend01
+    4300004: Blend01
+    4300006: dixiacheng-huopen
+    4300008: dixiacheng-huopen
+    4300010: dixiacheng-huolu
+    4300012: dixiacheng-huopen
+    4300014: Blend01
+    4300016: Blend01
+    4300018: build_yewai_bujian_tanzi02
+    4300020: dixiacheng-men
+    4300022: yewai_muban02
+    4300024: yewai_muban02
+    4300026: yewai_muban02
+    4300028: yewai_muban02
+    4300030: yewai_muban02
+    4300032: yewai_muban02
+    4300034: yewai_muban02
+    4300036: Object161
+    4300038: 111
+    4300040: Object161
+    4300042: Object161
+    4300044: Object161
+    4300046: 111
+    4300048: Object003
+    4300050: Object003
+    4300052: Object161
+    4300054: 111
+    4300056: Object161
+    4300058: Object161
+    4300060: Object161
+    4300062: 111
+    4300064: Object003
+    4300066: Object003
+    4300068: Object003
+    4300070: Object003
+    4300072: Object003
+    4300074: Object003
+    4300076: Object003
+    4300078: Object003
+    4300080: Object161
+    4300082: Cylinder001
+    4300084: build_yewai_bujian_tanzi02
+    4300086: build_yewai_pingtaiqiao 1
+    4300088: build_yewai_pingtaiqiao 1
+    4300090: Object161
+    4300092: 111
+    4300094: Object120
+    4300096: Object115
+    4300098: 096
+    4300100: Object131
+    4300102: Object145
+    4300104: Object119
+    4300106: Object116
+    4300108: Object099
+    4300110: Object137
+    4300112: Object123
+    4300114: Object147
+    4300116: Object150
+    4300118: Object141
+    4300120: Object127
+    4300122: Object148
+    4300124: Object144
+    4300126: Object130
+    4300128: Object125
+    4300130: Object121
+    4300132: Object134
+    4300134: Object133
+    4300136: Object149
+    4300138: Object142
+    4300140: Object117
+    4300142: 109
+    4300144: Object136
+    4300146: Object143
+    4300148: Object098
+    4300150: Object138
+    4300152: Object094
+    4300154: Object128
+    4300156: Object139
+    4300158: 107
+    4300160: Object129
+    4300162: 108
+    4300164: Object135
+    4300166: Object132
+    4300168: Object126
+    4300170: Object113
+    4300172: Object096
+    4300174: Object124
+    4300176: Object114
+    4300178: Object122
+    4300180: Object146
+    4300182: decal_shuiwa
+    4300184: decal_shuiwa
+    4300186: decal_shuiwa
+    4300188: decal_shuiwa
+    4300190: decal_shuiwa
+    4300192: decal_shuiwa
+    4300194: decal_shuiwa
+    4300196: decal_shuiwa
+    4300198: decal_shuiwa
+    4300200: decal_shuiwa
+    4300202: dixiacheng-dizhuan
+    4300204: dixiacheng-dizhuan
+    4300206: Blend01
+    4300208: dixiacheng-dizhuan
+    4300210: decal_shuiwa
+    4300212: yewai_muban02
+    4300214: build_yewai_zhuzi02
+    4300216: dixiacheng-men
+    4300218: dixiacheng-men
+    4300220: dixiacheng-men
+    4300222: dixiacheng-men
+    4300224: Object162
+    4300226: 112
+    4300228: Object162
+    4300230: Object162
+    4300232: Object162
+    4300234: 112
+    4300236: 112
+    4300238: Object162
+    4300240: dixiacheng-men
+    4300242: Object162
+    4300244: 112
+    4300246: Object162
+    4300248: dixiacheng-men
+    4300250: build_yewai_zhuzi03
+    4300252: build_yewai_zhuzi03
+    4300254: build_yewai_zhuzi03
+    4300256: build_yewai_zhuzi03
+    4300258: Object162
+    4300260: 112
+    4300262: Object162
+    4300264: 112
+    4300266: 112
+    4300268: Object162
+    4300270: Object162
+    4300272: build_yewai_zhuzi03
+    4300274: build_yewai_zhuzi03
+    4300276: Object162
+    4300278: Object162
+    4300280: dixiacheng-men
+    4300282: build_yewai_zhuzi03
+    4300284: Object162
+    4300286: build_yewai_zhuzi03
+    4300288: build_yewai_zhuzi03
+    4300290: Object162
+    4300292: Object162
+    4300294: 112
+    4300296: Object162
+    4300298: Object162
+    4300300: Object162
+    4300302: Object162
+    4300304: 112
+    4300306: Object162
+    4300308: Object162
+    4300310: build_yewai_zhuzi03
+    4300312: build_yewai_zhuzi03
+    4300314: dixiacheng-men
+    4300316: build_yewai_zhuzi03
+    4300318: 112
+    4300320: 112
+    4300322: Object162
+    4300324: dixiacheng-men
+    4300326: dixiacheng-men
+    4300328: decal_shuiwa
+    4300330: build_yewai_bujian_tanzi02
+    4300332: decal_shuiwa
+    4300334: dixiacheng-huolu
+    4300336: decal_shuiwa
+    4300338: build_yewai_bujian_tanzi02
+    4300340: dixiacheng-huolu
+    4300342: dixiacheng-huolu
+    4300344: Blend01
+    4300346: Object097
+    4300348: Object097
+    4300350: Object097
+    4300352: Object097
+    4300354: Object097
+    4300356: decal_shuiwa
+    4300358: Object097
+    4300360: Object097
+    4300362: build_yewai_bujian_tanzi02
+    4300364: dixiacheng-huolu
+    4300366: Blend01
+    4300368: decal_shuiwa
+    4300370: decal_shuiwa
+    4300372: build_yewai_bujian_tanzi02
+    4300374: decal_shuiwa
+    4300376: dixiacheng-huolu
+    4300378: build_yewai_zhuzi02
+    4300380: Blend01
+    4300382: Blend01
+    4300384: dixiacheng-huolu
+    4300386: decal_shuiwa
+    4300388: build_yewai_zhuzi02
+    4300390: build_yewai_zhuzi02
+    4300392: decal_shuiwa
+    4300394: decal_shuiwa
+    4300396: build_yewai_zhuzi01
+    4300398: decal_shuiwa
+    4300400: build_yewai_zhuzi02
+    4300402: dixiacheng-dizhuan
+    4300404: dixiacheng-dizhuan
+    4300406: dibiaohuawen2
+    4300408: decal_shuiwa
+    4300410: Blend01
+    4300412: dibiaohuawen4
+    4300414: Object012
+    4300416: Object009
+    4300418: Object282246
+    4300420: ______001
+    4300422: Object001
+    4300424: Object001
+    4300426: ______001
+    4300428: Object001
+    4300430: ______001
+    4300432: ______001
+    4300434: Object001
+    4300436: ______001
+    4300438: Object001
+    4300440: Object001
+    4300442: ______001
+    4300444: ______001
+    4300446: Object001
+    4300448: Object001
+    4300450: ______001
+    4300452: Object162
+    4300454: dixiacheng-men
+    4300456: dibiaohuawen4
+    4300458: decal_shuiwa
+    4300460: dixiacheng-dizhuan
+    4300462: Object162
+    4300464: Object012
+    4300466: Object009
+    4300468: Blend01
+    4300470: decal_shuiwa
+    4300472: Blend01
+    4300474: dixiacheng-huolu
+    4300476: Blend01
+    4300478: Blend01
+    4300480: Blend01
+    4300482: Blend01
+    4300484: Blend01
+    4300486: Blend01
+    4300488: Cube
+    4300490: Cube
+    4300492: Cube
+    4300494: Cube
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 

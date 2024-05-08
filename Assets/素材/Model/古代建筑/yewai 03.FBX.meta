@@ -1,0 +1,1123 @@
+fileFormatVersion: 2
+guid: e14144a940a041241829075f93dd75dd
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: 14-Default
+    100002: 1_Caster_Receive
+    100004: 1_Receive
+    100006: 1_Receive 1
+    100008: 1_Receive_batched
+    100010: _c5_veg_songhsu12
+    100012: Box275
+    100014: Box275 1
+    100016: build_fujianzhu_batched
+    100018: build_menchuang
+    100020: build_menchuang 1
+    100022: build_menchuang 2
+    100024: build_menchuang 3
+    100026: build_pingfeng02 1
+    100028: build_pingfeng02 1 1
+    100030: build_shizi02_BigVertex_0
+    100032: build_shizi02_BigVertex_1
+    100034: build_shizidizuo
+    100036: build_xiangzi
+    100038: build_xiangzi02
+    100040: build_yewai_bujian_d
+    100042: build_yewai_bujian_d_01_Caster_Receive
+    100044: build_yewai_huatan03
+    100046: build_yewai_huatan04
+    100048: build_yewai_huatan04 1
+    100050: build_yewai_shiqiang01
+    100052: build_yewai_yuanluo_huatan
+    100054: build_yewai_yuanluo_huatan_Caster_Receive
+    100056: build_yewai_yuanluo_pailou
+    100058: build_yewai_yuanluopingtai_01 1
+    100060: build_yewai_yuanluopingtai_02
+    100062: build_yewai_yuanluopingtai_Caster_Receive
+    100064: build_yewai_yuanluopingtai_Caster_Receive 1
+    100066: build_yewai_yuanluopingtai_new
+    100068: build_yewai_yuanluopingtai_new 1
+    100070: build_yuanhuawen
+    100072: build_yuanluo_changlouti
+    100074: build_yuanluo_changlouti 1
+    100076: build_yuanluo_changlouti 2
+    100078: build_yuanluo_changlouti 3
+    100080: build_yuanluo_changlouti 4
+    100082: build_yuanluo_changlouti 5
+    100084: build_yuanluo_dayingbi_01
+    100086: build_yuanluo_dayingbi_01 1
+    100088: build_yuanluo_louti
+    100090: build_yuanluo_louti 1
+    100092: build_yuanluo_mendong
+    100094: build_yuanluo_menlian
+    100096: build_yuanluo_weiqiang_01
+    100098: build_yuanluo_weiqiang_01 1
+    100100: build_yuanluo_weiqiang_01 2
+    100102: build_yuanluo_weiqiang_02
+    100104: build_yuanluo_weiqiang_03
+    100106: build_yuanluo_weiqiang_03 1
+    100108: build_yuanluo_weiqiang_03 2
+    100110: build_yuanluo_weiqiang_03_Caster_Receive
+    100112: build_yuanluo_weiqiang_04
+    100114: build_yuanluo_weiqiang_04 1
+    100116: build_yuanluo_weiqiang_04 2
+    100118: build_yuanluo_weiqiang_06
+    100120: build_yuanluo_weiqiang_06_Caster_Receive
+    100122: build_yuanluo_weiqiang_07_batched
+    100124: build_yuanluo_zhujianpingtai
+    100126: build_yuanluo_zhujianpingtai_Caster_Receive
+    100128: build_yuanluo_zhujianpingtai_Caster_Receive 1
+    100130: build_yuanluo_zhujianpingtai_chaifen_batched
+    100132: build_yuanluo_zhujianpingtai_chaifen_batched 1
+    100134: bush_lvcao21
+    100136: bush_lvcao21 1
+    100138: c5_pingjieqiang2_Caster_Receive
+    100140: c5_pingjieqiang_Caster_Receive
+    100142: c5_pingjieqiang_obj_0
+    100144: c5_pingjieqiang_obj_0 1
+    100146: c5_pingjieqiang_obj_0 10
+    100148: c5_pingjieqiang_obj_0 11
+    100150: c5_pingjieqiang_obj_0 12
+    100152: c5_pingjieqiang_obj_0 13
+    100154: c5_pingjieqiang_obj_0 14
+    100156: c5_pingjieqiang_obj_0 15
+    100158: c5_pingjieqiang_obj_0 16
+    100160: c5_pingjieqiang_obj_0 17
+    100162: c5_pingjieqiang_obj_0 18
+    100164: c5_pingjieqiang_obj_0 19
+    100166: c5_pingjieqiang_obj_0 2
+    100168: c5_pingjieqiang_obj_0 20
+    100170: c5_pingjieqiang_obj_0 21
+    100172: c5_pingjieqiang_obj_0 22
+    100174: c5_pingjieqiang_obj_0 23
+    100176: c5_pingjieqiang_obj_0 24
+    100178: c5_pingjieqiang_obj_0 25
+    100180: c5_pingjieqiang_obj_0 26
+    100182: c5_pingjieqiang_obj_0 27
+    100184: c5_pingjieqiang_obj_0 28
+    100186: c5_pingjieqiang_obj_0 29
+    100188: c5_pingjieqiang_obj_0 3
+    100190: c5_pingjieqiang_obj_0 30
+    100192: c5_pingjieqiang_obj_0 31
+    100194: c5_pingjieqiang_obj_0 32
+    100196: c5_pingjieqiang_obj_0 33
+    100198: c5_pingjieqiang_obj_0 34
+    100200: c5_pingjieqiang_obj_0 35
+    100202: c5_pingjieqiang_obj_0 36
+    100204: c5_pingjieqiang_obj_0 37
+    100206: c5_pingjieqiang_obj_0 4
+    100208: c5_pingjieqiang_obj_0 5
+    100210: c5_pingjieqiang_obj_0 6
+    100212: c5_pingjieqiang_obj_0 7
+    100214: c5_pingjieqiang_obj_0 8
+    100216: c5_pingjieqiang_obj_0 9
+    100218: c5_pingjieqiang_obj_1
+    100220: c5_pingjieqiang_obj_1 1
+    100222: c5_pingjieqiang_obj_1 10
+    100224: c5_pingjieqiang_obj_1 11
+    100226: c5_pingjieqiang_obj_1 12
+    100228: c5_pingjieqiang_obj_1 13
+    100230: c5_pingjieqiang_obj_1 14
+    100232: c5_pingjieqiang_obj_1 15
+    100234: c5_pingjieqiang_obj_1 16
+    100236: c5_pingjieqiang_obj_1 17
+    100238: c5_pingjieqiang_obj_1 18
+    100240: c5_pingjieqiang_obj_1 19
+    100242: c5_pingjieqiang_obj_1 2
+    100244: c5_pingjieqiang_obj_1 20
+    100246: c5_pingjieqiang_obj_1 21
+    100248: c5_pingjieqiang_obj_1 22
+    100250: c5_pingjieqiang_obj_1 23
+    100252: c5_pingjieqiang_obj_1 24
+    100254: c5_pingjieqiang_obj_1 25
+    100256: c5_pingjieqiang_obj_1 26
+    100258: c5_pingjieqiang_obj_1 27
+    100260: c5_pingjieqiang_obj_1 28
+    100262: c5_pingjieqiang_obj_1 29
+    100264: c5_pingjieqiang_obj_1 3
+    100266: c5_pingjieqiang_obj_1 30
+    100268: c5_pingjieqiang_obj_1 31
+    100270: c5_pingjieqiang_obj_1 32
+    100272: c5_pingjieqiang_obj_1 33
+    100274: c5_pingjieqiang_obj_1 34
+    100276: c5_pingjieqiang_obj_1 35
+    100278: c5_pingjieqiang_obj_1 36
+    100280: c5_pingjieqiang_obj_1 37
+    100282: c5_pingjieqiang_obj_1 38
+    100284: c5_pingjieqiang_obj_1 39
+    100286: c5_pingjieqiang_obj_1 4
+    100288: c5_pingjieqiang_obj_1 40
+    100290: c5_pingjieqiang_obj_1 5
+    100292: c5_pingjieqiang_obj_1 6
+    100294: c5_pingjieqiang_obj_1 7
+    100296: c5_pingjieqiang_obj_1 8
+    100298: c5_pingjieqiang_obj_1 9
+    100300: Cube
+    100302: Cube 1
+    100304: Cube 10
+    100306: Cube 11
+    100308: Cube 12
+    100310: Cube 13
+    100312: Cube 14
+    100314: Cube 15
+    100316: Cube 2
+    100318: Cube 3
+    100320: Cube 4
+    100322: Cube 5
+    100324: Cube 6
+    100326: Cube 7
+    100328: Cube 8
+    100330: Cube 9
+    100332: F042_fengbianshi_diffuse_Caster_Receive
+    100334: GameObject
+    100336: menlian02
+    100338: menlian03
+    100340: mianlian01
+    100342: Object002
+    100344: Object011
+    100346: Object011 1
+    100348: Object017
+    100350: Object017 1
+    100352: Object017 2
+    100354: Object017 3
+    100356: Object017 4
+    100358: Object089
+    100360: Object093
+    100362: OcclusionTrigger
+    100364: OcclusionTrigger 1
+    100366: OcclusionTrigger 2
+    100368: OcclusionTrigger 3
+    100370: part01
+    100372: part02
+    100374: part03
+    100376: part04
+    100378: Plane048
+    100380: Plane048 1
+    100382: Plane048 2
+    100384: Plane048 3
+    100386: Plane048 4
+    100388: Plane_fengshu
+    100390: Plane_fengshu 1
+    100392: polySurface022
+    100394: polySurface022 1
+    100396: qiang
+    100398: qiang_batched
+    100400: Rock2E_LP:polySurface014
+    100402: shiqiao
+    100404: veg_zhuzi01
+    100406: veg_zhuzi01 1
+    100408: veg_zhuzi01 2
+    100410: veg_zhuzi01 3
+    100412: veg_zhuzi01 4
+    100414: water_shuimian01
+    100416: water_shuimian01 1
+    100418: water_shuimian02
+    100420: xiaorong
+    100422: xiaorong2
+    100424: xiaorong3
+    100426: xiaorong4
+    100428: xiaosuishi_batched
+    100430: xinshoucun_qiang
+    100432: xinshoucun_qiang 1
+    100434: xinshoucun_qiang 10
+    100436: xinshoucun_qiang 11
+    100438: xinshoucun_qiang 12
+    100440: xinshoucun_qiang 13
+    100442: xinshoucun_qiang 14
+    100444: xinshoucun_qiang 15
+    100446: xinshoucun_qiang 16
+    100448: xinshoucun_qiang 17
+    100450: xinshoucun_qiang 18
+    100452: xinshoucun_qiang 19
+    100454: xinshoucun_qiang 2
+    100456: xinshoucun_qiang 20
+    100458: xinshoucun_qiang 21
+    100460: xinshoucun_qiang 22
+    100462: xinshoucun_qiang 23
+    100464: xinshoucun_qiang 24
+    100466: xinshoucun_qiang 25
+    100468: xinshoucun_qiang 26
+    100470: xinshoucun_qiang 27
+    100472: xinshoucun_qiang 28
+    100474: xinshoucun_qiang 29
+    100476: xinshoucun_qiang 3
+    100478: xinshoucun_qiang 30
+    100480: xinshoucun_qiang 31
+    100482: xinshoucun_qiang 32
+    100484: xinshoucun_qiang 33
+    100486: xinshoucun_qiang 34
+    100488: xinshoucun_qiang 35
+    100490: xinshoucun_qiang 4
+    100492: xinshoucun_qiang 5
+    100494: xinshoucun_qiang 6
+    100496: xinshoucun_qiang 7
+    100498: xinshoucun_qiang 8
+    100500: xinshoucun_qiang 9
+    100502: //RootNode
+    100504: yewai_guanqia101_part03_new
+    100506: yewai_guanqia101_part03_new 1
+    100508: yewai_guanqia101_part03_new 2
+    100510: yewai_heye01_02
+    100512: zudang
+    400000: 14-Default
+    400002: 1_Caster_Receive
+    400004: 1_Receive
+    400006: 1_Receive 1
+    400008: 1_Receive_batched
+    400010: _c5_veg_songhsu12
+    400012: Box275
+    400014: Box275 1
+    400016: build_fujianzhu_batched
+    400018: build_menchuang
+    400020: build_menchuang 1
+    400022: build_menchuang 2
+    400024: build_menchuang 3
+    400026: build_pingfeng02 1
+    400028: build_pingfeng02 1 1
+    400030: build_shizi02_BigVertex_0
+    400032: build_shizi02_BigVertex_1
+    400034: build_shizidizuo
+    400036: build_xiangzi
+    400038: build_xiangzi02
+    400040: build_yewai_bujian_d
+    400042: build_yewai_bujian_d_01_Caster_Receive
+    400044: build_yewai_huatan03
+    400046: build_yewai_huatan04
+    400048: build_yewai_huatan04 1
+    400050: build_yewai_shiqiang01
+    400052: build_yewai_yuanluo_huatan
+    400054: build_yewai_yuanluo_huatan_Caster_Receive
+    400056: build_yewai_yuanluo_pailou
+    400058: build_yewai_yuanluopingtai_01 1
+    400060: build_yewai_yuanluopingtai_02
+    400062: build_yewai_yuanluopingtai_Caster_Receive
+    400064: build_yewai_yuanluopingtai_Caster_Receive 1
+    400066: build_yewai_yuanluopingtai_new
+    400068: build_yewai_yuanluopingtai_new 1
+    400070: build_yuanhuawen
+    400072: build_yuanluo_changlouti
+    400074: build_yuanluo_changlouti 1
+    400076: build_yuanluo_changlouti 2
+    400078: build_yuanluo_changlouti 3
+    400080: build_yuanluo_changlouti 4
+    400082: build_yuanluo_changlouti 5
+    400084: build_yuanluo_dayingbi_01
+    400086: build_yuanluo_dayingbi_01 1
+    400088: build_yuanluo_louti
+    400090: build_yuanluo_louti 1
+    400092: build_yuanluo_mendong
+    400094: build_yuanluo_menlian
+    400096: build_yuanluo_weiqiang_01
+    400098: build_yuanluo_weiqiang_01 1
+    400100: build_yuanluo_weiqiang_01 2
+    400102: build_yuanluo_weiqiang_02
+    400104: build_yuanluo_weiqiang_03
+    400106: build_yuanluo_weiqiang_03 1
+    400108: build_yuanluo_weiqiang_03 2
+    400110: build_yuanluo_weiqiang_03_Caster_Receive
+    400112: build_yuanluo_weiqiang_04
+    400114: build_yuanluo_weiqiang_04 1
+    400116: build_yuanluo_weiqiang_04 2
+    400118: build_yuanluo_weiqiang_06
+    400120: build_yuanluo_weiqiang_06_Caster_Receive
+    400122: build_yuanluo_weiqiang_07_batched
+    400124: build_yuanluo_zhujianpingtai
+    400126: build_yuanluo_zhujianpingtai_Caster_Receive
+    400128: build_yuanluo_zhujianpingtai_Caster_Receive 1
+    400130: build_yuanluo_zhujianpingtai_chaifen_batched
+    400132: build_yuanluo_zhujianpingtai_chaifen_batched 1
+    400134: bush_lvcao21
+    400136: bush_lvcao21 1
+    400138: c5_pingjieqiang2_Caster_Receive
+    400140: c5_pingjieqiang_Caster_Receive
+    400142: c5_pingjieqiang_obj_0
+    400144: c5_pingjieqiang_obj_0 1
+    400146: c5_pingjieqiang_obj_0 10
+    400148: c5_pingjieqiang_obj_0 11
+    400150: c5_pingjieqiang_obj_0 12
+    400152: c5_pingjieqiang_obj_0 13
+    400154: c5_pingjieqiang_obj_0 14
+    400156: c5_pingjieqiang_obj_0 15
+    400158: c5_pingjieqiang_obj_0 16
+    400160: c5_pingjieqiang_obj_0 17
+    400162: c5_pingjieqiang_obj_0 18
+    400164: c5_pingjieqiang_obj_0 19
+    400166: c5_pingjieqiang_obj_0 2
+    400168: c5_pingjieqiang_obj_0 20
+    400170: c5_pingjieqiang_obj_0 21
+    400172: c5_pingjieqiang_obj_0 22
+    400174: c5_pingjieqiang_obj_0 23
+    400176: c5_pingjieqiang_obj_0 24
+    400178: c5_pingjieqiang_obj_0 25
+    400180: c5_pingjieqiang_obj_0 26
+    400182: c5_pingjieqiang_obj_0 27
+    400184: c5_pingjieqiang_obj_0 28
+    400186: c5_pingjieqiang_obj_0 29
+    400188: c5_pingjieqiang_obj_0 3
+    400190: c5_pingjieqiang_obj_0 30
+    400192: c5_pingjieqiang_obj_0 31
+    400194: c5_pingjieqiang_obj_0 32
+    400196: c5_pingjieqiang_obj_0 33
+    400198: c5_pingjieqiang_obj_0 34
+    400200: c5_pingjieqiang_obj_0 35
+    400202: c5_pingjieqiang_obj_0 36
+    400204: c5_pingjieqiang_obj_0 37
+    400206: c5_pingjieqiang_obj_0 4
+    400208: c5_pingjieqiang_obj_0 5
+    400210: c5_pingjieqiang_obj_0 6
+    400212: c5_pingjieqiang_obj_0 7
+    400214: c5_pingjieqiang_obj_0 8
+    400216: c5_pingjieqiang_obj_0 9
+    400218: c5_pingjieqiang_obj_1
+    400220: c5_pingjieqiang_obj_1 1
+    400222: c5_pingjieqiang_obj_1 10
+    400224: c5_pingjieqiang_obj_1 11
+    400226: c5_pingjieqiang_obj_1 12
+    400228: c5_pingjieqiang_obj_1 13
+    400230: c5_pingjieqiang_obj_1 14
+    400232: c5_pingjieqiang_obj_1 15
+    400234: c5_pingjieqiang_obj_1 16
+    400236: c5_pingjieqiang_obj_1 17
+    400238: c5_pingjieqiang_obj_1 18
+    400240: c5_pingjieqiang_obj_1 19
+    400242: c5_pingjieqiang_obj_1 2
+    400244: c5_pingjieqiang_obj_1 20
+    400246: c5_pingjieqiang_obj_1 21
+    400248: c5_pingjieqiang_obj_1 22
+    400250: c5_pingjieqiang_obj_1 23
+    400252: c5_pingjieqiang_obj_1 24
+    400254: c5_pingjieqiang_obj_1 25
+    400256: c5_pingjieqiang_obj_1 26
+    400258: c5_pingjieqiang_obj_1 27
+    400260: c5_pingjieqiang_obj_1 28
+    400262: c5_pingjieqiang_obj_1 29
+    400264: c5_pingjieqiang_obj_1 3
+    400266: c5_pingjieqiang_obj_1 30
+    400268: c5_pingjieqiang_obj_1 31
+    400270: c5_pingjieqiang_obj_1 32
+    400272: c5_pingjieqiang_obj_1 33
+    400274: c5_pingjieqiang_obj_1 34
+    400276: c5_pingjieqiang_obj_1 35
+    400278: c5_pingjieqiang_obj_1 36
+    400280: c5_pingjieqiang_obj_1 37
+    400282: c5_pingjieqiang_obj_1 38
+    400284: c5_pingjieqiang_obj_1 39
+    400286: c5_pingjieqiang_obj_1 4
+    400288: c5_pingjieqiang_obj_1 40
+    400290: c5_pingjieqiang_obj_1 5
+    400292: c5_pingjieqiang_obj_1 6
+    400294: c5_pingjieqiang_obj_1 7
+    400296: c5_pingjieqiang_obj_1 8
+    400298: c5_pingjieqiang_obj_1 9
+    400300: Cube
+    400302: Cube 1
+    400304: Cube 10
+    400306: Cube 11
+    400308: Cube 12
+    400310: Cube 13
+    400312: Cube 14
+    400314: Cube 15
+    400316: Cube 2
+    400318: Cube 3
+    400320: Cube 4
+    400322: Cube 5
+    400324: Cube 6
+    400326: Cube 7
+    400328: Cube 8
+    400330: Cube 9
+    400332: F042_fengbianshi_diffuse_Caster_Receive
+    400334: GameObject
+    400336: menlian02
+    400338: menlian03
+    400340: mianlian01
+    400342: Object002
+    400344: Object011
+    400346: Object011 1
+    400348: Object017
+    400350: Object017 1
+    400352: Object017 2
+    400354: Object017 3
+    400356: Object017 4
+    400358: Object089
+    400360: Object093
+    400362: OcclusionTrigger
+    400364: OcclusionTrigger 1
+    400366: OcclusionTrigger 2
+    400368: OcclusionTrigger 3
+    400370: part01
+    400372: part02
+    400374: part03
+    400376: part04
+    400378: Plane048
+    400380: Plane048 1
+    400382: Plane048 2
+    400384: Plane048 3
+    400386: Plane048 4
+    400388: Plane_fengshu
+    400390: Plane_fengshu 1
+    400392: polySurface022
+    400394: polySurface022 1
+    400396: qiang
+    400398: qiang_batched
+    400400: Rock2E_LP:polySurface014
+    400402: shiqiao
+    400404: veg_zhuzi01
+    400406: veg_zhuzi01 1
+    400408: veg_zhuzi01 2
+    400410: veg_zhuzi01 3
+    400412: veg_zhuzi01 4
+    400414: water_shuimian01
+    400416: water_shuimian01 1
+    400418: water_shuimian02
+    400420: xiaorong
+    400422: xiaorong2
+    400424: xiaorong3
+    400426: xiaorong4
+    400428: xiaosuishi_batched
+    400430: xinshoucun_qiang
+    400432: xinshoucun_qiang 1
+    400434: xinshoucun_qiang 10
+    400436: xinshoucun_qiang 11
+    400438: xinshoucun_qiang 12
+    400440: xinshoucun_qiang 13
+    400442: xinshoucun_qiang 14
+    400444: xinshoucun_qiang 15
+    400446: xinshoucun_qiang 16
+    400448: xinshoucun_qiang 17
+    400450: xinshoucun_qiang 18
+    400452: xinshoucun_qiang 19
+    400454: xinshoucun_qiang 2
+    400456: xinshoucun_qiang 20
+    400458: xinshoucun_qiang 21
+    400460: xinshoucun_qiang 22
+    400462: xinshoucun_qiang 23
+    400464: xinshoucun_qiang 24
+    400466: xinshoucun_qiang 25
+    400468: xinshoucun_qiang 26
+    400470: xinshoucun_qiang 27
+    400472: xinshoucun_qiang 28
+    400474: xinshoucun_qiang 29
+    400476: xinshoucun_qiang 3
+    400478: xinshoucun_qiang 30
+    400480: xinshoucun_qiang 31
+    400482: xinshoucun_qiang 32
+    400484: xinshoucun_qiang 33
+    400486: xinshoucun_qiang 34
+    400488: xinshoucun_qiang 35
+    400490: xinshoucun_qiang 4
+    400492: xinshoucun_qiang 5
+    400494: xinshoucun_qiang 6
+    400496: xinshoucun_qiang 7
+    400498: xinshoucun_qiang 8
+    400500: xinshoucun_qiang 9
+    400502: //RootNode
+    400504: yewai_guanqia101_part03_new
+    400506: yewai_guanqia101_part03_new 1
+    400508: yewai_guanqia101_part03_new 2
+    400510: yewai_heye01_02
+    400512: zudang
+    2300000: 14-Default
+    2300002: 1_Receive
+    2300004: 1_Receive 1
+    2300006: _c5_veg_songhsu12
+    2300008: Box275
+    2300010: Box275 1
+    2300012: build_menchuang
+    2300014: build_menchuang 1
+    2300016: build_menchuang 2
+    2300018: build_menchuang 3
+    2300020: build_pingfeng02 1
+    2300022: build_pingfeng02 1 1
+    2300024: build_xiangzi
+    2300026: build_xiangzi02
+    2300028: build_yewai_bujian_d
+    2300030: build_yewai_bujian_d_01_Caster_Receive
+    2300032: build_yewai_huatan04
+    2300034: build_yewai_huatan04 1
+    2300036: build_yewai_shiqiang01
+    2300038: build_yewai_yuanluo_huatan
+    2300040: build_yewai_yuanluo_huatan_Caster_Receive
+    2300042: build_yewai_yuanluo_pailou
+    2300044: build_yewai_yuanluopingtai_01 1
+    2300046: build_yewai_yuanluopingtai_02
+    2300048: build_yewai_yuanluopingtai_Caster_Receive
+    2300050: build_yewai_yuanluopingtai_Caster_Receive 1
+    2300052: build_yewai_yuanluopingtai_new
+    2300054: build_yewai_yuanluopingtai_new 1
+    2300056: build_yuanhuawen
+    2300058: build_yuanluo_changlouti
+    2300060: build_yuanluo_changlouti 1
+    2300062: build_yuanluo_changlouti 2
+    2300064: build_yuanluo_changlouti 3
+    2300066: build_yuanluo_changlouti 4
+    2300068: build_yuanluo_changlouti 5
+    2300070: build_yuanluo_louti
+    2300072: build_yuanluo_louti 1
+    2300074: build_yuanluo_weiqiang_01
+    2300076: build_yuanluo_weiqiang_01 1
+    2300078: build_yuanluo_weiqiang_01 2
+    2300080: build_yuanluo_weiqiang_02
+    2300082: build_yuanluo_weiqiang_03
+    2300084: build_yuanluo_weiqiang_03 1
+    2300086: build_yuanluo_weiqiang_03 2
+    2300088: build_yuanluo_weiqiang_03_Caster_Receive
+    2300090: build_yuanluo_weiqiang_04
+    2300092: build_yuanluo_weiqiang_04 1
+    2300094: build_yuanluo_weiqiang_04 2
+    2300096: build_yuanluo_weiqiang_06
+    2300098: build_yuanluo_weiqiang_06_Caster_Receive
+    2300100: build_yuanluo_zhujianpingtai
+    2300102: build_yuanluo_zhujianpingtai_Caster_Receive
+    2300104: build_yuanluo_zhujianpingtai_Caster_Receive 1
+    2300106: bush_lvcao21
+    2300108: bush_lvcao21 1
+    2300110: c5_pingjieqiang2_Caster_Receive
+    2300112: c5_pingjieqiang_Caster_Receive
+    2300114: c5_pingjieqiang_obj_0
+    2300116: c5_pingjieqiang_obj_0 1
+    2300118: c5_pingjieqiang_obj_0 10
+    2300120: c5_pingjieqiang_obj_0 11
+    2300122: c5_pingjieqiang_obj_0 12
+    2300124: c5_pingjieqiang_obj_0 13
+    2300126: c5_pingjieqiang_obj_0 14
+    2300128: c5_pingjieqiang_obj_0 15
+    2300130: c5_pingjieqiang_obj_0 16
+    2300132: c5_pingjieqiang_obj_0 17
+    2300134: c5_pingjieqiang_obj_0 18
+    2300136: c5_pingjieqiang_obj_0 19
+    2300138: c5_pingjieqiang_obj_0 2
+    2300140: c5_pingjieqiang_obj_0 20
+    2300142: c5_pingjieqiang_obj_0 21
+    2300144: c5_pingjieqiang_obj_0 22
+    2300146: c5_pingjieqiang_obj_0 23
+    2300148: c5_pingjieqiang_obj_0 24
+    2300150: c5_pingjieqiang_obj_0 25
+    2300152: c5_pingjieqiang_obj_0 26
+    2300154: c5_pingjieqiang_obj_0 27
+    2300156: c5_pingjieqiang_obj_0 28
+    2300158: c5_pingjieqiang_obj_0 29
+    2300160: c5_pingjieqiang_obj_0 3
+    2300162: c5_pingjieqiang_obj_0 30
+    2300164: c5_pingjieqiang_obj_0 31
+    2300166: c5_pingjieqiang_obj_0 32
+    2300168: c5_pingjieqiang_obj_0 33
+    2300170: c5_pingjieqiang_obj_0 34
+    2300172: c5_pingjieqiang_obj_0 35
+    2300174: c5_pingjieqiang_obj_0 36
+    2300176: c5_pingjieqiang_obj_0 37
+    2300178: c5_pingjieqiang_obj_0 4
+    2300180: c5_pingjieqiang_obj_0 5
+    2300182: c5_pingjieqiang_obj_0 6
+    2300184: c5_pingjieqiang_obj_0 7
+    2300186: c5_pingjieqiang_obj_0 8
+    2300188: c5_pingjieqiang_obj_0 9
+    2300190: c5_pingjieqiang_obj_1
+    2300192: c5_pingjieqiang_obj_1 1
+    2300194: c5_pingjieqiang_obj_1 10
+    2300196: c5_pingjieqiang_obj_1 11
+    2300198: c5_pingjieqiang_obj_1 12
+    2300200: c5_pingjieqiang_obj_1 13
+    2300202: c5_pingjieqiang_obj_1 14
+    2300204: c5_pingjieqiang_obj_1 15
+    2300206: c5_pingjieqiang_obj_1 16
+    2300208: c5_pingjieqiang_obj_1 17
+    2300210: c5_pingjieqiang_obj_1 18
+    2300212: c5_pingjieqiang_obj_1 19
+    2300214: c5_pingjieqiang_obj_1 2
+    2300216: c5_pingjieqiang_obj_1 20
+    2300218: c5_pingjieqiang_obj_1 21
+    2300220: c5_pingjieqiang_obj_1 22
+    2300222: c5_pingjieqiang_obj_1 23
+    2300224: c5_pingjieqiang_obj_1 24
+    2300226: c5_pingjieqiang_obj_1 25
+    2300228: c5_pingjieqiang_obj_1 26
+    2300230: c5_pingjieqiang_obj_1 27
+    2300232: c5_pingjieqiang_obj_1 28
+    2300234: c5_pingjieqiang_obj_1 29
+    2300236: c5_pingjieqiang_obj_1 3
+    2300238: c5_pingjieqiang_obj_1 30
+    2300240: c5_pingjieqiang_obj_1 31
+    2300242: c5_pingjieqiang_obj_1 32
+    2300244: c5_pingjieqiang_obj_1 33
+    2300246: c5_pingjieqiang_obj_1 34
+    2300248: c5_pingjieqiang_obj_1 35
+    2300250: c5_pingjieqiang_obj_1 36
+    2300252: c5_pingjieqiang_obj_1 37
+    2300254: c5_pingjieqiang_obj_1 38
+    2300256: c5_pingjieqiang_obj_1 39
+    2300258: c5_pingjieqiang_obj_1 4
+    2300260: c5_pingjieqiang_obj_1 40
+    2300262: c5_pingjieqiang_obj_1 5
+    2300264: c5_pingjieqiang_obj_1 6
+    2300266: c5_pingjieqiang_obj_1 7
+    2300268: c5_pingjieqiang_obj_1 8
+    2300270: c5_pingjieqiang_obj_1 9
+    2300272: Cube
+    2300274: Cube 1
+    2300276: Cube 10
+    2300278: Cube 11
+    2300280: Cube 12
+    2300282: Cube 13
+    2300284: Cube 14
+    2300286: Cube 15
+    2300288: Cube 2
+    2300290: Cube 3
+    2300292: Cube 4
+    2300294: Cube 5
+    2300296: Cube 6
+    2300298: Cube 7
+    2300300: Cube 8
+    2300302: Cube 9
+    2300304: F042_fengbianshi_diffuse_Caster_Receive
+    2300306: menlian02
+    2300308: menlian03
+    2300310: mianlian01
+    2300312: Object002
+    2300314: Object011
+    2300316: Object011 1
+    2300318: Object017
+    2300320: Object017 1
+    2300322: Object017 2
+    2300324: Object017 3
+    2300326: Object017 4
+    2300328: Object089
+    2300330: Object093
+    2300332: Plane048
+    2300334: Plane048 1
+    2300336: Plane048 2
+    2300338: Plane048 3
+    2300340: Plane048 4
+    2300342: Plane_fengshu
+    2300344: Plane_fengshu 1
+    2300346: polySurface022
+    2300348: polySurface022 1
+    2300350: Rock2E_LP:polySurface014
+    2300352: shiqiao
+    2300354: water_shuimian01
+    2300356: water_shuimian01 1
+    2300358: water_shuimian02
+    2300360: yewai_guanqia101_part03_new
+    2300362: yewai_guanqia101_part03_new 1
+    2300364: yewai_guanqia101_part03_new 2
+    3300000: 14-Default
+    3300002: 1_Receive
+    3300004: 1_Receive 1
+    3300006: _c5_veg_songhsu12
+    3300008: Box275
+    3300010: Box275 1
+    3300012: build_menchuang
+    3300014: build_menchuang 1
+    3300016: build_menchuang 2
+    3300018: build_menchuang 3
+    3300020: build_pingfeng02 1
+    3300022: build_pingfeng02 1 1
+    3300024: build_xiangzi
+    3300026: build_xiangzi02
+    3300028: build_yewai_bujian_d
+    3300030: build_yewai_bujian_d_01_Caster_Receive
+    3300032: build_yewai_huatan04
+    3300034: build_yewai_huatan04 1
+    3300036: build_yewai_shiqiang01
+    3300038: build_yewai_yuanluo_huatan
+    3300040: build_yewai_yuanluo_huatan_Caster_Receive
+    3300042: build_yewai_yuanluo_pailou
+    3300044: build_yewai_yuanluopingtai_01 1
+    3300046: build_yewai_yuanluopingtai_02
+    3300048: build_yewai_yuanluopingtai_Caster_Receive
+    3300050: build_yewai_yuanluopingtai_Caster_Receive 1
+    3300052: build_yewai_yuanluopingtai_new
+    3300054: build_yewai_yuanluopingtai_new 1
+    3300056: build_yuanhuawen
+    3300058: build_yuanluo_changlouti
+    3300060: build_yuanluo_changlouti 1
+    3300062: build_yuanluo_changlouti 2
+    3300064: build_yuanluo_changlouti 3
+    3300066: build_yuanluo_changlouti 4
+    3300068: build_yuanluo_changlouti 5
+    3300070: build_yuanluo_louti
+    3300072: build_yuanluo_louti 1
+    3300074: build_yuanluo_weiqiang_01
+    3300076: build_yuanluo_weiqiang_01 1
+    3300078: build_yuanluo_weiqiang_01 2
+    3300080: build_yuanluo_weiqiang_02
+    3300082: build_yuanluo_weiqiang_03
+    3300084: build_yuanluo_weiqiang_03 1
+    3300086: build_yuanluo_weiqiang_03 2
+    3300088: build_yuanluo_weiqiang_03_Caster_Receive
+    3300090: build_yuanluo_weiqiang_04
+    3300092: build_yuanluo_weiqiang_04 1
+    3300094: build_yuanluo_weiqiang_04 2
+    3300096: build_yuanluo_weiqiang_06
+    3300098: build_yuanluo_weiqiang_06_Caster_Receive
+    3300100: build_yuanluo_zhujianpingtai
+    3300102: build_yuanluo_zhujianpingtai_Caster_Receive
+    3300104: build_yuanluo_zhujianpingtai_Caster_Receive 1
+    3300106: bush_lvcao21
+    3300108: bush_lvcao21 1
+    3300110: c5_pingjieqiang2_Caster_Receive
+    3300112: c5_pingjieqiang_Caster_Receive
+    3300114: c5_pingjieqiang_obj_0
+    3300116: c5_pingjieqiang_obj_0 1
+    3300118: c5_pingjieqiang_obj_0 10
+    3300120: c5_pingjieqiang_obj_0 11
+    3300122: c5_pingjieqiang_obj_0 12
+    3300124: c5_pingjieqiang_obj_0 13
+    3300126: c5_pingjieqiang_obj_0 14
+    3300128: c5_pingjieqiang_obj_0 15
+    3300130: c5_pingjieqiang_obj_0 16
+    3300132: c5_pingjieqiang_obj_0 17
+    3300134: c5_pingjieqiang_obj_0 18
+    3300136: c5_pingjieqiang_obj_0 19
+    3300138: c5_pingjieqiang_obj_0 2
+    3300140: c5_pingjieqiang_obj_0 20
+    3300142: c5_pingjieqiang_obj_0 21
+    3300144: c5_pingjieqiang_obj_0 22
+    3300146: c5_pingjieqiang_obj_0 23
+    3300148: c5_pingjieqiang_obj_0 24
+    3300150: c5_pingjieqiang_obj_0 25
+    3300152: c5_pingjieqiang_obj_0 26
+    3300154: c5_pingjieqiang_obj_0 27
+    3300156: c5_pingjieqiang_obj_0 28
+    3300158: c5_pingjieqiang_obj_0 29
+    3300160: c5_pingjieqiang_obj_0 3
+    3300162: c5_pingjieqiang_obj_0 30
+    3300164: c5_pingjieqiang_obj_0 31
+    3300166: c5_pingjieqiang_obj_0 32
+    3300168: c5_pingjieqiang_obj_0 33
+    3300170: c5_pingjieqiang_obj_0 34
+    3300172: c5_pingjieqiang_obj_0 35
+    3300174: c5_pingjieqiang_obj_0 36
+    3300176: c5_pingjieqiang_obj_0 37
+    3300178: c5_pingjieqiang_obj_0 4
+    3300180: c5_pingjieqiang_obj_0 5
+    3300182: c5_pingjieqiang_obj_0 6
+    3300184: c5_pingjieqiang_obj_0 7
+    3300186: c5_pingjieqiang_obj_0 8
+    3300188: c5_pingjieqiang_obj_0 9
+    3300190: c5_pingjieqiang_obj_1
+    3300192: c5_pingjieqiang_obj_1 1
+    3300194: c5_pingjieqiang_obj_1 10
+    3300196: c5_pingjieqiang_obj_1 11
+    3300198: c5_pingjieqiang_obj_1 12
+    3300200: c5_pingjieqiang_obj_1 13
+    3300202: c5_pingjieqiang_obj_1 14
+    3300204: c5_pingjieqiang_obj_1 15
+    3300206: c5_pingjieqiang_obj_1 16
+    3300208: c5_pingjieqiang_obj_1 17
+    3300210: c5_pingjieqiang_obj_1 18
+    3300212: c5_pingjieqiang_obj_1 19
+    3300214: c5_pingjieqiang_obj_1 2
+    3300216: c5_pingjieqiang_obj_1 20
+    3300218: c5_pingjieqiang_obj_1 21
+    3300220: c5_pingjieqiang_obj_1 22
+    3300222: c5_pingjieqiang_obj_1 23
+    3300224: c5_pingjieqiang_obj_1 24
+    3300226: c5_pingjieqiang_obj_1 25
+    3300228: c5_pingjieqiang_obj_1 26
+    3300230: c5_pingjieqiang_obj_1 27
+    3300232: c5_pingjieqiang_obj_1 28
+    3300234: c5_pingjieqiang_obj_1 29
+    3300236: c5_pingjieqiang_obj_1 3
+    3300238: c5_pingjieqiang_obj_1 30
+    3300240: c5_pingjieqiang_obj_1 31
+    3300242: c5_pingjieqiang_obj_1 32
+    3300244: c5_pingjieqiang_obj_1 33
+    3300246: c5_pingjieqiang_obj_1 34
+    3300248: c5_pingjieqiang_obj_1 35
+    3300250: c5_pingjieqiang_obj_1 36
+    3300252: c5_pingjieqiang_obj_1 37
+    3300254: c5_pingjieqiang_obj_1 38
+    3300256: c5_pingjieqiang_obj_1 39
+    3300258: c5_pingjieqiang_obj_1 4
+    3300260: c5_pingjieqiang_obj_1 40
+    3300262: c5_pingjieqiang_obj_1 5
+    3300264: c5_pingjieqiang_obj_1 6
+    3300266: c5_pingjieqiang_obj_1 7
+    3300268: c5_pingjieqiang_obj_1 8
+    3300270: c5_pingjieqiang_obj_1 9
+    3300272: Cube
+    3300274: Cube 1
+    3300276: Cube 10
+    3300278: Cube 11
+    3300280: Cube 12
+    3300282: Cube 13
+    3300284: Cube 14
+    3300286: Cube 15
+    3300288: Cube 2
+    3300290: Cube 3
+    3300292: Cube 4
+    3300294: Cube 5
+    3300296: Cube 6
+    3300298: Cube 7
+    3300300: Cube 8
+    3300302: Cube 9
+    3300304: F042_fengbianshi_diffuse_Caster_Receive
+    3300306: menlian02
+    3300308: menlian03
+    3300310: mianlian01
+    3300312: Object002
+    3300314: Object011
+    3300316: Object011 1
+    3300318: Object017
+    3300320: Object017 1
+    3300322: Object017 2
+    3300324: Object017 3
+    3300326: Object017 4
+    3300328: Object089
+    3300330: Object093
+    3300332: Plane048
+    3300334: Plane048 1
+    3300336: Plane048 2
+    3300338: Plane048 3
+    3300340: Plane048 4
+    3300342: Plane_fengshu
+    3300344: Plane_fengshu 1
+    3300346: polySurface022
+    3300348: polySurface022 1
+    3300350: Rock2E_LP:polySurface014
+    3300352: shiqiao
+    3300354: water_shuimian01
+    3300356: water_shuimian01 1
+    3300358: water_shuimian02
+    3300360: yewai_guanqia101_part03_new
+    3300362: yewai_guanqia101_part03_new 1
+    3300364: yewai_guanqia101_part03_new 2
+    4300000: c5_pingjieqiang_obj_0
+    4300002: c5_pingjieqiang_obj_1
+    4300004: c5_pingjieqiang_obj_0
+    4300006: c5_pingjieqiang_obj_1
+    4300008: c5_pingjieqiang_obj_1
+    4300010: c5_pingjieqiang_obj_0
+    4300012: c5_pingjieqiang_obj_1
+    4300014: c5_pingjieqiang_obj_0
+    4300016: c5_pingjieqiang_obj_1
+    4300018: c5_pingjieqiang_obj_0
+    4300020: c5_pingjieqiang_obj_1
+    4300022: c5_pingjieqiang_obj_0
+    4300024: c5_pingjieqiang_obj_1
+    4300026: c5_pingjieqiang_obj_1
+    4300028: c5_pingjieqiang_obj_0
+    4300030: c5_pingjieqiang_obj_1
+    4300032: c5_pingjieqiang_obj_0
+    4300034: c5_pingjieqiang_obj_1
+    4300036: c5_pingjieqiang_obj_0
+    4300038: c5_pingjieqiang_obj_1
+    4300040: c5_pingjieqiang_obj_1
+    4300042: c5_pingjieqiang_obj_0
+    4300044: c5_pingjieqiang_obj_1
+    4300046: c5_pingjieqiang_obj_1
+    4300048: c5_pingjieqiang_obj_0
+    4300050: c5_pingjieqiang_obj_1
+    4300052: c5_pingjieqiang_obj_0
+    4300054: c5_pingjieqiang_obj_1
+    4300056: c5_pingjieqiang_obj_0
+    4300058: c5_pingjieqiang_obj_1
+    4300060: c5_pingjieqiang_obj_0
+    4300062: c5_pingjieqiang_obj_0
+    4300064: c5_pingjieqiang_obj_0
+    4300066: c5_pingjieqiang_obj_1
+    4300068: c5_pingjieqiang_obj_0
+    4300070: c5_pingjieqiang_obj_1
+    4300072: c5_pingjieqiang_obj_0
+    4300074: c5_pingjieqiang_obj_1
+    4300076: c5_pingjieqiang_obj_0
+    4300078: c5_pingjieqiang_obj_1
+    4300080: c5_pingjieqiang_obj_0
+    4300082: c5_pingjieqiang_obj_1
+    4300084: c5_pingjieqiang_obj_0
+    4300086: c5_pingjieqiang_obj_1
+    4300088: c5_pingjieqiang_obj_0
+    4300090: c5_pingjieqiang_obj_1
+    4300092: c5_pingjieqiang_obj_0
+    4300094: c5_pingjieqiang_obj_1
+    4300096: c5_pingjieqiang_obj_0
+    4300098: c5_pingjieqiang_obj_1
+    4300100: c5_pingjieqiang_obj_0
+    4300102: c5_pingjieqiang_obj_1
+    4300104: c5_pingjieqiang_obj_0
+    4300106: c5_pingjieqiang_obj_1
+    4300108: c5_pingjieqiang_obj_0
+    4300110: c5_pingjieqiang_obj_1
+    4300112: c5_pingjieqiang_obj_0
+    4300114: c5_pingjieqiang_obj_1
+    4300116: c5_pingjieqiang_obj_0
+    4300118: c5_pingjieqiang_obj_1
+    4300120: c5_pingjieqiang_obj_0
+    4300122: c5_pingjieqiang_obj_1
+    4300124: c5_pingjieqiang_obj_0
+    4300126: c5_pingjieqiang_obj_1
+    4300128: c5_pingjieqiang_obj_0
+    4300130: c5_pingjieqiang_obj_1
+    4300132: c5_pingjieqiang_obj_0
+    4300134: c5_pingjieqiang_obj_1
+    4300136: c5_pingjieqiang_obj_0
+    4300138: build_yewai_yuanluopingtai_02
+    4300140: c5_pingjieqiang2_Caster_Receive
+    4300142: c5_pingjieqiang_Caster_Receive
+    4300144: _c5_veg_songhsu12
+    4300146: build_yewai_yuanluo_huatan_Caster_Receive
+    4300148: yewai_guanqia101_part03_new
+    4300150: polySurface022
+    4300152: Box275
+    4300154: build_yuanluo_weiqiang_06_Caster_Receive
+    4300156: build_yuanluo_weiqiang_03_Caster_Receive
+    4300158: F042_fengbianshi_diffuse_Caster_Receive
+    4300160: shiqiao
+    4300162: Plane048
+    4300164: Object017
+    4300166: Plane048
+    4300168: Object017
+    4300170: Plane048
+    4300172: Object017
+    4300174: build_yewai_yuanluopingtai_Caster_Receive
+    4300176: build_yuanluo_zhujianpingtai_Caster_Receive
+    4300178: water_shuimian02
+    4300180: water_shuimian01
+    4300182: yewai_guanqia101_part03_new
+    4300184: Box275
+    4300186: polySurface022
+    4300188: 1_Receive
+    4300190: yewai_guanqia101_part03_new
+    4300192: c5_pingjieqiang_obj_1
+    4300194: c5_pingjieqiang_obj_0
+    4300196: c5_pingjieqiang_obj_1
+    4300198: c5_pingjieqiang_obj_1
+    4300200: c5_pingjieqiang_obj_1
+    4300202: c5_pingjieqiang_obj_0
+    4300204: Plane048
+    4300206: Object017
+    4300208: build_yewai_shiqiang01
+    4300210: 1_Receive
+    4300212: build_yuanluo_zhujianpingtai_Caster_Receive
+    4300214: build_yewai_yuanluopingtai_Caster_Receive
+    4300216: build_yewai_yuanluo_huatan
+    4300218: Plane_fengshu
+    4300220: 14-Default
+    4300222: build_yuanhuawen
+    4300224: Object002
+    4300226: Rock2E_LP:polySurface014
+    4300228: Plane048
+    4300230: Object017
+    4300232: build_yuanluo_louti
+    4300234: build_yewai_yuanluopingtai_new
+    4300236: Plane_fengshu
+    4300238: c5_pingjieqiang_obj_1
+    4300240: c5_pingjieqiang_obj_0
+    4300242: build_yewai_bujian_d
+    4300244: build_yewai_bujian_d_01_Caster_Receive
+    4300246: build_yuanluo_weiqiang_06
+    4300248: water_shuimian01
+    4300250: build_yewai_yuanluopingtai_new
+    4300252: build_yuanluo_louti
+    4300254: build_yewai_huatan04
+    4300256: Object011
+    4300258: build_yuanluo_changlouti
+    4300260: bush_lvcao21
+    4300262: build_yuanluo_zhujianpingtai
+    4300264: menlian02
+    4300266: menlian03
+    4300268: mianlian01
+    4300270: build_yewai_yuanluopingtai_01 1
+    4300272: build_yuanluo_changlouti
+    4300274: build_yuanluo_changlouti
+    4300276: bush_lvcao21
+    4300278: build_yuanluo_changlouti
+    4300280: build_yuanluo_changlouti
+    4300282: build_yuanluo_changlouti
+    4300284: Object011
+    4300286: build_yewai_huatan04
+    4300288: Cube
+    4300290: Cube
+    4300292: Cube
+    4300294: Cube
+    4300296: Cube
+    4300298: Cube
+    4300300: Cube
+    4300302: Cube
+    4300304: Cube
+    4300306: Cube
+    4300308: Cube
+    4300310: Cube
+    4300312: Cube
+    4300314: Cube
+    4300316: Cube
+    4300318: Cube
+    4300320: build_yewai_yuanluo_pailou
+    4300322: build_yuanluo_weiqiang_01
+    4300324: build_yuanluo_weiqiang_03
+    4300326: build_yuanluo_weiqiang_04
+    4300328: build_yuanluo_weiqiang_02
+    4300330: build_yuanluo_weiqiang_04
+    4300332: build_yuanluo_weiqiang_03
+    4300334: build_yuanluo_weiqiang_01
+    4300336: build_yuanluo_weiqiang_04
+    4300338: build_yuanluo_weiqiang_03
+    4300340: build_yuanluo_weiqiang_01
+    4300342: c5_pingjieqiang_obj_1
+    4300344: c5_pingjieqiang_obj_0
+    4300346: build_pingfeng02 1
+    4300348: build_xiangzi
+    4300350: build_xiangzi02
+    4300352: Object093
+    4300354: build_menchuang
+    4300356: Object089
+    4300358: build_menchuang
+    4300360: build_menchuang
+    4300362: build_menchuang
+    4300364: build_pingfeng02 1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
