@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e0b0f89a05dcd428732121e201d4a2, type: 3}
+  m_Name: "\u8D22\u4E3B"
+  m_EditorClassIdentifier: 
+  dx: {fileID: 0}
+  dialoguePieces:
+  - Name: "\u8D22\u4E3B"
+    ID: 1
+    image: {fileID: 0}
+    text: "\u563F\u563F\u563F\uFF0C\u6211\u8FD9\u91CC\u5E94\u6709\u5C3D\u6709......"
+    taskData_SO: {fileID: 0}
+    options:
+    - text: "\u4EA4\u6613"
+      targetID: 
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 1
+    - text: "\u79BB\u5F00"
+      targetID: 
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0

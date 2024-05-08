@@ -1,0 +1,454 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e0b0f89a05dcd428732121e201d4a2, type: 3}
+  m_Name: "\u4E5E\u4E10"
+  m_EditorClassIdentifier: 
+  dx: {fileID: 0}
+  dialoguePieces:
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 1
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u5454\uFF0C\u4F60\u8FD9\u5C0F\u4E2B\u5934\u7247\u5B50\uFF0C\u522B\u9760\u8FD1\u6211\uFF01"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 2
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4F60\u8FD9\u4E5E\u4E10\u8EAB\u65E0\u5206\u6587\uFF0C\u6015\u6211\u4E00\u5C0F\u5973\u5B69\u4F5C\u751A\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 3
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u4F60\u53EF\u4E0D\u662F\u4EC0\u4E48\u5C0F\u5973\u5B69\u554A\uFF0C\u6211\u611F\u89C9\u4F60\u8EAB\u4E0A\u6709\u80A1\u964C\u751F\u7684\u6C14\u606F\uFF0C\u4E00\u5B9A\u662F\u5916\u6765\u8005\uFF01"
+    taskData_SO: {fileID: 0}
+    options:
+    - text: "\u6211\u662F\u672C\u5730\u4EBA"
+      targetID: 4
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+    - text: "\u6211\u786E\u5B9E\u662F\u5916\u6765\u8005"
+      targetID: 27
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+  - Name: "\u4E01\u96EA"
+    ID: 4
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u54CE\u5440\uFF0C\u6211\u662F\u4ECE\u8BF8\u845B\u6751\u6765\u7684\uFF0C\u8FD9\u90FD\u88AB\u4F60\u53D1\u73B0\u5566\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 5
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\uFF08\u5F97\u610F\uFF09\u8001\u592B\u53EF\u662F\u706B\u773C\u91D1\u775B\uFF0C\u4EC0\u4E48\u80FD\u9003\u8131\u6211\u7684\u6CD5\u773C"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 6
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u6CA1\u4EBA\u80FD\u9003\u8FC7\u4F60\u7684\u6CD5\u773C\uFF0C\u90A3\u4F60\u600E\u4E48\u6210\u8FD9\u4E2A\u6837\u5B50\u4E86\u5440\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 7
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\uFF08\u652F\u652F\u543E\u543E\uFF09...\u90A3\u662F\u6709\u4EBA\u4E0D\u8BB2\u6B66\u5FB7\uFF0C\u627F\u8BA4\u6BD4\u4E0D\u8FC7\u6211\uFF0C\u5374\u6765\u5077\u88AD"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 8
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4F60\u4E00\u4E5E\u4E10\uFF0C\u8FD8\u6709\u4EBA\u80FD\u770B\u4E0A\u4F60\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 9
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u54FC\uFF0C\u672C\u5EA7\u53EF\u662F\u5218\u5FBD\u7B2C\u5341\u516D\u4EE3\u4F20\u4EBA\u5218\u91D1\u5F6A\u662F\u4E5F\u3002\u8981\u6587\u5316\u6709\u6587\u5316\uFF0C\u8981\u79D8\u5BC6\u6709\u79D8\u5BC6\uFF0C\u591A\u5C11\u4EBA\u60F3\u8BF7\u6211\u51FA\u5C71\u5374\u8BF7\u4E0D\u5230\u6211\uFF0C\u5F53\u5E74\u76DB\u540D\u538B\u5168\u5B8B\uFF0C\u900D\u9065\u81EA\u5728\uFF0C\u5929\u5730\u4EFB\u6E38\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 10
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u8FDE\u968F\u4FBF\u4E00\u4E2A\u8001\u5916\u90FD\u6253\u4E0D\u8FC7\uFF0C\u8FD8\u4FE1\u4F60\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 11
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u54FC\uFF0C\u77A7\u4E0D\u8D77\u8001\u592B\uFF1F\u770B\u8001\u592B\u7B97\u4E00\u7B97\u4F60\u7684\u7A76\u7ADF"
+    taskData_SO: {fileID: 0}
+    options:
+    - text: "\u7B97\u5C31\u7B97"
+      targetID: 12
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+    - text: "\u9A97\u8C01\u5462\uFF1F\u8FD8\u7B97\u547D\u5148\u751F"
+      targetID: 
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 12
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u5317\u6597\u4E03\u5143\uFF0C\u795E\u6C14\u7EDF\u5929\u3002\u5929\u7F61\u5927\u5723\uFF0C\u5A01\u5149\u4E07\u5343\u3002\u4E0A\u5929\u4E0B\u5730\uFF0C\u9882\u543E\u771F\u540D\u3002\u4E58\u4E91\u800C\u5347\uFF0C\u6765\u964D\u575B\u524D\u3002\u964D\u4E34\u771F\u6C14\uFF0C\u7A7F\u6C34\u5165\u70DF\u3002\u4F20\u4E4B\u4E09\u754C\uFF0C\u5F97\u543E\u4E4B\u4EE4\u3002\u6025\u6025\u5982\u5F8B\u4EE4\uFF01"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 13
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u5929\u5730\u4EBA\u4E07\u7269\u544A\u8BC9\u6211\uFF0C\u4F60\u7684\u75D5\u8FF9\u4E0D\u5728\u65F6\u5149\u4E4B\u5185\uFF0C\u4F60\u4E0D\u5C5E\u4E8E\u8FD9\u7247\u65F6\u5149\uFF0C\u4F60\u4E0D\u5C5E\u4E8E\u6211\u4EEC\u65F6\u4EE3\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 14
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4EC0\u4E48\uFF1F\u4F60\u662F\u7B2C\u4E00\u4E2A\u77E5\u9053\u6211\u8EAB\u4E16\u7684\u4EBA\uFF0C\u8FD9\u4E48\u5389\u5BB3\uFF01\u600E\u4E48\u505A\u5230\u7684\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 15
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\uFF08\u81EA\u8C6A\uFF09\u5F53\u7136\u662F\u9760\u7B97\u672F\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 16
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\uFF08\u8D28\u7591\uFF09\u7B97\u6570\u4E0D\u662F\u53EA\u80FD\u505A\u505A\u6570\u5B66\u9898\uFF0C\u589E\u52A0\u5206\u6570\u514D\u5F97\u88AB\u7238\u5988\u9A82\u5417\uFF1F\u518D\u5C31\u662F\u5B66\u597D\u53EF\u4EE5\u91D1\u699C\u9898\u540D\u3002\u600E\u4E48\u53EF\u80FD\u7B97\u51FA\u8FD9\u4E9B\u4E1C\u897F\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 17
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u522B\u4EE5\u4E3A\u7B97\u672F\u53EA\u80FD\u505A\u505A\u7B97\u6570\uFF0C\u601D\u7EF4\u548C\u7B97\u529B\u8FBE\u5230\u58C1\u5792\u540E\uFF0C\u82E5\u80FD\u7A81\u7834\u5E38\u4EBA\u6781\u9650\uFF0C\u5C31\u80FD\u901A\u8FC7\u8BA1\u7B97\u901A\u5929\u6653\u5730\uFF0C\u63A2\u53E4\u660E\u4ECA\uFF0C\u9884\u77E5\u672A\u6765\uFF0C\u4E3A\u77E5\u5929\u547D\u4E5F\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 18
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u54EA\u91CC\u5B66\u7684\uFF1F\u8FD9\u4E48\u5389\u5BB3\uFF01"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 19
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u5F53\u7136\u662F\u6211\u5BB6\u5148\u7956\u5218\u5FBD\u4E00\u8109\u4F20\u627F\u4E0B\u6765\uFF0C\u53EF\u60DC\u5230\u6211\u7236\u8F88\u5374\u53EA\u5F97\u76AE\u6BDB\uFF0C\u5C06\u8981\u6CA1\u843D\u4E86\u8FD9\u4E00\u95E8\u5947\u672F\u4E86\u3002\u5509\uFF01"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 20
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u6211\u60F3\u5B66\uFF0C\u6211\u613F\u610F\u7EE7\u627F\u8FD9\u95E8\u5B66\u95EE\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 21
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u4F60\u770B\u6211\u8FD9\u4E48\u60E8\uFF0C\u6240\u6709\u5B9D\u8D1D\u90FD\u88AB\u6D17\u52AB\u5566\uFF0C\u54EA\u91CC\u8FD8\u5269\u4E0B\u4E1C\u897F\u7ED9\u4F60\u5B66\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 22
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u8BB0\u8F7D\u7684\u77E5\u8BC6\u88AB\u4F60\u8BB0\u4F4F\u5566\uFF0C\u4E0D\u53EF\u4EE5\u6559\u6211\u5417\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 23
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u6211\u6240\u5B66\u4E5F\u53EA\u5F97\u5C0F\u6210\uFF0C\u800C\u4E14\u8FD9\u79CD\u77E5\u8BC6\u53EA\u53EF\u610F\u4F1A\u4E0D\u80FD\u8A00\u4F20\uFF0C\u6B64\u4E3A\u5929\u673A\u4E0D\u53EF\u6CC4\u9732\u3002\u53EA\u80FD\u7528\u7279\u6B8A\u7684\u4E1C\u897F\u8BB0\u8F7D\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 24
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u90A3\u4E1C\u897F\u662F\u4EC0\u4E48\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 25
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u6B64\u7269\u4E3A\u7B97\u7ECF\uFF0C\u540D\u300A\u5468\u9AC0\u7B97\u7ECF\u300B\uFF0C\u4E0D\u662F\u5E02\u9762\u6D41\u4F20\u7248\uFF0C\u800C\u662F\u6211\u5BB6\u5148\u7956\u7531\u8FD9\u672C\u7ECF\u4E66\u5F97\u5230\u542F\u53D1\uFF0C\u7528\u73CD\u8D35\u7684\u6750\u6599\u5199\u4E0B\u7684\u79D8\u672C\uFF0C\u91CC\u9762\u4E0D\u4EC5\u8BB0\u8F7D\u4E86\u901A\u5929\u4E4B\u672F\uFF0C\u8FD8\u80FD\u5343\u5E74\u4E0D\u673D\u3002\u636E\u8BF4\u8FD9\u672C\u7ECF\u4E66\u8FD8\u6709\u83AB\u6D4B\u4E4B\u80FD\uFF0C\u636E\u8BF4\u5B66\u5230\u5927\u6210\u4E4B\u540E\uFF0C\u53EF\u4EE5\u51ED\u6B64\u7269\u7A7F\u68AD\u65F6\u5149\uFF0C\u884C\u8D70\u4E0E\u5149\u9634\u4E4B\u5916\uFF0C\u505A\u5230\u771F\u6B63\u7684\u900D\u9065\u4ED9\uFF0C\u53EF\u60DC\u6211\u4E5F\u53EA\u662F\u5C0F\u6210\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 26
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u8FD9\u4E48\u5389\u5BB3\uFF0C\u90A3\u7ECF\u4E66\u5462\uFF1F\u4E0D\u80FD\u7ED9\u6211\u770B\u770B\u5417\uFF0C\u8BF4\u4E0D\u5B9A\u6211\u5929\u8D4B\u5F02\u7980\uFF0C\u5B66\u7684\u5F88\u5FEB\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u6211\u7684\u5B9D\u8D1D\u90FD\u88AB\u4E00\u4E2A\u4E0D\u8BB2\u6B66\u5FB7\u7684\u91D1\u53D1\u58EE\u5E74\u5077\u88AD\u6D17\u52AB\u8D70\u5566\uFF0C\u6211\u6000\u7591\u4ED6\u5C31\u662F\u4E3A\u4E86\u6211\u8FD9\u5B9D\u8D1D\uFF0C\u624D\u4E0D\u8FDC\u4E07\u91CC\u4ECE\u5F02\u57DF\u8DD1\u6765\u3002\u6765\u9A97\uFF0C\u6765\u5077\u88AD\uFF01\u5982\u679C\u4F60\u770B\u89C1\u4E86\uFF0C\u4E00\u5B9A\u8981\u5E2E\u6211\u62A5\u4EC7\uFF0C\u593A\u56DE\u5C5E\u4E8E\u6211\u4EEC\u7684\u5B9D\u8D1D\u554A\uFF01\u8FD9\u79CD\u4E1C\u897F\u7EDD\u5BF9\u4E0D\u80FD\u843D\u5165\u5916\u4EBA\u4E4B\u624B\uFF0C\u4E0D\u7136\u5929\u4E0B\u4F1A\u66F4\u52A0\u5927\u4E71\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 27
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4EC0\u4E48\uFF1F\u4F60\u7ADF\u7136\u80FD\u770B\u900F\u6211\u662F\u6765\u81EA\u672A\u6765\uFF1F\u679C\u7136\u8FD9\u91CC\u5367\u864E\u85CF\u9F99\uFF0C\u5C0F\u5C0F\u4E5E\u4E10\u5374\u8FD9\u822C\u6167\u773C\u5982\u73E0\uFF01\u8BA9\u6211\u770B\u770B\u662F\u4EC0\u4E48\u9AD8\u4EBA\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 28
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u522B...\u522B\u8FC7\u6765\uFF0C\u6211\u4E0D\u6B62\u77E5\u9053\u4F60\u4E0D\u50CF\u672C\u5730\u4EBA\uFF0C\u6211\u8FD8\u77E5\u9053\u4F60\u4E0D\u5B89\u597D\u5FC3\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 29
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u54E6\uFF1F\u90A3\u4F60\u8BF4\u8BF4\u770B"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 30
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u4E0A\u6B21\u6709\u4E00\u4E2A\u897F\u65B9\u6765\u7684\u91D1\u6BDB\u4EBA\uFF0C\u6765\u9A97\uFF0C\u6765\u5077\u88AD\uFF0C\u4E0D\u8BB2\u6B66\u5FB7\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 31
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u54C8\u54C8\u54C8\uFF0C\u5916\u56FD\u4EBA\uFF1F\u522B\u4EBA\u8001\u8FDC\u8DD1\u5230\u8FD9\u6765\uFF0C\u5076\u7136\u78B0\u5230\u4F60\uFF0C\u8FD8\u80FD\u770B\u4E0A\u4F60\u8FD9\u7834\u4E5E\u4E10\u4E0D\u6210\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 32
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u4ED6\u53EF\u4E0D\u662F\u5076\u7136\u554A\uFF0C\u4ED6\u53EF\u662F\u6709\u5907\u800C\u6765"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 33
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u501F\u7740\u548C\u6211\u5207\u78CB\u7684\u540D\u4E49\uFF0C\u4E00\u4E2A\u5DE6\u6B63\u8E6C\uFF0C\u4E00\u4E2A\u53F3\u97AD\u817F\uFF0C\u4E00\u4E2A\u5DE6\u523A\u62F3\uFF0C\u4E00\u770B\u5C31\u8BAD\u7EC3\u6709\u7D20"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 34
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u4F46\u662F\u6211\u5168\u90E8\u9632\u51FA\u53BB\u4E86\u554A\uFF0C\u9632\u51FA\u53BB\u4EE5\u540E\u81EA\u7136\u662F\u4F20\u7EDF\u529F\u592B\u70B9\u5230\u4E3A\u6B62\uFF0C\u53F3\u62F3\u653E\u5728\u4E86\u4ED6\u9F3B\u5B50\u4E0A\u6CA1\u6253\u4ED6"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 35
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u6211\u7B11\u4E0B\u51C6\u5907\u6536\u62F3\uFF0C\u56E0\u4E3A\u8FD9\u65F6\u95F4\uFF0C\u6309\u7167\u4F20\u7EDF\u529F\u592B\u7684\u70B9\u5230\u4E3A\u6B62\u4ED6\u5DF2\u7ECF\u8F93\u4E86\uFF0C\u5982\u679C\u8FD9\u4E00\u62F3\u53D1\u529B\uFF0C\u4E00\u62F3\u5C31\u628A\u4ED6\u9F3B\u5B50\u6253\u9AA8\u6298\u4E86\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 36
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u653E\u5728\u9F3B\u5B50\u4E0A\u6CA1\u6709\u6253\u4ED6\uFF0C\u4ED6\u4E5F\u627F\u8BA4\uFF0C\u6211\u5148\u6253\u5230\u4ED6\u9762\u90E8\u3002\u6211\u6536\u62F3\u7684\u65F6\u673A\u4E0D\u6253\u4E86\uFF0C\u4ED6\u7A81\u7136\u88AD\u51FB\u5DE6\u523A\u62F3\uFF0C\u6765\u6253\u6211\u7684\u8138"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 37
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u6211\u7B11\u4E0B\u51C6\u5907\u6536\u62F3\uFF0C\u56E0\u4E3A\u8FD9\u65F6\u95F4\uFF0C\u6309\u7167\u4F20\u7EDF\u529F\u592B\u7684\u70B9\u5230\u4E3A\u6B62\u4ED6\u5DF2\u7ECF\u8F93\u4E86\uFF0C\u5982\u679C\u8FD9\u4E00\u62F3\u53D1\u529B\uFF0C\u4E00\u62F3\u5C31\u628A\u4ED6\u9F3B\u5B50\u6253\u9AA8\u6298\u4E86\u3002\u653E\u5728\u9F3B\u5B50\u4E0A\u6CA1\u6709\u6253\u4ED6\uFF0C\u4ED6\u4E5F\u627F\u8BA4\uFF0C\u6211\u5148\u6253\u5230\u4ED6\u9762\u90E8\u3002\u6211\u6536\u62F3\u7684\u65F6\u673A\u4E0D\u6253\u4E86\uFF0C\u4ED6\u7A81\u7136\u88AD\u51FB\u5DE6\u523A\u62F3\uFF0C\u6765\u6253\u6211\u7684\u8138"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 38
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u6211\u5927\u610F\u4E86\u554A\uFF0C\u6CA1\u6709\u95EA\uFF0C\u4ED6\u7684\u5DE6\u62F3\u7ED9\u6211\u6253\u5012\u5728\u5730"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 39
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u6211\u8BF4\u505C\u505C\uFF0C\u4F46\u662F\u4ED6\u4E0D\u8BB2\u6B66\u5FB7\uFF0C\u4E00\u4E2A\u731B\u864E\u638F\u5FC3\uFF0C\u6076\u864E\u6251\u98DF\uFF0C\u87B3\u8782\u6446\u817F\uFF0C\u628A\u6211\u6253\u660F\u4E86\uFF0C\u62A2\u8D70\u4E86\u6211\u5168\u90E8\u7684\u76D8\u7F20\u548C\u5168\u90E8\u7684\u5B9D\u8D1D\u3002\u8FD9\u597D\u5417\uFF1F\u8FD9\u4E0D\u597D\u5427\u3002\u6240\u4EE5\u6211\u529D\u4F60\u8FD9\u4F4D\u5E74\u8F7B\u4EBA\u8017\u5B50\u5C3E\u6C41\uFF0C\u597D\u597D\u53CD\u601D\uFF0C\u4E0D\u8981\u8FC7\u6765\uFF0C\u4E0D\u7136\u8FD9\u6B21\u522B\u602A\u6211\u771F\u51FA\u624B\u4E86\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 40
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4F60\u770B\u6211\u8FD9\u4E2A\u6837\u5B50\u50CF\u4F1A\u6B66\u529F\u7684\u4EBA\u5417\uFF1F\uFF08\u644A\u624B\uFF09"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 41
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u90A3\u6709\u8BDD\u597D\u597D\u8BF4\uFF0C\u5148\u522B\u8FC7\u6765\u641E\u5077\u88AD\uFF01\uFF01\uFF01"
+    taskData_SO: {fileID: 0}
+    options:
+    - text: "\u4E3B\u52A8\u9760\u8FD1"
+      targetID: 42
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+    - text: "\u4E56\u4E56\u542C\u8BDD"
+      targetID: 43
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+    - text: "\u5207\uFF0C\u8C01\u7A00\u7F55\uFF01"
+      targetID: 58
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 42
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u8D70\u5F00\uFF0C\u8D70\u5F00\uFF0C\u8001\u592B\u5DF2\u7ECF\u8EAB\u65E0\u5206\u6587\u5566..."
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 43
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u770B\u4F60\u5C0F\u5B50\u8FD8\u662F\u542C\u8BDD\u7684\uFF0C\u8BF4\u5427\uFF0C\u627E\u6211\u53C8\u4EC0\u4E48\u76EE\u7684\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 44
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u662F\u662F\u662F\uFF0C\u524D\u8F88\u6559\u8BAD\u7684\u662F\uFF0C\u5C0F\u7684\u627E\u60A8\u6709\u4EC0\u4E48\u4E8B\u5462\uFF0C\u5C31\u662F\u770B\u60A8\u9700\u8981\u5E2E\u52A9\uFF0C\u6765\u8FD9\u91CC\u5BF9\u60A8\u8FDB\u884C\u7CBE\u795E\u4E0A\u7684\u63F4\u52A9\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 45
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u90A3\u7269\u8D28\u4E0A\u7684\u63F4\u52A9\u5462\uFF0C\u7ED9\u6211\u591A\u6765\u70B9"
+    taskData_SO: {fileID: 0}
+    options:
+    - text: "\u5927\u529B\u63F4\u52A9"
+      targetID: 46
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+    - text: "\u7ED9\u4E00\u70B9\u70B9\u5427"
+      targetID: 50
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+    - text: "\u4E00\u5206\u4E0D\u7ED9"
+      targetID: 
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+  - Name: "\u4E01\u96EA"
+    ID: 46
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u563F\u563F\u563F\uFF0C\u8FD9\u662F\u6211\u8EAB\u4E0A\u5168\u90E8\u7684\u76D8\u7F20\u4E86\uFF0C\u8BF7\u524D\u8F88\u6536\u597D\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 47
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u8BF6\uFF0C\u4E0D\u9519\u4E0D\u9519\uFF0C\u770B\u5728\u4F60\u8FD9\u4E48\u5B5D\u656C\u7684\u4EFD\u4E0A\uFF0C\u8FD9\u4E2A\u6536\u597D\uFF0C\u6211\u6700\u540E\u4E00\u4EF6\u5B9D\u8D1D\u4E86\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 48
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u5C31\u4E00\u4E2A\u7834\u5C01\u9762\uFF0C\u8FDE\u5B57\u90FD\u6CA1\u6709\u7684\u7ECF\u4E66\u4E5F\u80FD\u53EB\u4F5C\u5B9D\u8D1D\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 49
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u5929\u673A\u4E0D\u53EF\u6CC4\u9732\uFF0C\u4EE5\u540E\u4F60\u5C31\u77E5\u9053\u5566..."
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 50
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u524D\u8F88\uFF0C\u6211\u8EAB\u4E0A\u7684\u94B1\u8D22\u4E0D\u591A\u4E86\uFF0C\u8FD9\u4E9B\u5C31\u5F53\u662F\u5B5D\u656C\u524D\u8F88\u7684\u4E86"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u4F60\u8FD9\u5C0F\u59D1\u5A18\uFF0C\u7F62\u4E86\u7F62\u4E86\uFF0C\u770B\u5728\u8FD9\u4E9B\u76D8\u7F20\u7684\u4EFD\u4E0A\uFF0C\u6211\u5C31\u544A\u8BC9\u4F60\u4E00\u4E2A\u79D8\u5BC6\uFF0C\u4F60\u8FC7\u6765..."
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 51
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4EC0\u4E48\u79D8\u5BC6\u8FD9\u4E48\u795E\u795E\u79D8\u79D8\u7684\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 52
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "(\u8033\u8BED)\u90A3\u4E2A\u79E6\u8001\u5934\uFF0C\u6700\u8FD1\u597D\u50CF\u5728\u7814\u7A76\u4EC0\u4E48\u4E0D\u5F97\u4E86\u7684\u4E1C\u897F\uFF0C\u542C\u8BF4\u4ED6\u7814\u7A76\u51FA\u6765\u4E86\u5C31\u80FD\u8D85\u8131\u4E8E\u8FD9\u7247\u65F6\u5149\u4E4B\u5916\uFF0C\u627E\u5230\u4F20\u8BF4\u4E2D\u7684\u6843\u82B1\u6E90\uFF0C\u5728\u90A3\u8EB2\u907F\u5C06\u8981\u5230\u6765\u7684\u6218\u4E71\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 53
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4F60\u600E\u4E48\u77E5\u9053\u5357\u5B8B\u6218\u4E71\u5C06\u8D77"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 54
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u8FD9\u5929\u4E0B\uFF0C\u54EA\u6709\u6211\u4E0D\u77E5\u9053\u7684\u4E8B\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 55
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u4F60\u4E0D\u5C31\u4E0D\u77E5\u9053\u4F1A\u88AB\u522B\u4EBA\u62A2\u4E86\u94B1\u5417\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 80
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u5BB3\uFF0C\u4F60\u6CA1\u53D1\u73B0\u5404\u4E2A\u5730\u65B9\u9690\u9690\u7EA6\u7EA6\u51FA\u73B0\u4E86\u5404\u79CD\u5947\u4EBA\u5F02\u672F\u5417\uFF1F\u8FD9\u4E9B\u4EBA\u5E73\u65F6\u5927\u591A\u4E0D\u663E\u9732\u4E8E\u666E\u901A\u4EBA\u524D\uFF0C\u73B0\u5728\u53EA\u8981\u4F60\u7559\u5FC3\u89C2\u5BDF\uFF0C\u5C31\u4F1A\u53D1\u73B0\u4ED6\u4EEC\u7684\u4E0D\u51E1\u3002\u6839\u636E\u6211\u7684\u7ECF\u9A8C\u554A\uFF0C\u8FD9\u79CD\u60C5\u51B5\u53EA\u4F1A\u51FA\u73B0\u5728\u4E71\u4E16\uFF0C\u4E71\u4E16\u554A\uFF0C\u50CF\u4F60\u8FD9\u6837\u5947\u602A\u7684\u4EBA\u51FA\u73B0\u4E5F\u5C31\u66F4\u5370\u8BC1\u4E86\u6211\u7684\u731C\u60F3\u5566\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 56
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u600E\u4E48\u770B\u51FA\u6765\u7684?\u6559\u6559\u6211"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u5218\u91D1\u5F6A"
+    ID: 57
+    image: {fileID: 21300000, guid: a3428e51df12fa744853be4e1097fad0, type: 3}
+    text: "\u563F\u563F\u563F\uFF0C\u8FD9\u5C31\u662F\u53E6\u5916\u7684\u4EF7\u94B1\u5566"
+    taskData_SO: {fileID: 0}
+    options:
+    - text: "\u5F97\u4E86\u4FBF\u5B9C\u8FD8\u5356\u4E56\uFF01"
+      targetID: 
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0
+  - Name: "\u4E01\u96EA"
+    ID: 58
+    image: {fileID: 21300000, guid: f146edeff6a3ec345bd50598e03d99be, type: 3}
+    text: "\u81ED\u8001\u5934\uFF0C\u8FD8\u60F3\u5751\u8499\u62D0\u9A97\u3002"
+    taskData_SO: {fileID: 0}
+    options:
+    - text: "\u5F97\u4E86\u4FBF\u5B9C\u8FD8\u5356\u4E56\uFF01"
+      targetID: 
+      gameName: 
+      getTask: 0
+      getGame: 0
+      openStore: 0

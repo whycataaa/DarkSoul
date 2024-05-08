@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e0b0f89a05dcd428732121e201d4a2, type: 3}
+  m_Name: "\u8D3E\u5BAA"
+  m_EditorClassIdentifier: 
+  dx: {fileID: 21300000, guid: 0ce595d536d05b64598d2f52df7c3365, type: 3}
+  dialoguePieces:
+  - Name: "\u8D3E\u5BAA"
+    ID: 1
+    image: {fileID: 21300000, guid: 8e0421f30c8f2f949b5ce3610631272d, type: 3}
+    text: "\u8EAB\u4EFD\u867D\u5FAE\uFF0C\u6570\u5B66\u4E3A\u9053\uFF0C\u5317\u5B8B\u624D\u60C5\uFF0C\u81EA\u8BE9\u4E3A\u9B54\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 2
+    image: {fileID: 21300000, guid: 70aef7340ec0daf45ac83709803d5c55, type: 3}
+    text: "\u53E3\u6C14\u8FD9\u4E48\u5927\uFF0C\u4F60\u662F\u8C01\uFF1F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u8D3E\u5BAA"
+    ID: 3
+    image: {fileID: 21300000, guid: 8e0421f30c8f2f949b5ce3610631272d, type: 3}
+    text: "\u543E\u4E43\u8D3E\u5BAA\u662F\u4E5F"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 4
+    image: {fileID: 21300000, guid: 70aef7340ec0daf45ac83709803d5c55, type: 3}
+    text: "\u8D3E\u5BAA\u4E0D\u662F\u5DF2\u7ECF\u53BB\u4E16100\u591A\u5E74\u5417\uFF1F\u6BCF\u6B21\u90FD\u662F\u63D0\u8D77\u6768\u8F89\u624D\u8BB0\u8D77\u4F60\uFF0C\u660E\u660E\u662F\u4ED6\u5F15\u7528\u4F60\u7684\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u8D3E\u5BAA"
+    ID: 5
+    image: {fileID: 21300000, guid: 8e0421f30c8f2f949b5ce3610631272d, type: 3}
+    text: "\u5386\u53F2\u662F\u7ED9\u540E\u4EBA\u4E66\u5199\u7684\uFF0C\u80FD\u63A8\u52A8\u6587\u660E\u8FDB\u6B65\u4FBF\u8DB3\u4EE5\uFF0C\u4E0D\u6127\u4E8E\u5FC3\uFF0C\u4F55\u5FC5\u5982\u6B64\u5728\u610F\u4ED6\u4EBA\u773C\u5149\uFF0C\u8FD9\u6837\u53EA\u4F1A\u6D3B\u5728\u522B\u4EBA\u7684\u4E16\u754C\uFF0C\u505A\u4E0D\u4E86\u771F\u6B63\u7684\u81EA\u5DF1"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 6
+    image: {fileID: 21300000, guid: 70aef7340ec0daf45ac83709803d5c55, type: 3}
+    text: "\u5148\u751F\u5927\u4E49\u4E5F\u3002"
+    taskData_SO: {fileID: 0}
+    options: []

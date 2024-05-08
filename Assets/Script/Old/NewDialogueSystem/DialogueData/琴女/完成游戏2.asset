@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e0b0f89a05dcd428732121e201d4a2, type: 3}
+  m_Name: "\u5B8C\u6210\u6E38\u620F2"
+  m_EditorClassIdentifier: 
+  dx: {fileID: 0}
+  dialoguePieces:
+  - Name: "\u516C\u5B59\u4EEA"
+    ID: 1
+    image: {fileID: 21300000, guid: 53be50a2440858f4287074b368a34d7e, type: 3}
+    text: "\u59B9\u59B9\u679C\u7136\u4E86\u5F97\uFF0C\u90A3\u6211\u4FBF\u544A\u8BC9\u4F60\u5427\u3002\u6B64\u5904\u5411\u4E1C18\u91CC\u8DEF\uFF0C\u9014\u5F84\u843D\u751F\u5C71\u8109\uFF0C\u5728\u5C71\u8170\u5904\u53EF\u89C1\u7384\u7075\u6EAA\uFF0C\u6E21\u6CB3\u800C\u8FC73\u91CC\u8DEF\u4FBF\u53EF\u8FBE\u53F0\u5DDE\u5E9C\uFF0C\u5148\u751F\u4FBF\u662F\u5728\u90A3..."
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 2
+    image: {fileID: 21300000, guid: 049256db0282b7848ba6ad646b10856a, type: 3}
+    text: "\u597D\u7684\u59D0\u59D0\uFF0C\u6211\u8FD9\u4FBF\u53BB\u5BFB..."
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u516C\u5B59\u4EEA"
+    ID: 3
+    image: {fileID: 21300000, guid: 53be50a2440858f4287074b368a34d7e, type: 3}
+    text: "\u7B49\u7B49\uFF0C\u843D\u751F\u5C71\u8109\u5730\u5F62\u590D\u6742\uFF0C\u751F\u4EBA\u4E0D\u719F\u8DEF\uFF0C\u6781\u6613\u78B0\u89C1\u5C71\u4E2D\u6076\u517D\uFF0C\u4F60\u6211\u7686\u4E3A\u5973\u5B50\uFF0C\u60F3\u7A7F\u8D8A\u5219\u56F0\u96BE\u91CD\u91CD\uFF0C\u4F60\u82E5\u662F\u4E00\u5B9A\u8981\u524D\u5F80\uFF0C\u53EF\u7B491\u4E2A\u6708\u540E\u5546\u961F\u8DEF\u8FC7\u9001\u4F60\u4E00\u7A0B\uFF0C\u8FD9\u6837\u5371\u9669\u4FBF\u4F1A\u5C0F\u5F88\u591A\u3002\r"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 4
+    image: {fileID: 21300000, guid: 049256db0282b7848ba6ad646b10856a, type: 3}
+    text: "\u4E0D\u884C\uFF0C\u7B49\u5230\u90A3\u4E2A\u65F6\u5019\uFF0C\u6307\u4E0D\u5B9A\u6211\u5BB6\u91CC\u4EBA\u6025\u75AF\u62A5\u8B66\u4E86\uFF0C\u8C01\u4F1A\u67E5\u51FA\u6765\u6211\u7ADF\u7136\u7A7F\u8D8A\u4E86\uFF1F\r"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u516C\u5B59\u4EEA"
+    ID: 5
+    image: {fileID: 21300000, guid: 53be50a2440858f4287074b368a34d7e, type: 3}
+    text: "\u90A3\u4F60\u53EA\u80FD\u53BB\u5BFB\u6C42\u6B66\u529B\u9AD8\u5F3A\u7684\u4FA0\u5BA2\u5E2E\u52A9\uFF0C\u6211\u4EEC\u6751\u8FD1\u671F\u4FBF\u51FA\u73B0\u4E86\u4E00\u4F4D\uFF0C\u6B66\u529B\u4E3E\u4E16\u65E0\u53CC\uFF0C\u4F46\u662F\u6027\u683C\u53E4\u602A\uFF0C\u4E0D\u662F\u968F\u968F\u4FBF\u4FBF\u5C31\u4F1A\u51FA\u624B\uFF0C\u4F60\u8981\u591A\u8D5E\u7F8E\u8D5E\u7F8E\u4ED6\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u4E01\u96EA"
+    ID: 6
+    image: {fileID: 21300000, guid: 049256db0282b7848ba6ad646b10856a, type: 3}
+    text: "\u8C22\u8C22\u59D0\u59D0\uFF0C\u6211\u8D70\u5566\u3002"
+    taskData_SO: {fileID: 0}
+    options: []
+  - Name: "\u516C\u5B59\u4EEA"
+    ID: 7
+    image: {fileID: 21300000, guid: 53be50a2440858f4287074b368a34d7e, type: 3}
+    text: "\u8981\u662F\u9047\u4E0A\u56F0\u96BE\uFF0C\u53EF\u4EE5\u968F\u65F6\u56DE\u6765\u3002"
+    taskData_SO: {fileID: 11400000, guid: d5c4ad285c79ecc46a5157b6f09b1e78, type: 2}
+    options:
+    - text: "\u83AB\u9053\u79CB\u6C5F\u79BB\u522B\u96BE\uFF0C\u821F\u8239\u660E\u65E5\u662F\u957F\u5B89\u3002\u518D\u89C1\uFF01"
+      targetID: 
+      gameName: 
+      getTask: 1
+      getGame: 0
+      openStore: 0
