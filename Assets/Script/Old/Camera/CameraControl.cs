@@ -16,7 +16,7 @@ public class CameraControl : Singleton<CameraControl>
     public Button closeBoook_Bt;
     public CinemachineVirtualCamera V_cameraMain;
    // public CinemachineVirtualCamera V_cameraBook;
-    public CinemachineVirtualCamera V_cameraGame;
+    //public CinemachineVirtualCamera V_cameraGame;
     public CinemachineVirtualCamera V_cameraTalk;
 
     protected override void Awake()
@@ -25,7 +25,7 @@ public class CameraControl : Singleton<CameraControl>
         camer2D.SetActive(false);
         //   V_cameraBook.enabled = false;
         V_cameraTalk.enabled = false;
-        V_cameraGame.enabled = false;
+       // V_cameraGame.enabled = false;
     }
     public void Start2DScene()
     {

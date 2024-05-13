@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 /// <summary>
 ///背包控制界面
@@ -52,6 +54,9 @@ public class Panel_BagView : Singleton<Panel_BagView>
         bt_b.onClick.AddListener(()=>SetObjectToActive(bagBG_b,bagBG_a,bagBG_c));
         bt_c.onClick.AddListener(()=>SetObjectToActive(bagBG_c,bagBG_a,bagBG_b));
     }
+
+
+
 
     private void SetObjectToActive(GameObject gameObject)
     {
