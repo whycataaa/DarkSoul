@@ -11,13 +11,12 @@ namespace PolygonProject
     /// </summary>
     public class EquipPanel : BasePanel
     {
-
-        public WeaponManager weaponManager;
+        EquipPanelManager equipPanelManager;
         static readonly string path="AssetPackage/GUI/Panel_Equip";
 
-        public EquipPanel():base(new UIType(path))
+        public EquipPanel(EquipPanelManager _equipPanelManager):base(new UIType(path))
         {
-
+            equipPanelManager=_equipPanelManager;
         }
 
         /// <summary>
@@ -35,60 +34,40 @@ namespace PolygonProject
             image_R=UITool.Instance.GetORAddComponentInChildren<Image>("Image_R");
             image_T=UITool.Instance.GetORAddComponentInChildren<Image>("Image_T");
             image_D=UITool.Instance.GetORAddComponentInChildren<Image>("Image_D");
-
-            if(weaponManager.weaponsL.Count>0)
-            {
-                image_L.sprite=weaponManager.GetWeaponDic()[weaponManager.weaponsL[0]].sprite;
-            }
-            if(weaponManager.weaponsR.Count>0)
-            {
-                image_R.sprite=weaponManager.GetWeaponDic()[weaponManager.weaponsR[0]].sprite;
-            }
-
-
         }
 
 
-        public void SwitchLWeapon()
+        public void RefreshUI()
         {
-            //攻击次数重置
-            weaponManager.AttackTimes=1;
-            if(weaponManager.weaponsL.Count>0)
+            if(equipPanelManager.GetWeapons(true)[equipPanelManager
+                                            .GetCurrentWeaponIndex(true)]==-1)
             {
-                //索引加1
-                weaponManager.currentWeaponIndexL++;
-                if(weaponManager.currentWeaponIndexL>=weaponManager.weaponsL.Count)
-                {
-                    weaponManager.currentWeaponIndexL=0;
-                }
-
-                weaponManager.EquipWeapon(weaponManager.currentWeaponIndexL,true);
-
-
-                image_L.sprite=weaponManager.GetWeaponDic()[weaponManager.weaponsL[weaponManager.currentWeaponIndexL]].sprite;
-                weaponManager.SetCurrentWeapon(weaponManager.currentWeaponIndexL,true);
+                image_L.gameObject.SetActive(false);
             }
-        }
-
-        public void SwitchRWeapon()
-        {
-            weaponManager.AttackTimes=1;
-            if(weaponManager.weaponsR.Count>0)
+            else
             {
-                //索引加1
-                weaponManager.currentWeaponIndexR++;
-                if(weaponManager.currentWeaponIndexR>=weaponManager.weaponsR.Count)
-                {
-                    weaponManager.currentWeaponIndexR=0;
-                }
-
-                weaponManager.EquipWeapon(weaponManager.currentWeaponIndexR,false);
-
-                image_R.sprite=weaponManager.GetWeaponDic()[weaponManager.weaponsR[weaponManager.currentWeaponIndexR]].sprite;
-                weaponManager.SetCurrentWeapon(weaponManager.currentWeaponIndexR,false);
+                image_L.sprite=equipPanelManager.GetWeaponDic()[equipPanelManager
+                                            .GetWeapons(true)[equipPanelManager
+                                            .GetCurrentWeaponIndex(true)]]
+                                            .sprite;
+                image_L.gameObject.SetActive(true);
             }
-
+            
+            if(equipPanelManager.GetWeapons(false)[equipPanelManager
+                                            .GetCurrentWeaponIndex(false)]==-1)
+            {
+                image_R.gameObject.SetActive(false);
+            }
+            else
+            {
+                image_R.sprite=equipPanelManager.GetWeaponDic()[equipPanelManager
+                                                .GetWeapons(false)[equipPanelManager
+                                                .GetCurrentWeaponIndex(false)]]
+                                                .sprite;
+                image_R.gameObject.SetActive(true);
+            }
         }
 
     }
+
 }

@@ -48,7 +48,7 @@ namespace PolygonProject
             UIManager.Instance.GetAndShowUI(nextPanel.UIType);
 
             nextPanel.OnEnter();
-            Debug.Log(panelStack.Peek()+"入栈");
+            //Debug.Log(panelStack.Peek()+"入栈");
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace PolygonProject
         /// </summary>
         public void PanelPop()
         {
-            Debug.Log(panelStack.Peek()+"出栈");
+            //Debug.Log(panelStack.Peek()+"出栈");
             if(panelStack.Count>0)
             {
                 panelStack.Peek().OnExit();
@@ -64,7 +64,7 @@ namespace PolygonProject
             }
             if(panelStack.Count>0)
             {
-                Debug.Log(panelStack.Peek()+"继续");
+                //Debug.Log(panelStack.Peek()+"继续");
                 panelStack.Peek().OnResume();
             }
 

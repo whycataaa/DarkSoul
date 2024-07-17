@@ -15,10 +15,10 @@ namespace PolygonProject
             GetStateStartTime();
             playerControl.SetZeroVelocity();
             AttackAnim();
-            playerControl.playerWeaponManager.AttackTimes++;
-            if(playerControl.playerWeaponManager.AttackTimes>playerControl.playerWeaponManager.GetCurrentWeaponMaxAttackTimes(true))
+            playerControl.playerWeaponManager.AttackTimesL++;
+            if(playerControl.playerWeaponManager.AttackTimesL>playerControl.playerWeaponManager.GetCurrentWeaponMaxAttackTimes(true))
             {
-                playerControl.playerWeaponManager.AttackTimes=1;
+                playerControl.playerWeaponManager.AttackTimesL=1;
             }
         }
 
@@ -47,12 +47,12 @@ namespace PolygonProject
             Weapon currentWeapon=playerControl.playerWeaponManager.GetCurrentWeapon(true);
             if(currentWeapon!=null)
             {
-                Debug.Log(currentWeapon.id+"AttackL"+playerControl.playerWeaponManager.AttackTimes);
-                animator.CrossFade(currentWeapon.id+"AttackL"+playerControl.playerWeaponManager.AttackTimes,0.1f);
+                Debug.Log(currentWeapon.id+"AttackL"+playerControl.playerWeaponManager.AttackTimesL);
+                animator.CrossFade(currentWeapon.id+"AttackL"+playerControl.playerWeaponManager.AttackTimesL,0.1f);
             }
             else
             {
-                animator.CrossFade("Hand"+playerControl.playerWeaponManager.AttackTimes,0.1f);
+                animator.CrossFade("Hand"+playerControl.playerWeaponManager.AttackTimesL,0.1f);
                 Debug.Log("未装备武器");
             }
 

@@ -36,6 +36,7 @@ namespace PolygonProject
     public static class EventName
     {
         public const string EquipWeapon = "EquipWeapon";
+        public const string UnEquipWeapon = "UnEquipWeapon";
         public const string UseItem = "UseItem";
 
     }
