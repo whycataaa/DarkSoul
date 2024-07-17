@@ -53,6 +53,10 @@
     },
     "dotnet.defaultSolution": "DarkSoul.sln",
     "cSpell.words": [
-        "Hashs"
+        "Cinemachine",
+        "Dont",
+        "Hashs",
+        "Rigidbody",
+        "strs"
     ]
 }

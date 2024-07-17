@@ -1,0 +1,207 @@
+ManifestFileVersion: 0
+CRC: 3950349601
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0d049c35a89231e345ca922a97cab8de
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 86e91511b24cb7ef690bd804a16e3592
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0d049c35a89231e345ca922a97cab8de
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d238e6de5056124facb70bbf2c4d1be, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 61a95d05878b2e547b6ec42b7318f017, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0f64372449d70d642869d4026c065506, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 944f88a4fba816a4188c240ce18c6f9e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 12cc6c0d496cb84498b04bd7d72c03ec, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3fba5e185c877e343bdc8575b1002132, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 755890b7f26b8ae4f80429991486444b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7734331a4dc639646bab1ed2006100c3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4fa4a69174d660048b3e2ec5ac60933a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fc5b10ba4e91ac14796b960bb65251dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 578c932733819dd48b5ef0a97257290b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 54d459a5240a1c344a446a2d1975940c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f2b68b2c7953ebb479b78627f19a6ccb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7e6c4e60250e1024c88626ecec8407a1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cb08a859a94622b408f004b200358ae0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d24af544886625a41b849324dc3941b7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3d2472a3a976f7149b91ebab9b8a7316, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: aec5e5c93e04548488d9ca3c5d10c6ec, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 737bc3ce6a9bc6b4aa6484c70f364dec, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 329429c4ce3512449a2f47b8d34c1f04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bd6b99ce60756c447b24fb880514ec9b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7e3831b0f76f0224a8d6d8e435520218, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4a12e7c3bf8b3b047a2f16c37c6d2ac8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: da3eede050226f247bfa098affdfd0e2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2aa7501fd8fdee14ebb7b109891b2d17, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e6f5338a96461264fb9a1132c8509672, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9ac9a45963b2b784a8dc75a70239faad, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2555af9dee3986a47b98bf230a3510cc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73d791651f9538541b39e31f125a02ae, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 11a8a532034f3ec45855162f4948e529, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 75f5da4a663c8794e8054c3679e40060, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9c0e7e499ff69de4c82f122a88c7b935, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 443c9f2903f6fe044ab64b726eaf37c6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c48204ac3889c434baa5e5cdbfd12ac0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bdbd3ce05f5b45942b56ede5c9b38364, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 134
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: BehaviorDesigner.Runtime
+  ClassName: BehaviorDesigner.Runtime.BehaviorSource
+- AssemblyName: BehaviorDesigner.Runtime
+  ClassName: BehaviorDesigner.Runtime.FieldSerializationData
+- AssemblyName: BehaviorDesigner.Runtime
+  ClassName: BehaviorDesigner.Runtime.TaskSerializationData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.AngleConstraint/LimitSerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.AngleConstraint/RestorationSerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.CheckSliderSerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.ClothDebugSettings
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.ClothSerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.ClothSerializeData2
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.ColliderCollisionConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.CullingSettings
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.CurveSerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.CustomSkinningSettings
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.DistanceConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.GizmoSerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.InertiaConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.MotionConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.NormalAlignmentSettings
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.PreBuildSerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.ReductionSettings
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.ResultCode
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.SelectionData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.SelfCollisionConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.SpringConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.TetherConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.TransformData/UniqueSerializationData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.TriangleBendingConstraint/SerializeData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.UniquePreBuildData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.VertexAttribute
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.VirtualMesh/UniqueSerializationData
+- AssemblyName: MagicaClothV2
+  ClassName: MagicaCloth2.WindSettings
+- AssemblyName: Unity.Mathematics
+  ClassName: Unity.Mathematics.float3
+Assets:
+- Assets/Prefabs/PlayerControl.prefab
+- Assets/Prefabs/Enemy/ReaperControl.prefab
+Dependencies: []

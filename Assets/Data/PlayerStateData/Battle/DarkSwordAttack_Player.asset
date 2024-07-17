@@ -14,9 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateName: 
   transDuration: 0
+  force:
+  - 2
+  - 2
+  - 2
+  - 2.5
   stateNames:
   - DarkSwordAttack1
   - DarkSwordAttack2
   - DarkSwordAttack3
   - DarkSwordAttack4
   stateHashs: 0988af59b3d9a6c025e9a1b7867cc529
+  Stamina:
+  - 10
+  - 10
+  - 10
+  - 15
