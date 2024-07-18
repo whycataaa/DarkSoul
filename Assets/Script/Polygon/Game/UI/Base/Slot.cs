@@ -94,6 +94,10 @@ namespace PolygonProject
             {
                 ChosePanel.Instance.ChoseItemID=this.bagItemID;
                 UIManager.Instance.DisShowUI(ShowItemPanel.Instance.UIType);
+                if(PanelManager.Instance.GetPanelStack().Peek()==ChosePanel.Instance)
+                {
+                    PanelManager.Instance.PanelPop();
+                }
                 PanelManager.Instance.PanelPush(ChosePanel.Instance);
                 UIManager.Instance.UIDic[ChosePanel.Instance.UIType].transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
             }

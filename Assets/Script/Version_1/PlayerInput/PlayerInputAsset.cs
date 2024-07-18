@@ -161,6 +161,24 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchUpItem"",
+                    ""type"": ""Button"",
+                    ""id"": ""d959c0bf-cbf4-470d-a527-6dc683a4f2ce"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SwitchDownItem"",
+                    ""type"": ""Button"",
+                    ""id"": ""67a97abc-6fc5-4ec1-9567-ffc5cb642dde"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -526,6 +544,28 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
                     ""action"": ""SwitchRWeapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6990116f-e7ed-4920-b048-37d52a579493"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchUpItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7e541d77-71e3-48a7-a3d7-f4a78f84ac06"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchDownItem"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -610,6 +650,8 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
         m_GamePlay_Bag = m_GamePlay.FindAction("Bag", throwIfNotFound: true);
         m_GamePlay_SwitchLWeapon = m_GamePlay.FindAction("SwitchLWeapon", throwIfNotFound: true);
         m_GamePlay_SwitchRWeapon = m_GamePlay.FindAction("SwitchRWeapon", throwIfNotFound: true);
+        m_GamePlay_SwitchUpItem = m_GamePlay.FindAction("SwitchUpItem", throwIfNotFound: true);
+        m_GamePlay_SwitchDownItem = m_GamePlay.FindAction("SwitchDownItem", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
@@ -689,6 +731,8 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
     private readonly InputAction m_GamePlay_Bag;
     private readonly InputAction m_GamePlay_SwitchLWeapon;
     private readonly InputAction m_GamePlay_SwitchRWeapon;
+    private readonly InputAction m_GamePlay_SwitchUpItem;
+    private readonly InputAction m_GamePlay_SwitchDownItem;
     public struct GamePlayActions
     {
         private @PlayerInputAsset m_Wrapper;
@@ -708,6 +752,8 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
         public InputAction @Bag => m_Wrapper.m_GamePlay_Bag;
         public InputAction @SwitchLWeapon => m_Wrapper.m_GamePlay_SwitchLWeapon;
         public InputAction @SwitchRWeapon => m_Wrapper.m_GamePlay_SwitchRWeapon;
+        public InputAction @SwitchUpItem => m_Wrapper.m_GamePlay_SwitchUpItem;
+        public InputAction @SwitchDownItem => m_Wrapper.m_GamePlay_SwitchDownItem;
         public InputActionMap Get() { return m_Wrapper.m_GamePlay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -762,6 +808,12 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
             @SwitchRWeapon.started += instance.OnSwitchRWeapon;
             @SwitchRWeapon.performed += instance.OnSwitchRWeapon;
             @SwitchRWeapon.canceled += instance.OnSwitchRWeapon;
+            @SwitchUpItem.started += instance.OnSwitchUpItem;
+            @SwitchUpItem.performed += instance.OnSwitchUpItem;
+            @SwitchUpItem.canceled += instance.OnSwitchUpItem;
+            @SwitchDownItem.started += instance.OnSwitchDownItem;
+            @SwitchDownItem.performed += instance.OnSwitchDownItem;
+            @SwitchDownItem.canceled += instance.OnSwitchDownItem;
         }
 
         private void UnregisterCallbacks(IGamePlayActions instance)
@@ -811,6 +863,12 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
             @SwitchRWeapon.started -= instance.OnSwitchRWeapon;
             @SwitchRWeapon.performed -= instance.OnSwitchRWeapon;
             @SwitchRWeapon.canceled -= instance.OnSwitchRWeapon;
+            @SwitchUpItem.started -= instance.OnSwitchUpItem;
+            @SwitchUpItem.performed -= instance.OnSwitchUpItem;
+            @SwitchUpItem.canceled -= instance.OnSwitchUpItem;
+            @SwitchDownItem.started -= instance.OnSwitchDownItem;
+            @SwitchDownItem.performed -= instance.OnSwitchDownItem;
+            @SwitchDownItem.canceled -= instance.OnSwitchDownItem;
         }
 
         public void RemoveCallbacks(IGamePlayActions instance)
@@ -909,6 +967,8 @@ public partial class @PlayerInputAsset: IInputActionCollection2, IDisposable
         void OnBag(InputAction.CallbackContext context);
         void OnSwitchLWeapon(InputAction.CallbackContext context);
         void OnSwitchRWeapon(InputAction.CallbackContext context);
+        void OnSwitchUpItem(InputAction.CallbackContext context);
+        void OnSwitchDownItem(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

@@ -83,8 +83,10 @@ namespace PolygonProject
             weaponManager.player=player;
             weaponManager.bagData=bagPanelManager.GetBagData();
             weaponManager.Init();
+
             playerControl.playerWeaponManager=weaponManager;
             equipPanelManager.weaponManager=weaponManager;
+            equipPanelManager.bagPanelManager=bagPanelManager;
             // PlayerData playerData=new PlayerData();
             // playerData.Load();
             #endregion

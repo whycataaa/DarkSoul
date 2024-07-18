@@ -32,6 +32,8 @@ namespace PolygonProject
 
         public bool IsSwitchLWeapon=>inputActions.GamePlay.SwitchLWeapon.WasPressedThisFrame();
         public bool IsSwitchRWeapon=>inputActions.GamePlay.SwitchRWeapon.WasPressedThisFrame();
+        public bool IsSwitchUpItem=>inputActions.GamePlay.SwitchUpItem.WasPressedThisFrame();
+        public bool IsSwitchDownItem=>inputActions.GamePlay.SwitchDownItem.WasPressedThisFrame();
         #endregion
         #region UI
         public bool IsShowCursor;

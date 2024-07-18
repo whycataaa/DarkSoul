@@ -1,11 +1,6 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Data.Common;
-using BehaviorDesigner.Runtime.Tasks.Unity.UnityPlayerPrefs;
-using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.Animations;
 using UnityEngine.UI;
 
 namespace PolygonProject
@@ -27,21 +22,19 @@ namespace PolygonProject
         //当前持武器状态
         private HandState CurrentHandState;
         //当前武器序号
-        private int currentWeaponIndexL=0;
-        private int currentWeaponIndexR=0;
-        //最大武器数量
-        private int maxWeaponCountL=4;
-        private int maxWeaponCountR=4;
+        private int currentWeaponIndexL=>DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Left);
+        private int currentWeaponIndexR=>DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Right);
+
         //当前装备的武器
         private int currentWeaponLID=>weaponsL[currentWeaponIndexL];
         private int currentWeaponRID=>weaponsR[currentWeaponIndexR];
-
+        private int maxWeaponCountL=>DataBoard.Instance.BagData.DefaultLCount;
+        private int maxWeaponCountR=>DataBoard.Instance.BagData.DefaultRCount;
         //左手可装备的武器
-        private int[] weaponsL;
+        private int[] weaponsL=>DataBoard.Instance.BagData.GetEquippedItems(EDerection.Left);
         //右手可装备的武器
-        private int[] weaponsR;
-        //存储武器默认的旋转
-        private Dictionary<int,Vector3> WeaponDefaultRotation;
+        private int[] weaponsR=>DataBoard.Instance.BagData.GetEquippedItems(EDerection.Right);
+
 
         //绑定武器的位置
         Transform weaponTransL;
@@ -69,18 +62,7 @@ namespace PolygonProject
             button.gameObject.SetActive(false);
             button2.gameObject.SetActive(false);
             Debug.Log(Application.persistentDataPath);
-            maxWeaponCountL=4;
-            maxWeaponCountR=4;
-            weaponsL=new int[maxWeaponCountL];
-            weaponsR=new int[maxWeaponCountR];
-            for(int i=0;i<maxWeaponCountL;i++)
-            {
-                weaponsL[i]=-1;
-            }
-            for(int i=0;i<maxWeaponCountR;i++)
-            {
-                weaponsR[i]=-1;
-            }
+
             weaponDic=new Dictionary<int, Weapon>();
 
             //读取武器表，加载数据
@@ -230,11 +212,7 @@ namespace PolygonProject
         /// </summary>
         public void SwitchLWeapon()
         {
-            currentWeaponIndexL++;
-            if(currentWeaponIndexL>=maxWeaponCountL)
-            {
-                currentWeaponIndexL=0;
-            }
+            DataBoard.Instance.BagData.SwitchLeftItemData();
         }
 
         /// <summary>
@@ -242,11 +220,7 @@ namespace PolygonProject
         /// </summary>
         public void SwitchRWeapon()
         {
-            currentWeaponIndexR++;
-            if(currentWeaponIndexR>=maxWeaponCountR)
-            {
-                currentWeaponIndexR=0;
-            }
+            DataBoard.Instance.BagData.SwitchRightItemData();
         }
 
 
@@ -268,51 +242,10 @@ namespace PolygonProject
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void AddWeapon(int ID,HandState handState)
+        public void AddWeapon(int ID,EDerection EDerection)
         {
             Debug.Log($"已添加{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.name}");
-            switch(handState)
-            {
-                case HandState.LeftHand:
-                   for(int i=0;i<weaponsL.Length;i++)
-                   {
-                        if(weaponsL[i]==-1)
-                        {
-                            weaponsL[i]=ID;
-                            break;
-                        }
-                   }
-                    break;
-                case HandState.RightHand:
-                    for(int i=0;i<weaponsR.Length;i++)
-                    {
-                        if(weaponsR[i]==-1)
-                        {
-                            weaponsR[i]=ID;
-                            break;
-                        }
-                    }
-                    break;
-                case HandState.TwoHands:
-                    for(int i=0;i<weaponsL.Length;i++)
-                    {
-                        if(weaponsL[i]==-1)
-                        {
-                            weaponsL[i]=ID;
-                            break;
-                        }
-                    }
-                    for(int i=0;i<weaponsR.Length;i++)
-                    {
-                        if(weaponsR[i]==-1)
-                        {
-                            weaponsR[i]=ID;
-                            break;
-                        }
-                    }
-                    break;
-            }
-
+            DataBoard.Instance.BagData.AddEquipItem(ID,EDerection);
         }
 
         /// <summary>
@@ -321,25 +254,12 @@ namespace PolygonProject
         /// <param name="ID"></param>
         public void RemoveWeapon(int ID)
         {
-
             Debug.Log($"已移除{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.name}");
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Left);
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Right);
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Up);
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Down);
 
-            for(int i=0;i<weaponsL.Length;i++)
-            {
-                if(weaponsL[i]==ID)
-                {
-                    weaponsL[i]=-1;
-                    break;
-                }
-            }
-            for(int i=0;i<weaponsR.Length;i++)
-            {
-                if(weaponsR[i]==ID)
-                {
-                    weaponsR[i]=-1;
-                    break;
-                }
-            }
         }
 
         /// <summary>
@@ -445,6 +365,10 @@ namespace PolygonProject
             return IsLeft?weaponsL:weaponsR;
         }
 
+        /// <summary>
+        /// 重置某一边武器攻击次数
+        /// </summary>
+        /// <param name="IsLeft"></param>
         public void ReSetAttackTimes(bool IsLeft)
         {
             if(IsLeft)
@@ -457,6 +381,9 @@ namespace PolygonProject
             }
 
         }
+        /// <summary>
+        /// 重置武器攻击次数(左右都重置)
+        /// </summary>
         public void ReSetAttackTimes()
         {
             AttackTimesL=1;

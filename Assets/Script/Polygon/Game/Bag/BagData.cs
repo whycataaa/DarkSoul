@@ -11,7 +11,24 @@ namespace PolygonProject
     /// </summary>
     public class BagData
     {
+        public int DefaultLCount=4;
+        public int DefaultRCount=4;
+        public int DefaultTCount=4;
+        public int DefaultDCount=4;
 
+        int[] EquipItemsT;
+        int[] EquipItemsD;
+        int[] EquipItemsL;
+        int[] EquipItemsR;
+        int CurrentIndexT=0;
+        int CurrentIndexD=0;
+        int CurrentIndexL=0;
+        int CurrentIndexR=0;
+
+        int currentItemUp=>EquipItemsT[CurrentIndexT];
+        int currentItemDown=>EquipItemsD[CurrentIndexD];
+        int currentItemLeft=>EquipItemsL[CurrentIndexL];
+        int currentItemRight=>EquipItemsR[CurrentIndexR];
         BagPanelManager bagPanelManager;
         public BagData(BagPanelManager _bagPanelManager)
         {
@@ -26,6 +43,26 @@ namespace PolygonProject
         Dictionary<int,BagItem> BagItemDic;
         public void Init()
         {
+            EquipItemsT = new int[DefaultTCount];
+            EquipItemsD = new int[DefaultDCount];
+            EquipItemsL = new int[DefaultLCount];
+            EquipItemsR = new int[DefaultRCount];
+            for(int i = 0; i < DefaultTCount; i++)
+            {
+                EquipItemsT[i] = -1;
+            }
+            for (int i = 0; i < DefaultDCount; i++)
+            {
+                EquipItemsD[i] = -1;
+            }
+            for (int i = 0; i < DefaultLCount; i++)
+            {
+                EquipItemsL[i] = -1;
+            }
+            for (int i = 0; i < DefaultRCount; i++)
+            {
+                EquipItemsR[i] = -1;
+            }
             LoadDataFromCSV();
         }
 
@@ -49,6 +86,7 @@ namespace PolygonProject
                             break;
                         case 1:
                             item.itemType = (ItemType)int.Parse(itemDt.Rows[i][j].ToString());
+                            Debug.Log(item.itemType);
                             break;
                         case 2:
                             item.name = itemDt.Rows[i][j].ToString();
@@ -96,7 +134,6 @@ namespace PolygonProject
         {
             return bagItems;
         }
-
         public Dictionary<int,BagItem> GetBagItemDic()
         {
             return BagItemDic;
@@ -176,6 +213,171 @@ namespace PolygonProject
             return null;
         }
 
+        public int[] GetEquippedItems(EDerection _EDerection)
+        {
+            switch(_EDerection)
+            {
+                case EDerection.Up:
+                    return EquipItemsT;
+                case EDerection.Down:
+                    return EquipItemsD;
+                case EDerection.Left:
+                    return EquipItemsL;
+                case EDerection.Right:
+                    return EquipItemsR;
+                default :
+                    return null;
+            }
+        }
+
+        public int GetCurrentIndex(EDerection _EDerection)
+        {
+            switch(_EDerection)
+            {
+                case EDerection.Up:
+                    return CurrentIndexT;
+                case EDerection.Down:
+                    return CurrentIndexD;
+                case EDerection.Left:
+                    return CurrentIndexL;
+                case EDerection.Right:
+                    return CurrentIndexR;
+                default :
+                    return -1;
+            }
+        }
+
+        //增加物品栏物品
+        public void AddEquipItem(int _itemID,EDerection _EDerection)
+        {
+            switch(_EDerection)
+            {
+                case EDerection.Up:
+                    for(int i=0;i<EquipItemsT.Length;i++)
+                    {
+                        if(EquipItemsT[i]==-1)
+                        {
+                            EquipItemsT[i]=_itemID;
+                            break;
+                        }
+                    }
+                    break;
+                case EDerection.Down:
+                    for(int i=0;i<EquipItemsD.Length;i++)
+                    {
+                        if(EquipItemsD[i]==-1)
+                        {
+                            EquipItemsD[i]=_itemID;
+                            break;
+                        }
+                    }
+                    break;
+                case EDerection.Left:
+                    for(int i=0;i<EquipItemsL.Length;i++)
+                    {
+                        if(EquipItemsL[i]==-1)
+                        {
+                            EquipItemsL[i]=_itemID;
+                            break;
+                        }
+                    }
+                    break;
+                case EDerection.Right:
+                    for(int i=0;i<EquipItemsR.Length;i++)
+                    {
+                        if(EquipItemsR[i]==-1)
+                        {
+                            EquipItemsR[i]=_itemID;
+                            break;
+                        }
+                    }
+                    break;
+            }
+        }
+
+        //移除物品栏物品
+        public void RemoveEquipItem(int _itemID,EDerection _EDerection)
+        {
+            switch(_EDerection)
+            {
+                case EDerection.Up:
+                    for(int i=0;i<EquipItemsT.Length;i++)
+                    {
+                        if(EquipItemsT[i]==_itemID)
+                        {
+                            EquipItemsT[i]=-1;
+                            break;
+                        }
+                    }
+                    break;
+                case EDerection.Down:
+                    for(int i=0;i<EquipItemsD.Length;i++)
+                    {
+                        if(EquipItemsD[i]==_itemID)
+                        {
+                            EquipItemsD[i]=-1;
+                            break;
+                        }
+                    }
+                    break;
+                case EDerection.Left:
+                    for(int i=0;i<EquipItemsL.Length;i++)
+                    {
+                        if(EquipItemsL[i]==_itemID)
+                        {
+                            EquipItemsL[i]=-1;
+                            break;
+                        }
+                    }
+                    break;
+                case EDerection.Right:
+                    for(int i=0;i<EquipItemsR.Length;i++)
+                    {
+                        if(EquipItemsR[i]==_itemID)
+                        {
+                            EquipItemsR[i]=-1;
+                            break;
+                        }
+                    }
+                    break;
+            }
+        }
+
+        public void SwitchUpItemData()
+        {
+            CurrentIndexT++;
+            if(CurrentIndexT>=EquipItemsT.Length)
+            {
+                CurrentIndexT=0;
+            }
+        }
+
+        public void SwitchDownItemData()
+        {
+            CurrentIndexD++;
+            if(CurrentIndexD>=EquipItemsD.Length)
+            {
+                CurrentIndexD=0;
+            }
+        }
+
+        public void SwitchLeftItemData()
+        {
+            CurrentIndexL++;
+            if(CurrentIndexL>=EquipItemsL.Length)
+            {
+                CurrentIndexL=0;
+            }
+        }
+
+        public void SwitchRightItemData()
+        {
+            CurrentIndexR++;
+            if(CurrentIndexR>=EquipItemsR.Length)
+            {
+                CurrentIndexR=0;
+            }
+        }
     }
     public class BagItem
     {
@@ -189,6 +391,7 @@ namespace PolygonProject
         //默认没有被装备
         public ItemState itemState=ItemState.Unequipped;
     }
+
 
     public enum ItemState
     {

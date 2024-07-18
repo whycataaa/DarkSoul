@@ -27,8 +27,9 @@ namespace PolygonProject
             PanelManager.Instance.PanelPush(bagPanel);
             bagPanel.Init();
             PanelManager.Instance.PanelPop();
-
-            EventManager.Instance.AddListener(EventName.UseItem,AddItem);
+            bagPanel.RefreshInventoryUI();
+            EventManager.Instance.AddListener(EventName.UseItem,RemoveItem);
+            EventManager.Instance.AddListener(EventName.AddItem,AddItem);
         }
 
 
@@ -116,5 +117,10 @@ namespace PolygonProject
         {
             bagData=_bagData;
         }
+        public void RefreshInventoryUI()
+        {
+            bagPanel.RefreshInventoryUI();
+        }
+
     }
 }
