@@ -50,8 +50,8 @@ namespace PolygonProject
 
             if(currentWeapon!=null)
             {
-                Debug.Log(currentWeapon.id+"AttackR"+playerControl.playerWeaponManager.AttackTimesR);
-                animator.CrossFade(currentWeapon.id+"AttackR"+playerControl.playerWeaponManager.AttackTimesR,0.1f);
+                Debug.Log(currentWeapon.ID+"AttackR"+playerControl.playerWeaponManager.AttackTimesR);
+                animator.CrossFade(currentWeapon.ID+"AttackR"+playerControl.playerWeaponManager.AttackTimesR,0.1f);
             }
             else
             {

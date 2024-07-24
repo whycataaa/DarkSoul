@@ -47,8 +47,8 @@ namespace PolygonProject
             Weapon currentWeapon=playerControl.playerWeaponManager.GetCurrentWeapon(true);
             if(currentWeapon!=null)
             {
-                Debug.Log(currentWeapon.id+"AttackL"+playerControl.playerWeaponManager.AttackTimesL);
-                animator.CrossFade(currentWeapon.id+"AttackL"+playerControl.playerWeaponManager.AttackTimesL,0.1f);
+                Debug.Log(currentWeapon.ID+"AttackL"+playerControl.playerWeaponManager.AttackTimesL);
+                animator.CrossFade(currentWeapon.ID+"AttackL"+playerControl.playerWeaponManager.AttackTimesL,0.1f);
             }
             else
             {

@@ -22,6 +22,17 @@ namespace PolygonProject
 
         private void EnterGameScene()
         {
+            #region 数据
+            //加载数据曲线
+            GameObject DataPrefab=ResManager.Instance.LoadResource<GameObject>("Data","Data.prefab");
+            GameObject Data=Instantiate(DataPrefab);
+            Data.name="Data";
+
+            var bagData=new BagData();
+            bagData.Init();
+            DataBoard.Instance.Init();
+            DataBoard.Instance.BagData=bagData;
+            #endregion
             #region 地图
             GameObject mapPrefab=ResManager.Instance.LoadResource<GameObject>("Maps","MapTest.prefab");
             GameObject map=Instantiate(mapPrefab);
@@ -62,8 +73,7 @@ namespace PolygonProject
             this.AddComponent<PlayerBasePanelManager>();
             var equipPanelManager=this.AddComponent<EquipPanelManager>();
             var bagPanelManager=this.AddComponent<BagPanelManager>();
-            var bagData=new BagData(bagPanelManager);
-            bagData.Init();
+
             bagPanelManager.SetBagData(bagData);
 
             this.AddComponent<ShowItemPanelManager>();
@@ -71,13 +81,14 @@ namespace PolygonProject
             #endregion
 
             #region 初始化
+            //相机
             var playerCameraRoot=TransformHelper.FindDeepTransform<Transform>(player.transform,"CameraRoot");
 
             playerCamera.GetComponent<CameraControl>().SetCameraAim(playerCameraRoot,playerCamera);
             playerCamera.GetComponent<CameraControl>().SetCameraFollow(playerCameraRoot,lockCamera);
             playerCamera.GetComponent<CameraControl>().SetCameraFollow(playerCameraRoot,playerCamera);
 
-            DataBoard.Instance.BagData=bagData;
+
 
             WeaponManager weaponManager=new WeaponManager();
             weaponManager.player=player;
@@ -89,7 +100,19 @@ namespace PolygonProject
             equipPanelManager.bagPanelManager=bagPanelManager;
             // PlayerData playerData=new PlayerData();
             // playerData.Load();
+
+
+
             #endregion
+        }
+
+        /// <summary>
+        /// Start is called on the frame when a script is enabled just before
+        /// any of the Update methods is called the first time.
+        /// </summary>
+        void Start()
+        {
+
         }
     }
 }

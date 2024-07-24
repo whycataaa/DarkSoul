@@ -40,10 +40,10 @@ namespace PolygonProject
         /// </summary>
         void LEquip()
         {
-            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState!=ItemState.Equipped)
+            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].ItemEquipState==EItemEquipState.Unequipped)
             {
                 EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Left});
-                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState=ItemState.Equipped;
+                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].ItemEquipState=EItemEquipState.LeftHandEquipped;
                 choseItemID=-1;
                 PanelManager.Instance.PanelPop();
             }
@@ -58,10 +58,10 @@ namespace PolygonProject
         /// </summary>
         void REquip()
         {
-            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState!=ItemState.Equipped)
+            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].ItemEquipState==EItemEquipState.Unequipped)
             {
                 EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Right});
-                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState=ItemState.Equipped;
+                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].ItemEquipState=EItemEquipState.RightHandEquipped;
                 choseItemID=-1;
                 PanelManager.Instance.PanelPop();
             }
@@ -76,11 +76,11 @@ namespace PolygonProject
         /// </summary>
         void TEquip()
         {
-            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState!=ItemState.Equipped)
+            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].ItemEquipState==EItemEquipState.Unequipped)
             {
                 EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Left});
                 EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Right});
-                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState=ItemState.Equipped;
+                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].ItemEquipState=EItemEquipState.TwoHandEquipped;
                 choseItemID=-1;
                 PanelManager.Instance.PanelPop();
             }

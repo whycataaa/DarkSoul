@@ -5,22 +5,12 @@ using UnityEngine.UI;
 
 namespace PolygonProject
 {
-    public enum HandState
-    {
-        None,
-        LeftHand,
-        RightHand,
-        TwoHands
-    }
-
     /// <summary>
     /// 管理已经装备的武器(数据和实体)
     /// </summary>
     public class WeaponManager
     {
 
-        //当前持武器状态
-        private HandState CurrentHandState;
         //当前武器序号
         private int currentWeaponIndexL=>DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Left);
         private int currentWeaponIndexR=>DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Right);
@@ -38,16 +28,12 @@ namespace PolygonProject
 
         //绑定武器的位置
         Transform weaponTransL;
-
         Transform weaponTransR;
         //是否在检测
         [SerializeField]public bool OnDetect=false;
-        //武器列表
-        [SerializeField]List<Weapon> weapons=new List<Weapon>();
+
         //攻击检测的列表
         [SerializeField]List<Detection> detections=new List<Detection>();
-
-        private Dictionary<int,Weapon> weaponDic;
 
         public GameObject player;
         public BagData bagData;
@@ -61,62 +47,12 @@ namespace PolygonProject
             button2.onClick.AddListener(Save);
             button.gameObject.SetActive(false);
             button2.gameObject.SetActive(false);
-            Debug.Log(Application.persistentDataPath);
-
-            weaponDic=new Dictionary<int, Weapon>();
-
-            //读取武器表，加载数据
-            var dt = CSVTool.OpenCSV("武器表");
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                int id=0;
-                int attack=0;
-                int defense=0;
-                int left=0;
-                int right=0;
-                int twoHands=0;
-                for (int j = 0; j < dt.Columns.Count; j++)
-                {
-                    switch (j)
-                    {
-                        case 0:
-                            id = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                        case 1:
-                            attack = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                        case 2:
-                            defense = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                        case 3:
-                            left = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                        case 4:
-                            right = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                        case 5:
-                            twoHands = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                    }
-                }
-                Weapon weapon=new Weapon(id,attack,defense,left,right,twoHands);
-                var data=SaveSystem.LoadFromJson<SaveData>("WeaponRotationData").Rotations.Find(x=>x.ID==id);
-                weapon.DefaultRotationL=data.RotationL;
-                weapon.DefaultRotationR=data.RotationR;
-
-                weaponDic.Add(id,weapon);
-                if(bagData.GetItemDic().ContainsKey(id))
-                {
-                    weapon.info=bagData.GetItemDic()[id].info;
-                    weapon.itemType=bagData.GetItemDic()[id].itemType;
-                    weapon.name=bagData.GetItemDic()[id].name;
-                    weapon.sprite=bagData.GetItemDic()[id].sprite;
-                }
-
-            }
+//            Debug.Log(Application.persistentDataPath);
 
 
-            CurrentHandState=HandState.None;
+
+
+
             weaponTransL=TransformHelper.FindDeepTransform<Transform>(player.transform,"WeaponSlotL");
             weaponTransR=TransformHelper.FindDeepTransform<Transform>(player.transform,"WeaponSlotR");
 
@@ -162,18 +98,22 @@ namespace PolygonProject
         /// </summary>
         private void DestroyWeapon(bool IsLeft)
         {
+
             if(IsLeft)
             {
                 if(weaponTransL.childCount>0)
                 {
-                    GameObject.Destroy(weaponTransL.GetChild(0).gameObject);
+
+                    GameObject.DestroyImmediate(weaponTransL.GetChild(0).gameObject);
                 }
             }
             else
             {
                 if(weaponTransR.childCount>0)
                 {
-                    GameObject.Destroy(weaponTransR.GetChild(0).gameObject);
+ //                   Debug.Log(weaponTransR.childCount);
+                    GameObject.DestroyImmediate(weaponTransR.GetChild(0).gameObject);
+//                    Debug.Log(weaponTransR.childCount);
                 }
             }
         }
@@ -187,11 +127,11 @@ namespace PolygonProject
         {
             if(_WeaponID==-1)
             {
-                Debug.Log("没武器");
+//                Debug.Log("没武器");
                 return;
             }
             var weaponPre=ResManager.Instance.LoadResource<GameObject>
-            ("Item/Weapon","Weapon_"+weaponDic[_WeaponID].id.ToString().PadLeft(4,'0')+".prefab");
+            ("Item/Weapon","Weapon_"+_WeaponID.ToString().PadLeft(4,'0')+".prefab");
             var weapon=GameObject.Instantiate(weaponPre);
             weapon.name=weaponPre.name;
             if(IsLeft)
@@ -200,11 +140,12 @@ namespace PolygonProject
             }
             else
             {
+//                Debug.Log("生成");
                 weapon.transform.SetParent(weaponTransR.transform);
             }
             weapon.transform.localPosition=Vector3.zero;
-            weapon.transform.localRotation=IsLeft?weaponDic[_WeaponID].DefaultRotationL
-                                            :weaponDic[_WeaponID].DefaultRotationR;
+            weapon.transform.localRotation=IsLeft?(DataBoard.Instance.BagItemDic[_WeaponID].item as Weapon).DefaultRotationL
+                                                 :(DataBoard.Instance.BagItemDic[_WeaponID].item as Weapon).DefaultRotationR;
         }
 
         /// <summary>
@@ -233,7 +174,6 @@ namespace PolygonProject
         public void RefreshWeapon(bool _IsLeft)
         {
             DestroyWeapon(_IsLeft);
-
             InitWeapon(_IsLeft,_IsLeft?currentWeaponLID:currentWeaponRID);
         }
 
@@ -244,7 +184,7 @@ namespace PolygonProject
         /// <param name="e"></param>
         public void AddWeapon(int ID,EDerection EDerection)
         {
-            Debug.Log($"已添加{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.name}");
+            Debug.Log($"已添加{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.Name}");
             DataBoard.Instance.BagData.AddEquipItem(ID,EDerection);
         }
 
@@ -254,7 +194,7 @@ namespace PolygonProject
         /// <param name="ID"></param>
         public void RemoveWeapon(int ID)
         {
-            Debug.Log($"已移除{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.name}");
+            Debug.Log($"已移除{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.Name}");
             DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Left);
             DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Right);
             DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Up);
@@ -273,7 +213,7 @@ namespace PolygonProject
             {
                 if(currentWeaponLID!=-1)
                 {
-                    return weaponDic[currentWeaponLID];
+                    return DataBoard.Instance.BagItemDic[currentWeaponLID].item as Weapon;
                 }
                 else
                 {
@@ -284,7 +224,7 @@ namespace PolygonProject
             {
                 if(currentWeaponRID!=-1)
                 {
-                    return weaponDic[currentWeaponRID];
+                    return DataBoard.Instance.BagItemDic[currentWeaponRID].item as Weapon;
                 }
                 else
                 {
@@ -305,7 +245,7 @@ namespace PolygonProject
             {
                 if(currentWeaponLID!=-1)
                 {
-                    return weaponDic[currentWeaponLID].LeftHandAttackTimes;
+                    return (DataBoard.Instance.BagItemDic[currentWeaponLID].item as Weapon).AttackTimes;
                 }
                 else
                 {
@@ -316,7 +256,7 @@ namespace PolygonProject
             {
                 if(currentWeaponRID!=-1)
                 {
-                    return weaponDic[currentWeaponRID].RightHandAttackTimes;
+                    return (DataBoard.Instance.BagItemDic[currentWeaponRID].item as Weapon).AttackTimes;
                 }
                 else
                 {
@@ -327,14 +267,7 @@ namespace PolygonProject
         }
 
 
-        /// <summary>
-        /// 获取当前武器字典
-        /// </summary>
-        /// <returns></returns>
-        public Dictionary<int,Weapon> GetWeaponDic()
-        {
-            return weaponDic;
-        }
+
         /// <summary>
         /// 获取当前武器槽的索引
         /// </summary>

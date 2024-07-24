@@ -25,11 +25,15 @@ namespace PolygonProject
         void Start()
         {
             PanelManager.Instance.PanelPush(bagPanel);
+            //背包和装备界面数据初始化
             bagPanel.Init();
             PanelManager.Instance.PanelPop();
+            //物品栏刷新
             bagPanel.RefreshInventoryUI();
             EventManager.Instance.AddListener(EventName.UseItem,RemoveItem);
             EventManager.Instance.AddListener(EventName.AddItem,AddItem);
+
+
         }
 
 
@@ -61,13 +65,15 @@ namespace PolygonProject
 
         void OnDestroy()
         {
-            EventManager.Instance.RemoveListener(EventName.UseItem, AddItem);
+            EventManager.Instance.RemoveListener(EventName.AddItem,AddItem);
+            EventManager.Instance.RemoveListener(EventName.UseItem,RemoveItem);
         }
         public void AddItem(object sender, EventArgs e)
         {
             var data = e as ItemEventArgs;
-            bagData.AddItem(data.BagItemID);
-            bagPanel.AddItem(data.BagItemID);
+            Debug.Log(bagData==null);
+            bagData.AddItem(data.BagItemID,data.ItemNum);
+            bagPanel.AddItem(data.BagItemID,data.ItemNum);
         }
 
         public void RemoveItem(object sender, EventArgs e)
@@ -95,10 +101,6 @@ namespace PolygonProject
             return bagData.FindItemByName(_name);
         }
 
-        public List<BagItem> GetBagItems()
-        {
-            return bagData.GetBagItems();
-        }
 
         public Dictionary<int,BagItem> GetBagItemDic()
         {

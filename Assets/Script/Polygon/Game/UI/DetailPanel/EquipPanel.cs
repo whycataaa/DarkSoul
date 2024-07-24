@@ -52,10 +52,10 @@ namespace PolygonProject
                     }
                     else
                     {
-                        image_L.sprite=equipPanelManager.GetWeaponDic()[equipPanelManager
+                        image_L.sprite=DataBoard.Instance.BagItemDic[equipPanelManager
                                                     .GetWeapons(true)[equipPanelManager
-                                                    .GetCurrentWeaponIndex(true)]]
-                                                    .sprite;
+                                                    .GetCurrentWeaponIndex(true)]].item
+                                                    .GetSprite();
                         image_L.gameObject.SetActive(true);
                     }
                     break;
@@ -68,10 +68,10 @@ namespace PolygonProject
                     }
                     else
                     {
-                        image_R.sprite=equipPanelManager.GetWeaponDic()[equipPanelManager
+                        image_R.sprite=DataBoard.Instance.BagItemDic[equipPanelManager
                                                         .GetWeapons(false)[equipPanelManager
-                                                        .GetCurrentWeaponIndex(false)]]
-                                                        .sprite;
+                                                        .GetCurrentWeaponIndex(false)]].item
+                                                        .GetSprite();
                         image_R.gameObject.SetActive(true);
                     }
                     break;
@@ -89,7 +89,7 @@ namespace PolygonProject
                                                                     DataBoard.Instance.BagData.GetEquippedItems(EDerection.Up)
                                                                     [DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Up)]
                                                                 ]
-                                                                .sprite;
+                                                                .GetSprite();
                         image_T.gameObject.SetActive(true);
                     }
 
@@ -108,7 +108,7 @@ namespace PolygonProject
                                                                     DataBoard.Instance.BagData.GetEquippedItems(EDerection.Down)
                                                                     [DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Down)]
                                                                 ]
-                                                                .sprite;
+                                                                .GetSprite();
                         image_D.gameObject.SetActive(true);
                     }
                     break;

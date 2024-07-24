@@ -11,6 +11,7 @@ namespace PolygonProject
     {
         public int BagItemID;
         public EDerection EDerection;
+        public int ItemNum;
     }
     public class ChosePanel : BasePanel
     {
@@ -66,7 +67,7 @@ namespace PolygonProject
         /// <param name="_bagItemID"></param>
         void Equip(int _bagItemID)
         {
-            switch(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].item.itemType)
+            switch(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].item.ItemType)
             {
                 case ItemType.Weapon:
                     choseEquipPanel.choseItemID=_bagItemID;
@@ -75,10 +76,10 @@ namespace PolygonProject
                                                                     new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
                     break;
                 case ItemType.Spell:
-                    if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].itemState!=ItemState.Equipped)
+                    if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].ItemEquipState==EItemEquipState.Unequipped)
                     {
                         EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=_bagItemID});
-                        DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].itemState=ItemState.Equipped;
+                        DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].ItemEquipState=EItemEquipState.Equipped;
                         PanelManager.Instance.PanelPop();
                     }
                     else
@@ -87,10 +88,10 @@ namespace PolygonProject
                     }
                     break;
                 case ItemType.Useable:
-                    if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].itemState!=ItemState.Equipped)
+                    if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].ItemEquipState==EItemEquipState.Unequipped)
                     {
                         EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=_bagItemID});
-                        DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].itemState=ItemState.Equipped;
+                        DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].ItemEquipState=EItemEquipState.Equipped;
                         PanelManager.Instance.PanelPop();
                     }
                     else
@@ -106,7 +107,7 @@ namespace PolygonProject
         //使用物品方法
         void Use(int _bagItemID)
         {
-            if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].item.itemType==ItemType.Useable)
+            if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].item.ItemType==ItemType.Useable)
             {
                 EventTriggerExt.TriggerEvent(this,EventName.UseItem,new ItemEventArgs{BagItemID=_bagItemID});
             }
@@ -118,10 +119,10 @@ namespace PolygonProject
 
         private void UnEquip(int _bagItemID)
         {
-            if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].itemState==ItemState.Equipped)
+            if(DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].ItemEquipState!=EItemEquipState.Unequipped)
             {
                 EventTriggerExt.TriggerEvent(this,EventName.UnEquipItem,new ItemEventArgs{BagItemID=_bagItemID});
-                DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].itemState=ItemState.Unequipped;
+                DataBoard.Instance.BagData.GetBagItemDic()[_bagItemID].ItemEquipState=EItemEquipState.Unequipped;
                 PanelManager.Instance.PanelPop();
             }
         }

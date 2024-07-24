@@ -4,36 +4,45 @@ using UnityEngine;
 
 namespace PolygonProject
 {
-    public class Item
+    public interface IItem
     {
-        public int id;
-        public string name;
-        public string info;
-        public Sprite sprite;
-        public ItemType itemType;
-        public int MaxStackCount
+        int ID{get;set;}
+        string Name{get;set;}
+        string Info{get;set;}
+        string IconID{get;set;}
+        EQuality Quality{get;set;}
+        int MaxStackCount{get;set;}
+        EItemIdentifyState ItemState{get;set;}
+        ItemType ItemType{get;set;}
+
+        Sprite GetSprite();
+    }
+    //物品基类
+    public abstract class Item:IItem
+    {
+        public int ID{get;set;}
+        public string Name{get;set;}
+        public string Info{get;set;}
+        public string IconID{get;set;}
+        public ItemType ItemType{get;set;}
+        public int MaxStackCount{get;set;}
+        public EQuality Quality{get;set;}
+        public EItemIdentifyState ItemState{get;set;}
+
+        public Sprite GetSprite()
         {
-            get
-            {
-                switch(itemType)
-                {
-                    case ItemType.Weapon:
-                        return 1;
-                    case ItemType.Useable:
-                        return 100;
-                    case ItemType.Spell:
-                        return 1;
-                    case ItemType.Collection:
-                        return 100;
-                    default:
-                        return 1;
-                }
-            }
+            return ResManager.Instance.LoadResource<Sprite>("Icon",IconID+ ".png");
         }
 
     }
 
-
+    public enum EItemIdentifyState
+    {
+        //已鉴定
+        Identified,
+        //未鉴定
+        Unidentified
+    }
 
     public enum ItemType
     {
@@ -44,6 +53,8 @@ namespace PolygonProject
         //法术
         Spell=2,
         //不可使用的收集物
-        Collection=3
+        Collection=3,
+        //护甲
+        Armor = 4
     }
 }
