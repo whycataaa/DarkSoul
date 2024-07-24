@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace PolygonProject
 {
@@ -11,11 +9,18 @@ namespace PolygonProject
     /// </summary>
     public class BagData
     {
+        #region 物品栏
         public int DefaultLCount=4;
         public int DefaultRCount=4;
         public int DefaultTCount=4;
         public int DefaultDCount=4;
 
+        //护甲栏位
+        public int ArmorHead=-1;
+        public int ArmorBody=-1;
+        public int ArmorLeg=-1;
+        public int ArmorHand=-1;
+        public int ArmorFeet=-1;
         int[] EquipItemsT;
         int[] EquipItemsD;
         int[] EquipItemsL;
@@ -24,23 +29,12 @@ namespace PolygonProject
         int CurrentIndexD=0;
         int CurrentIndexL=0;
         int CurrentIndexR=0;
-
-        int currentItemUp=>EquipItemsT[CurrentIndexT];
-        int currentItemDown=>EquipItemsD[CurrentIndexD];
-        int currentItemLeft=>EquipItemsL[CurrentIndexL];
-        int currentItemRight=>EquipItemsR[CurrentIndexR];
-        BagPanelManager bagPanelManager;
-        public BagData(BagPanelManager _bagPanelManager)
-        {
-            bagPanelManager=_bagPanelManager;
-        }
-        //存放在背包中的物品
-        List<BagItem> bagItems;
+        #endregion
 
         //ID->物品
-        Dictionary<int,Item> ItemDic;
+        Dictionary<int,Item> ItemDic=>DataBoard.Instance.ItemDic;
         //ID->背包物品
-        Dictionary<int,BagItem> BagItemDic;
+        Dictionary<int,BagItem> BagItemDic=>DataBoard.Instance.BagItemDic;
         public void Init()
         {
             EquipItemsT = new int[DefaultTCount];
@@ -63,77 +57,10 @@ namespace PolygonProject
             {
                 EquipItemsR[i] = -1;
             }
-            LoadDataFromCSV();
+
         }
 
-        /// <summary>
-        /// 从CSV中加载数据
-        /// </summary>
-        private void LoadDataFromCSV()
-        {
-            BagItemDic=new Dictionary<int, BagItem>();
-            ItemDic = new Dictionary<int, Item>();
-            var itemDt = CSVTool.OpenCSV("物品表");
-            for (int i = 0; i < itemDt.Rows.Count; i++)
-            {
-                Item item = new Item();
-                for (int j = 0; j < itemDt.Columns.Count; j++)
-                {
-                    switch (j)
-                    {
-                        case 0:
-                            item.id = int.Parse(itemDt.Rows[i][j].ToString());
-                            break;
-                        case 1:
-                            item.itemType = (ItemType)int.Parse(itemDt.Rows[i][j].ToString());
-                            Debug.Log(item.itemType);
-                            break;
-                        case 2:
-                            item.name = itemDt.Rows[i][j].ToString();
-                            break;
-                        case 3:
-                            item.info = itemDt.Rows[i][j].ToString();
-                            break;
-                    }
-                }
 
-                //物品名称用#0000表示
-                string itemResName = "#" + item.id.ToString().PadLeft(4, '0');
-                item.sprite = ResManager.Instance.LoadResource<Sprite>("Icon", itemResName + ".png");
-                //加到字典里
-                ItemDic.Add(item.id, item);
-            }
-
-            bagItems = new List<BagItem>();
-
-            var dt = CSVTool.OpenCSV("玩家背包表");
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                int id = -1;
-                int num = 0;
-                for (int j = 0; j < dt.Columns.Count; j++)
-                {
-                    switch (j)
-                    {
-                        case 0:
-                            id = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                        case 1:
-                            num = int.Parse(dt.Rows[i][j].ToString());
-                            break;
-                    }
-                }
-                BagItem bagItem=new BagItem(ItemDic[id], num);
-                bagItems.Add(bagItem);
-
-                BagItemDic.Add(id,bagItem);
-            }
-        }
-
-        public List<BagItem> GetBagItems()
-        {
-            return bagItems;
-        }
         public Dictionary<int,BagItem> GetBagItemDic()
         {
             return BagItemDic;
@@ -142,6 +69,7 @@ namespace PolygonProject
         {
             return ItemDic;
         }
+
         /// <summary>
         /// 增加物品
         /// </summary>
@@ -152,15 +80,18 @@ namespace PolygonProject
             {
                 BagItemDic[_itemID].Num++;
             }
-            else
-            {
-                var bagItem=new BagItem(ItemDic[_itemID],1);
-                bagItems.Add(bagItem);
-                BagItemDic.Add(_itemID,bagItem);
-            }
-
         }
-
+        /// <summary>
+        /// 增加物品
+        /// </summary>
+        /// <param name="_bagItem"></param>
+        public void AddItem(int _itemID,int _Num)
+        {
+            if(BagItemDic.ContainsKey(_itemID))
+            {
+                BagItemDic[_itemID].Num+=_Num;
+            }
+        }
         /// <summary>
         /// 移除物品
         /// </summary>
@@ -172,7 +103,6 @@ namespace PolygonProject
                 BagItemDic[_itemID].Num--;
                 if(BagItemDic[_itemID].Num==0)
                 {
-                    bagItems.Remove(BagItemDic[_itemID]);
                     BagItemDic.Remove(_itemID);
                 }
             }
@@ -184,13 +114,7 @@ namespace PolygonProject
         /// <param name="_bagItem"></param>
         public BagItem FindItemByID(int _id)
         {
-            foreach(var bagItem in bagItems)
-            {
-                if(bagItem.item.id==_id)
-                {
-                    return bagItem;
-                }
-            }
+
 
             Debug.Log("背包中未找到物品");
             return null;
@@ -202,13 +126,7 @@ namespace PolygonProject
         /// <param name="_bagItem"></param>
         public BagItem FindItemByName(string _name)
         {
-            foreach(var bagItem in bagItems)
-            {
-                if(bagItem.item.name==_name)
-                {
-                    return bagItem;
-                }
-            }
+
             Debug.Log("背包中未找到物品");
             return null;
         }
@@ -246,7 +164,49 @@ namespace PolygonProject
                     return -1;
             }
         }
+        public void AddArmor(int _itemID)
+        {
+            switch((DataBoard.Instance.BagItemDic[_itemID].item as Armor).equipType)
+            {
+                case EquipType.Head:
+                    ArmorHead=_itemID;
+                    break;
+                case EquipType.Body:
+                    ArmorBody=_itemID;
+                    break;
+                case EquipType.Leg:
+                    ArmorLeg=_itemID;
+                    break;
+                case EquipType.Hand:
+                    ArmorHand=_itemID;
+                    break;
+                case EquipType.Feet:
+                    ArmorFeet=_itemID;
+                    break;
+            }
+        }
 
+        public void RemoveArmor(int _itemID)
+        {
+            switch((DataBoard.Instance.BagItemDic[_itemID].item as Armor).equipType)
+            {
+                case EquipType.Head:
+                    ArmorHead=-1;
+                    break;
+                case EquipType.Body:
+                    ArmorBody=-1;
+                    break;
+                case EquipType.Leg:
+                    ArmorLeg=-1;
+                    break;
+                case EquipType.Hand:
+                    ArmorHand=-1;
+                    break;
+                case EquipType.Feet:
+                    ArmorFeet=-1;
+                    break;
+            }
+        }
         //增加物品栏物品
         public void AddEquipItem(int _itemID,EDerection _EDerection)
         {
@@ -379,25 +339,20 @@ namespace PolygonProject
             }
         }
     }
-    public class BagItem
-    {
-        public BagItem(Item _item,int _Num)
-        {
-            item=_item;
-            Num=_Num;
-        }
-        public Item item;
-        public int Num;
-        //默认没有被装备
-        public ItemState itemState=ItemState.Unequipped;
-    }
 
 
-    public enum ItemState
+
+    public enum EItemEquipState
     {
         //没有被装备
         Unequipped,
         //被装备
-        Equipped
+        Equipped,
+        //双手装备
+        TwoHandEquipped,
+        //左手装备
+        LeftHandEquipped,
+        //右手装备
+        RightHandEquipped
     }
 }

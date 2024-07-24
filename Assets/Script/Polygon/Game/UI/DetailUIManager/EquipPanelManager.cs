@@ -47,10 +47,10 @@ namespace PolygonProject
         {
             var data = e as ItemEventArgs;
 
-            switch(DataBoard.Instance.BagData.GetItemDic()[data.BagItemID].itemType)
+            switch(DataBoard.Instance.BagData.GetItemDic()[data.BagItemID].ItemType)
             {
                 case ItemType.Weapon:
-                    weaponManager.AddWeapon(data.BagItemID,data.EDerection);
+                    DataBoard.Instance.BagData.AddEquipItem(data.BagItemID,data.EDerection);
                     weaponManager.RefreshWeapon(true);
                     weaponManager.RefreshWeapon(false);
                     equipPanel.RefreshUI(EDerection.Left);
@@ -68,6 +68,9 @@ namespace PolygonProject
                 case ItemType.Collection:
                     Debug.Log("收集品不可装备");
                     break;
+                case ItemType.Armor:
+                    DataBoard.Instance.BagData.AddArmor(data.BagItemID);
+                    break;
             }
 
             bagPanelManager.RefreshInventoryUI();
@@ -75,7 +78,7 @@ namespace PolygonProject
         private void UnEquipItem(object sender, EventArgs e)
         {
             var data = e as ItemEventArgs;
-            switch(DataBoard.Instance.BagData.GetItemDic()[data.BagItemID].itemType)
+            switch(DataBoard.Instance.ItemDic[data.BagItemID].ItemType)
             {
                 case ItemType.Weapon:
                     DataBoard.Instance.BagData.RemoveEquipItem(data.BagItemID,EDerection.Left);
@@ -178,14 +181,6 @@ namespace PolygonProject
         }
 
 
-        /// <summary>
-        /// 获取当前武器字典
-        /// </summary>
-        /// <returns></returns>
-        public Dictionary<int,Weapon> GetWeaponDic()
-        {
-            return weaponManager.GetWeaponDic();
-        }
         /// <summary>
         /// 获取当前武器槽的索引
         /// </summary>

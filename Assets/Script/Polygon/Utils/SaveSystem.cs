@@ -1,71 +1,57 @@
 using System.IO;
 using UnityEngine;
+using Newtonsoft.Json;
+using System;
 
 namespace PolygonProject
 {
     public static class SaveSystem
     {
-        #region PlayerPrefs
 
-        public static void SaveByPlayerPrefs(string key, object data)
-        {
-            var json = JsonUtility.ToJson(data);
 
-            PlayerPrefs.SetString(key, json);
-            PlayerPrefs.Save();
-
-        #if UNITY_EDITOR
-            Debug.Log("Successfully saved data to PlayerPrefs.");
-        #endif
-        }
-
-        public static string LoadFromPlayerPrefs(string key)
-        {
-            return PlayerPrefs.GetString(key, null);
-        }
-        
-        #endregion
 
         #region JSON
 
         public static void SaveByJson(string saveFileName, object data)
         {
-            var json = JsonUtility.ToJson(data);
-            var path = Path.Combine(Application.persistentDataPath, saveFileName);
-
-            try
+            if(!File.Exists(Application.persistentDataPath+"/usersData"))
             {
-                File.WriteAllText(path, json);
+                System.IO.Directory.CreateDirectory(Application.persistentDataPath+"/usersData");
+            }
+            var settings = new JsonSerializerSettings();
+            settings.TypeNameHandling = TypeNameHandling.Auto;
+            settings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
 
-                #if UNITY_EDITOR
-                Debug.Log($"Susscessfully saved data to {path}.");
-                #endif
-            }
-            catch (System.Exception exception)
-            {
-                #if UNITY_EDITOR
-                Debug.LogError($"Failed to save data to {path}. \n{exception}");
-                #endif
-            }
+            string jsonData=JsonConvert.SerializeObject(data,settings);
+
+            File.WriteAllText(Application.persistentDataPath+"/usersData/"+saveFileName,jsonData);
         }
 
         public static T LoadFromJson<T>(string saveFileName)
         {
-            var path = Path.Combine(Application.persistentDataPath, saveFileName);
-
-            try
+            var path = Path.Combine(Application.persistentDataPath+"/usersData", saveFileName);
+//            Debug.Log(path);
+            if(File.Exists(path))
             {
-                var json = File.ReadAllText(path);
-                var data = JsonUtility.FromJson<T>(json);
-
-                return data;
+                    var settings = new JsonSerializerSettings();
+                    settings.TypeNameHandling = TypeNameHandling.Auto;
+                    settings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                    try
+                    {
+                        string jsonData = File.ReadAllText(path);
+                        T usersData=JsonConvert.DeserializeObject<T>(jsonData,settings);
+                        return usersData;
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.LogError($"Error loading from JSON: {ex.Message}");
+                        throw;
+                    }
+                
             }
-            catch (System.Exception exception)
+            else
             {
-                #if UNITY_EDITOR
-                Debug.LogError($"Failed to load data from {path}. \n{exception}");
-                #endif
-
+                Debug.Log("读取失败，未找到文件");
                 return default;
             }
         }
@@ -76,7 +62,7 @@ namespace PolygonProject
 
         public static void DeleteSaveFile(string saveFileName)
         {
-            var path = Path.Combine(Application.persistentDataPath, saveFileName);
+            var path = Path.Combine(Application.persistentDataPath+"/usersData", saveFileName);
 
             try
             {

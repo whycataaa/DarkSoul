@@ -23,7 +23,7 @@ namespace PolygonProject
                 if(value!=-1)
                 {
                     bagItemID=value;
-                    image.sprite=DataBoard.Instance.BagData.GetBagItemDic()[value].item.sprite;
+                    image.sprite=DataBoard.Instance.BagData.GetBagItemDic()[value].item.GetSprite();
                     Num=DataBoard.Instance.BagData.GetBagItemDic()[value].Num;
                 }
                 else
@@ -69,7 +69,7 @@ namespace PolygonProject
             UIManager.Instance.UIDic[ShowItemPanel.Instance.UIType].transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
             if(BagItemID!=-1)
             {
-                ShowItemPanel.Instance.SetNameAndInfo(DataBoard.Instance.BagData.GetBagItemDic()[bagItemID].item.name,DataBoard.Instance.BagData.GetBagItemDic()[bagItemID].item.info);
+                ShowItemPanel.Instance.RefreshUI(bagItemID);
             }
         }
 
