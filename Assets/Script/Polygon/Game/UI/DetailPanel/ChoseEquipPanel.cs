@@ -13,7 +13,7 @@ namespace PolygonProject
         Button buttonL;
         Button buttonR;
         Button buttonT;
-        Button buttonN;
+
 
         public ChoseEquipPanel() : base(new UIType(path))
         {
@@ -26,12 +26,12 @@ namespace PolygonProject
             buttonL=UITool.Instance.GetORAddComponentInChildren<Button>("Button_L");
             buttonR=UITool.Instance.GetORAddComponentInChildren<Button>("Button_R");
             buttonT=UITool.Instance.GetORAddComponentInChildren<Button>("Button_T");
-            buttonN=UITool.Instance.GetORAddComponentInChildren<Button>("Button_N");
+
 
             buttonL.onClick.AddListener(()=>LEquip());
             buttonR.onClick.AddListener(()=>REquip());
             buttonT.onClick.AddListener(()=>TEquip());
-            buttonN.onClick.AddListener(()=>NEquip());
+
         }
 
 
@@ -40,11 +40,17 @@ namespace PolygonProject
         /// </summary>
         void LEquip()
         {
-
-            EventTriggerExt.TriggerEvent(this,EventName.EquipWeapon,new ItemEventArgs{BagItemID=choseItemID,handState=HandState.LeftHand});
-
-            choseItemID=-1;
-            PanelManager.Instance.PanelPop();
+            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState!=ItemState.Equipped)
+            {
+                EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Left});
+                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState=ItemState.Equipped;
+                choseItemID=-1;
+                PanelManager.Instance.PanelPop();
+            }
+            else
+            {
+                Debug.Log("已经装备");
+            }
         }
 
         /// <summary>
@@ -52,10 +58,17 @@ namespace PolygonProject
         /// </summary>
         void REquip()
         {
-
-            EventTriggerExt.TriggerEvent(this,EventName.EquipWeapon,new ItemEventArgs{BagItemID=choseItemID,handState=HandState.RightHand});
-            choseItemID=-1;
-            PanelManager.Instance.PanelPop();
+            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState!=ItemState.Equipped)
+            {
+                EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Right});
+                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState=ItemState.Equipped;
+                choseItemID=-1;
+                PanelManager.Instance.PanelPop();
+            }
+            else
+            {
+                Debug.Log("已经装备");
+            }
         }
 
         /// <summary>
@@ -63,20 +76,18 @@ namespace PolygonProject
         /// </summary>
         void TEquip()
         {
-            EventTriggerExt.TriggerEvent(this,EventName.EquipWeapon,new ItemEventArgs{BagItemID=choseItemID,handState=HandState.TwoHands});
-            choseItemID=-1;
-            PanelManager.Instance.PanelPop();
+            if(DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState!=ItemState.Equipped)
+            {
+                EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Left});
+                EventTriggerExt.TriggerEvent(this,EventName.EquipItem,new ItemEventArgs{BagItemID=choseItemID,EDerection=EDerection.Right});
+                DataBoard.Instance.BagData.GetBagItemDic()[choseItemID].itemState=ItemState.Equipped;
+                choseItemID=-1;
+                PanelManager.Instance.PanelPop();
+            }
+            else
+            {
+                Debug.Log("已经装备");
+            }
         }
-
-        /// <summary>
-        /// 卸下装备
-        /// </summary>
-        void NEquip()
-        {
-            EventTriggerExt.TriggerEvent(this,EventName.EquipWeapon,new ItemEventArgs{BagItemID=choseItemID,handState=HandState.None});
-            choseItemID=-1;
-            PanelManager.Instance.PanelPop();
-        }
-        
     }
 }

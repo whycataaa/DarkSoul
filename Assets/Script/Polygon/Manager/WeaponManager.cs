@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Data.Common;
 using UnityEngine;
-using UnityEngine.Animations;
+using UnityEngine.UI;
 
 namespace PolygonProject
 {
@@ -16,26 +14,27 @@ namespace PolygonProject
     }
 
     /// <summary>
-    /// 管理已经装备的武器
+    /// 管理已经装备的武器(数据和实体)
     /// </summary>
     public class WeaponManager
     {
-        //当前持武器状态
-        public HandState CurrentHandState;
-        //当前武器序号
-        public int currentWeaponIndexL=0;
-        public int currentWeaponIndexR=0;
-        //最大武器数量
-        private int maxWeaponCountL=4;
-        private int maxWeaponCountR=4;
-        //当前装备的武器
-        private int currentWeaponLID=-1;
-        private int currentWeaponRID=-1;
 
+        //当前持武器状态
+        private HandState CurrentHandState;
+        //当前武器序号
+        private int currentWeaponIndexL=>DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Left);
+        private int currentWeaponIndexR=>DataBoard.Instance.BagData.GetCurrentIndex(EDerection.Right);
+
+        //当前装备的武器
+        private int currentWeaponLID=>weaponsL[currentWeaponIndexL];
+        private int currentWeaponRID=>weaponsR[currentWeaponIndexR];
+        private int maxWeaponCountL=>DataBoard.Instance.BagData.DefaultLCount;
+        private int maxWeaponCountR=>DataBoard.Instance.BagData.DefaultRCount;
         //左手可装备的武器
-        public List<int> weaponsL;
+        private int[] weaponsL=>DataBoard.Instance.BagData.GetEquippedItems(EDerection.Left);
         //右手可装备的武器
-        public List<int> weaponsR;
+        private int[] weaponsR=>DataBoard.Instance.BagData.GetEquippedItems(EDerection.Right);
+
 
         //绑定武器的位置
         Transform weaponTransL;
@@ -48,17 +47,22 @@ namespace PolygonProject
         //攻击检测的列表
         [SerializeField]List<Detection> detections=new List<Detection>();
 
-        public Dictionary<int,Weapon> weaponDic;
+        private Dictionary<int,Weapon> weaponDic;
 
         public GameObject player;
         public BagData bagData;
-        public int AttackTimes=1;
+        public int AttackTimesL=1;
+        public int AttackTimesR=1;
         public void Init()
         {
-            maxWeaponCountL=4;
-            maxWeaponCountR=4;
-            weaponsR=new List<int>(maxWeaponCountR);
-            weaponsL=new List<int>(maxWeaponCountL);
+            Button button=GameObject.Find("ButtonSave").GetComponent<Button>();
+            button.onClick.AddListener(AddData);
+            Button button2=GameObject.Find("ButtonSaveAll").GetComponent<Button>();
+            button2.onClick.AddListener(Save);
+            button.gameObject.SetActive(false);
+            button2.gameObject.SetActive(false);
+            Debug.Log(Application.persistentDataPath);
+
             weaponDic=new Dictionary<int, Weapon>();
 
             //读取武器表，加载数据
@@ -96,6 +100,10 @@ namespace PolygonProject
                     }
                 }
                 Weapon weapon=new Weapon(id,attack,defense,left,right,twoHands);
+                var data=SaveSystem.LoadFromJson<SaveData>("WeaponRotationData").Rotations.Find(x=>x.ID==id);
+                weapon.DefaultRotationL=data.RotationL;
+                weapon.DefaultRotationR=data.RotationR;
+
                 weaponDic.Add(id,weapon);
                 if(bagData.GetItemDic().ContainsKey(id))
                 {
@@ -112,102 +120,153 @@ namespace PolygonProject
             weaponTransL=TransformHelper.FindDeepTransform<Transform>(player.transform,"WeaponSlotL");
             weaponTransR=TransformHelper.FindDeepTransform<Transform>(player.transform,"WeaponSlotR");
 
-            EventManager.Instance.AddListener(EventName.EquipWeapon,AddWeapon);
 
-            Debug.Log(weaponTransL);
-            Debug.Log(weaponTransR);
         }
+        [Serializable]
+        class SaveData
+        {
+            public List<WeaponData> Rotations;
+            public SaveData()
+            {
+                Rotations=new List<WeaponData>();
+            }
+        }
+
+        [Serializable]
+        struct WeaponData
+        {
+            public int ID;
+            public Quaternion RotationL;
+            public Quaternion RotationR;
+        }
+        public void Save()
+        {
+            SaveSystem.SaveByJson("WeaponRotationData",saveData);
+        }
+
+        SaveData saveData=new SaveData();
+
+        void AddData()
+        {
+            saveData.Rotations.Add(new WeaponData()
+            {
+                ID=currentWeaponLID,
+                RotationL=weaponTransL.GetChild(0).transform.localRotation,
+                RotationR=weaponTransR.GetChild(0).transform.localRotation
+            });
+        }
+
+
+        /// <summary>
+        /// 销毁武器实体
+        /// </summary>
+        private void DestroyWeapon(bool IsLeft)
+        {
+            if(IsLeft)
+            {
+                if(weaponTransL.childCount>0)
+                {
+                    GameObject.Destroy(weaponTransL.GetChild(0).gameObject);
+                }
+            }
+            else
+            {
+                if(weaponTransR.childCount>0)
+                {
+                    GameObject.Destroy(weaponTransR.GetChild(0).gameObject);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 生成武器实体
+        /// </summary>
+        /// <param name="IsLeft"></param>
+        /// <param name="_WeaponID">武器ID</param>
+        private void InitWeapon(bool IsLeft,int _WeaponID)
+        {
+            if(_WeaponID==-1)
+            {
+                Debug.Log("没武器");
+                return;
+            }
+            var weaponPre=ResManager.Instance.LoadResource<GameObject>
+            ("Item/Weapon","Weapon_"+weaponDic[_WeaponID].id.ToString().PadLeft(4,'0')+".prefab");
+            var weapon=GameObject.Instantiate(weaponPre);
+            weapon.name=weaponPre.name;
+            if(IsLeft)
+            {
+                weapon.transform.SetParent(weaponTransL.transform);
+            }
+            else
+            {
+                weapon.transform.SetParent(weaponTransR.transform);
+            }
+            weapon.transform.localPosition=Vector3.zero;
+            weapon.transform.localRotation=IsLeft?weaponDic[_WeaponID].DefaultRotationL
+                                            :weaponDic[_WeaponID].DefaultRotationR;
+        }
+
+        /// <summary>
+        /// 数据上切换
+        /// </summary>
+        public void SwitchLWeapon()
+        {
+            DataBoard.Instance.BagData.SwitchLeftItemData();
+        }
+
+        /// <summary>
+        /// 数据上切换
+        /// </summary>
+        public void SwitchRWeapon()
+        {
+            DataBoard.Instance.BagData.SwitchRightItemData();
+        }
+
+
+       #region  PUBLIC FUNCTION
 
         /// <summary>
         /// 在指定位置销毁生成指定武器
         /// </summary>
         /// <param name="_index"></param>
-        public void EquipWeapon(int _index,bool IsLeft)
+        public void RefreshWeapon(bool _IsLeft)
         {
-            //换左手武器
-            if(IsLeft)
-            {
-                CurrentHandState=HandState.LeftHand;
-                
-                if(weaponTransL.childCount>0)
-                {
-                    GameObject.Destroy(weaponTransL.GetChild(0).gameObject);
-                    var weaponPre=ResManager.Instance.LoadResource<GameObject>
-                    ("Item/Weapon","Weapon_"+weaponDic[weaponsL[_index]].id.ToString().PadLeft(4,'0')+".prefab");
-                    var weapon=GameObject.Instantiate(weaponPre);
-                    weapon.name=weaponPre.name;
-                    weapon.transform.SetParent(weaponTransL.transform);
-                    weapon.transform.localPosition=Vector3.zero;
-                }
-                else
-                {
-                    var weaponPre=ResManager.Instance.LoadResource<GameObject>
-                    ("Item/Weapon","Weapon_"+weaponDic[weaponsL[_index]].id.ToString().PadLeft(4,'0')+".prefab");
-                    var weapon=GameObject.Instantiate(weaponPre);
-                    weapon.name=weaponPre.name;
-                    weapon.transform.SetParent(weaponTransL);
-                    weapon.transform.localPosition=new Vector3(0,0,0);
-                }
-            }
-            //换右手武器
-            else
-            {
-                CurrentHandState=HandState.RightHand;
-                if(weaponTransR.childCount>0)
-                {
-                    GameObject.Destroy(weaponTransR.GetChild(0).gameObject);
-                    var weaponPre=ResManager.Instance.LoadResource<GameObject>
-                    ("Item/Weapon","Weapon_"+weaponDic[weaponsR[_index]].id.ToString().PadLeft(4,'0')+".prefab");
-                   var weapon=GameObject.Instantiate(weaponPre);
-                   weapon.name=weaponPre.name;
-                   weapon.transform.SetParent(weaponTransR.transform);
-                   weapon.transform.localPosition=new Vector3(0,0,0);
+            DestroyWeapon(_IsLeft);
 
-                }
-                else
-                {
-                    var weaponPre=ResManager.Instance.LoadResource<GameObject>
-                    ("Item/Weapon","Weapon_"+weaponDic[weaponsR[_index]].id.ToString().PadLeft(4,'0')+".prefab");
-                    var weapon=GameObject.Instantiate(weaponPre);
-                    weapon.name=weaponPre.name;
-                    weapon.transform.SetParent(weaponTransR);
-                    weapon.transform.localPosition=new Vector3(0,0,0);
-                }
-            }
+            InitWeapon(_IsLeft,_IsLeft?currentWeaponLID:currentWeaponRID);
         }
 
-
-        public void AddWeapon(object sender, EventArgs e)
+        /// <summary>
+        /// 数据上进行添加
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void AddWeapon(int ID,EDerection EDerection)
         {
-            var data = e as ItemEventArgs;
-            CurrentHandState=data.handState;
+            Debug.Log($"已添加{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.name}");
+            DataBoard.Instance.BagData.AddEquipItem(ID,EDerection);
+        }
 
-            Debug.Log($"已添加{DataBoard.Instance.BagData.GetBagItemDic()[data.BagItemID].item.name}");
-            switch(data.handState)
-            {
-                case HandState.LeftHand:
-                    if(weaponsL.Count<maxWeaponCountL)
-                    weaponsL.Add(data.BagItemID);
-                    break;
-                case HandState.RightHand:
-                    if(weaponsR.Count<maxWeaponCountR)
-                    weaponsR.Add(data.BagItemID);
-                    break;
-                case HandState.TwoHands:
-                    if(weaponsL.Count<maxWeaponCountL)
-                    weaponsL.Add(data.BagItemID);
-                    if(weaponsR.Count<maxWeaponCountR)
-                    weaponsR.Add(data.BagItemID);
-                    break;
-                case HandState.None:
-                    if(weaponsL.Contains(data.BagItemID))
-                    weaponsL.Remove(data.BagItemID);
-                    if(weaponsR.Contains(data.BagItemID))
-                    weaponsR.Remove(data.BagItemID);
-                    break;
-            }
+        /// <summary>
+        /// 移除装备栏中的武器（DATA）
+        /// </summary>
+        /// <param name="ID"></param>
+        public void RemoveWeapon(int ID)
+        {
+            Debug.Log($"已移除{DataBoard.Instance.BagData.GetBagItemDic()[ID].item.name}");
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Left);
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Right);
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Up);
+            DataBoard.Instance.BagData.RemoveEquipItem(ID,EDerection.Down);
 
         }
+
+        /// <summary>
+        /// 获取当前武器
+        /// </summary>
+        /// <param name="IsLeft"></param>
+        /// <returns></returns>
         public Weapon GetCurrentWeapon(bool IsLeft)
         {
             if(IsLeft)
@@ -234,6 +293,11 @@ namespace PolygonProject
             }
         }
 
+        /// <summary>
+        /// 获取当前武器的攻击次数
+        /// </summary>
+        /// <param name="IsLeft"></param>
+        /// <returns></returns>
         public int GetCurrentWeaponMaxAttackTimes(bool IsLeft)
         {
             //返回左手武器
@@ -262,26 +326,70 @@ namespace PolygonProject
 
         }
 
-        /// <summary>
-        /// 通过索引设置当前武器
-        /// </summary>
-        /// <param name="_index"></param>
-        /// <param name="IsLeft"></param>
-        public void SetCurrentWeapon(int _index,bool IsLeft)
-        {
-            if(IsLeft)
-            {
-                currentWeaponLID=weaponsL[_index];
-            }
-            else
-            {
-                currentWeaponRID=weaponsR[_index];
-            }
-        }
 
+        /// <summary>
+        /// 获取当前武器字典
+        /// </summary>
+        /// <returns></returns>
         public Dictionary<int,Weapon> GetWeaponDic()
         {
             return weaponDic;
         }
+        /// <summary>
+        /// 获取当前武器槽的索引
+        /// </summary>
+        /// <param name="IsLeft">是否为左手</param>
+        /// <returns></returns>
+        public int GetCurrentWeaponIndex(bool IsLeft)
+        {
+            return IsLeft?currentWeaponIndexL:currentWeaponIndexR;
+        }
+
+        /// <summary>
+        /// 获取最大可装备武器数量
+        /// </summary>
+        /// <param name="IsLeft">是否为左手</param>
+        /// <returns></returns>
+        public int GetMaxWeaponCount(bool IsLeft)
+        {
+            return IsLeft?maxWeaponCountL:maxWeaponCountR;
+        }
+
+        /// <summary>
+        /// 获取当前武器栏位数组
+        /// </summary>
+        /// <param name="IsLeft">是否为左手</param>
+        /// <returns></returns>
+        public int[] GetWeapons(bool IsLeft)
+        {
+            return IsLeft?weaponsL:weaponsR;
+        }
+
+        /// <summary>
+        /// 重置某一边武器攻击次数
+        /// </summary>
+        /// <param name="IsLeft"></param>
+        public void ReSetAttackTimes(bool IsLeft)
+        {
+            if(IsLeft)
+            {
+                AttackTimesL=1;
+            }
+            else
+            {
+                AttackTimesR=1;
+            }
+
+        }
+        /// <summary>
+        /// 重置武器攻击次数(左右都重置)
+        /// </summary>
+        public void ReSetAttackTimes()
+        {
+            AttackTimesL=1;
+            AttackTimesR=1;
+        }
+        #endregion
+
     }
 }

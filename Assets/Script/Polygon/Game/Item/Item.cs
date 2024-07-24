@@ -11,6 +11,25 @@ namespace PolygonProject
         public string info;
         public Sprite sprite;
         public ItemType itemType;
+        public int MaxStackCount
+        {
+            get
+            {
+                switch(itemType)
+                {
+                    case ItemType.Weapon:
+                        return 1;
+                    case ItemType.Useable:
+                        return 100;
+                    case ItemType.Spell:
+                        return 1;
+                    case ItemType.Collection:
+                        return 100;
+                    default:
+                        return 1;
+                }
+            }
+        }
 
     }
 

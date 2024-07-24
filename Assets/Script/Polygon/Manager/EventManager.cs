@@ -35,9 +35,11 @@ namespace PolygonProject
 
     public static class EventName
     {
-        public const string EquipWeapon = "EquipWeapon";
+        public const string EquipItem = "EquipWeapon";
+        public const string UnEquipItem = "UnEquipWeapon";
         public const string UseItem = "UseItem";
-
+        public const string AddItem = "AddItem";
+        public const string ThrowItem = "ThrowItem";
     }
     public class EventManager : SingletonMono<EventManager>
     {

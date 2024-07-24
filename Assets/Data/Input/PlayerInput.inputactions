@@ -139,6 +139,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchUpItem",
+                    "type": "Button",
+                    "id": "d959c0bf-cbf4-470d-a527-6dc683a4f2ce",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchDownItem",
+                    "type": "Button",
+                    "id": "67a97abc-6fc5-4ec1-9567-ffc5cb642dde",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -504,6 +522,28 @@
                     "action": "SwitchRWeapon",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "6990116f-e7ed-4920-b048-37d52a579493",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchUpItem",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7e541d77-71e3-48a7-a3d7-f4a78f84ac06",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchDownItem",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
